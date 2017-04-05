@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-namespace JulianSchoenbaechler.GameState
+﻿namespace JulianSchoenbaechler.GameState
 {
 	public interface IGameState
 	{
