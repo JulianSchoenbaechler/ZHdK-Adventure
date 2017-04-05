@@ -59,7 +59,7 @@
 			//if(toonD < 1)
 			//	toonD = saturate((1 - toonD) * o.ShadowTex + toonD);
 
-			half3 diffuseColor = _LightColor0 * o.Albedo * toonD;// * toonD;
+			half3 diffuseColor = _LightColor0 * o.Albedo * toonD;
 
 			return half4(diffuseColor, o.Alpha);
 
