@@ -5,13 +5,19 @@ using UnityEngine;
 
 namespace Adventure.Inventory
 {
-	public class Item : ICloneable
+	public class Item : MonoBehaviour, ICloneable
 	{
+		[SerializeField] private string _id = "id0";
+		[SerializeField] private string _name = "noname";
+		[SerializeField, TextArea] private string _description = "";
+		[SerializeField] private bool _isStackable = false;
+		[SerializeField] private Texture2D _icon;
+
 		public string ID { get; protected set; }
 		public string Name { get; protected set; }
 		public string Description { get; protected set; }
 		public bool IsStackable { get; protected set; }
-		public Texture2D Icon { get; set; }
+		public Texture2D Icon { get; protected set; }
 
 
 		public Item(string id)
@@ -59,6 +65,15 @@ namespace Adventure.Inventory
 			Item clone = new Item(ID + "_clone", Name, Description, IsStackable);
 
 			return clone;
+		}
+
+		protected void Awake()
+		{
+			ID = _id.Length > 0 ? _id : "id";
+			Name = _name;
+			Description = _description;
+			IsStackable = _isStackable;
+			Icon = _icon;
 		}
 	}
 }

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Adventure.Inventory;
 
 namespace Adventure.Interaction
 {
@@ -25,7 +26,8 @@ namespace Adventure.Interaction
 		// Use this for initialization
 		void Start()
 		{
-			
+			Item gaga = new Item("test");
+			Debug.Log(gaga.ID);
 		}
 
 		// Update is called once per frame
