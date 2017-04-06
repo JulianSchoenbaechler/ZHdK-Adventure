@@ -5,13 +5,14 @@ using UnityEngine;
 
 namespace Adventure.Interaction
 {
-	public enum SpecialAction
+	public enum ActionType
 	{
 		None,
 		LoadScene,
 		ChangeState,
 		DisableObject,
-		EnableObject
+		EnableObject,
+		ToggleObject
 	};
 
 	public interface IInteractive

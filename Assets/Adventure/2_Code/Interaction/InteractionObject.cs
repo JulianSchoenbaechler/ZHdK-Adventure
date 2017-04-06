@@ -12,7 +12,9 @@ namespace Adventure.Interaction
 		public bool Active { get; set; }
 
 		[SerializeField] protected bool _active = true;
-		[SerializeField] protected SpecialAction _specialAction = SpecialAction.None;
+		[SerializeField] protected ActionType _specialAction = ActionType.None;
+		[SerializeField, HideInInspector] private GameObject _objectParameter;
+		[SerializeField, HideInInspector] private string _stringParameter;
 
 
 		void Awake()
@@ -23,7 +25,7 @@ namespace Adventure.Interaction
 		// Use this for initialization
 		void Start()
 		{
-
+			
 		}
 
 		// Update is called once per frame
@@ -39,5 +41,6 @@ namespace Adventure.Interaction
 			if(InteractionEvent != null)
 				InteractionEvent();
 		}
+
 	}
 }
