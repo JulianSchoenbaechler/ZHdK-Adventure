@@ -8,14 +8,25 @@ namespace Adventure.Interaction
 {
 	public class InteractionObject : MonoBehaviour, IInteractive
 	{
+		[Serializable]
+		private sealed class InteractionPiece
+		{
+			public Transform Position { get; set; }
+
+			[SerializeField] private ActionType _actionType = ActionType.None;
+			[SerializeField, HideInInspector] private GameObject _objectParameter;
+			[SerializeField, HideInInspector] private string _stringParameter;
+			[SerializeField, HideInInspector] private Transform _positionParameter;
+			[SerializeField, HideInInspector] private bool _stateParameter;
+		}
+
+
 		public event Action InteractionEvent;
 
-		public bool Active { get; set; }
-
 		[SerializeField] protected bool _active = true;
-		[SerializeField] protected ActionType _specialAction = ActionType.None;
-		[SerializeField, HideInInspector] private GameObject _objectParameter;
-		[SerializeField, HideInInspector] private string _stringParameter;
+		[SerializeField] private InteractionPiece[] _interactions;
+
+		public bool Active { get; set; }
 
 
 		void Awake()
@@ -26,8 +37,14 @@ namespace Adventure.Interaction
 		// Use this for initialization
 		void Start()
 		{
-			Item gaga = new Item("test");
-			Debug.Log(gaga.ID);
+			// Debug
+			Item item = new Item("test");
+			item.AddProperty("marcel", "dumm");
+			GameObject gaga = item.GetProperty<GameObject>("marcell");
+			Debug.Log(gaga);
+			//ItemComponent ic = GameObject.Find("Cube").GetComponent<ItemComponent>();
+			//Item gaga = (Item)ic;
+			//Debug.Log(ic.Equals(gaga));
 		}
 
 		// Update is called once per frame
@@ -37,7 +54,7 @@ namespace Adventure.Interaction
 		}
 
 
-		public void OnInteraction()
+		public virtual void OnInteraction()
 		{
 			// Raise interaction event
 			if(InteractionEvent != null)

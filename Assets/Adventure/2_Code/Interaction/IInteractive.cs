@@ -12,7 +12,11 @@ namespace Adventure.Interaction
 		ChangeState,
 		DisableObject,
 		EnableObject,
-		ToggleObject
+		ToggleObject,
+		DestroyObject,
+		InstantiateObject,
+		AddToInventory,
+		RemoveFromInventory
 	};
 
 	public interface IInteractive
