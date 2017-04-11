@@ -12,36 +12,23 @@ namespace Adventure.Interaction
 	[CustomEditor(typeof(InteractionObject))]
 	public class InteractionObjectEditor : Editor
 	{
-		private SerializedProperty _activeProp;
+		private InteractionObject _targetObject;
+		private SerializedProperty _interactionDistanceProp;
 		private SerializedProperty _interactionsProp;
 		private List<bool> _interactionsFoldout;
-		/*
-		private SerializedProperty _specialActionProp;
-		private SerializedProperty _objectParameterProp;
-		private SerializedProperty _stringParameterProp;
-		private SerializedProperty _positionParameterProp;
-		private SerializedProperty _stateParameterProp;
-		*/
 
-		//private InteractionObject _io;
 
 		/// <summary>
 		/// On enable.
 		/// </summary>
 		private void OnEnable()
 		{
+			_targetObject = target as InteractionObject;
+
 			// Get serialized references
-			_activeProp = serializedObject.FindProperty("_active");
+			_interactionDistanceProp = serializedObject.FindProperty("_interactionDistance");
 			_interactionsProp = serializedObject.FindProperty("_interactions");
 			_interactionsFoldout = new List<bool>();
-
-			/*
-			_specialActionProp = serializedObject.FindProperty("_specialAction");
-			_objectParameterProp = serializedObject.FindProperty("_objectParameter");
-			_stringParameterProp = serializedObject.FindProperty("_stringParameter");
-			_positionParameterProp = serializedObject.FindProperty("_positionParameter");
-			_stateParameterProp = serializedObject.FindProperty("_stateParameter");
-			*/
 		}
 
 		/// <summary>
@@ -52,7 +39,10 @@ namespace Adventure.Interaction
 			// Update serialized property values
 			serializedObject.Update();
 
-			EditorGUILayout.PropertyField(_activeProp);
+			//EditorGUILayout.PropertyField(_activeProp);
+			_targetObject.Active = EditorGUILayout.Toggle("Active", _targetObject.Active);
+			EditorGUILayout.PropertyField(_interactionDistanceProp);
+			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(_interactionsProp.FindPropertyRelative("Array.size"), new GUIContent("Numbers Of Interactions"));
 
 			for(int i = 0; i < _interactionsProp.arraySize; i++)
@@ -65,14 +55,17 @@ namespace Adventure.Interaction
 			serializedObject.ApplyModifiedProperties();
 		}
 
-
+		/// <summary>
+		/// Draw interaction options on inspector.
+		/// </summary>
+		/// <param name="interaction">Interactions array element as serialized property.</param>
+		/// <param name="i">The interaction count.</param>
 		private void DisplayInteraction(SerializedProperty interaction, int i)
 		{
 			SerializedProperty actionTypeProp = interaction.FindPropertyRelative("_actionType");
 			SerializedProperty objectParameterProp = interaction.FindPropertyRelative("_objectParameter");
 			SerializedProperty stringParameterProp = interaction.FindPropertyRelative("_stringParameter");
 			SerializedProperty positionParameterProp = interaction.FindPropertyRelative("_positionParameter");
-			SerializedProperty stateParameterProp = interaction.FindPropertyRelative("_stateParameter");
 
 			while(_interactionsFoldout.Count <= i)
 				_interactionsFoldout.Add(false);

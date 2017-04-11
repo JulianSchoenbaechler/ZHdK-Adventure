@@ -2,7 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Adventure.Inventory;
+using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Interaction
 {
@@ -17,45 +19,100 @@ namespace Adventure.Interaction
 			[SerializeField, HideInInspector] private GameObject _objectParameter;
 			[SerializeField, HideInInspector] private string _stringParameter;
 			[SerializeField, HideInInspector] private Transform _positionParameter;
-			[SerializeField, HideInInspector] private bool _stateParameter;
+
+			public void Run()
+			{
+				switch(_actionType)
+				{
+					case ActionType.LoadScene:
+						SceneManager.LoadScene(_stringParameter);
+						break;
+
+					case ActionType.ChangeState:
+						GameState.active = _stringParameter;
+						break;
+
+					case ActionType.DisableObject:
+						_objectParameter.SetActive(false);
+						break;
+
+					case ActionType.EnableObject:
+						_objectParameter.SetActive(true);
+						break;
+
+					case ActionType.ToggleObject:
+						_objectParameter.SetActive(_objectParameter.activeInHierarchy);
+						break;
+
+					case ActionType.DestroyObject:
+						Destroy(_objectParameter);
+						break;
+
+					case ActionType.InstantiateObject:
+						Instantiate(
+							_objectParameter,
+							_positionParameter != null ? _positionParameter.position : Vector3.zero,
+							Quaternion.identity,
+							_objectParameter.transform.root
+						);
+						break;
+
+					case ActionType.AddToInventory:
+						break;
+
+					case ActionType.RemoveFromInventory:
+						break;
+
+					default:
+						break;
+				}
+			}
 		}
 
 
 		public event Action InteractionEvent;
 
-		[SerializeField] protected bool _active = true;
-		[SerializeField] private InteractionPiece[] _interactions;
-
 		public bool Active { get; set; }
 
+		[SerializeField] protected float _interactionDistance = 1f;
+		[SerializeField] private InteractionPiece[] _interactions;
 
-		void Awake()
-		{
-			Active = _active;
-		}
+		protected Transform _player;
 
-		// Use this for initialization
+
+		/// <summary>
+		/// Initialization.
+		/// </summary>
 		void Start()
 		{
-			// Debug
-			Item item = new Item("test");
-			item.AddProperty("marcel", "dumm");
-			GameObject gaga = item.GetProperty<GameObject>("marcell");
-			Debug.Log(gaga);
-			//ItemComponent ic = GameObject.Find("Cube").GetComponent<ItemComponent>();
-			//Item gaga = (Item)ic;
-			//Debug.Log(ic.Equals(gaga));
+			_player = GameObject.FindGameObjectWithTag("Player").transform;
 		}
 
-		// Update is called once per frame
-		void Update()
+		/// <summary>
+		/// Every frame while mouse over interaction object.
+		/// </summary>
+		protected void OnMouseOver()
 		{
-
+			if(Input.GetMouseButtonDown(0) && Active)
+			{
+				if(Vector3.Distance(transform.position, _player.position) <= _interactionDistance)
+				{
+					OnInteraction();
+				}
+			}
 		}
 
-
+		/// <summary>
+		/// Processes all interactions and raises the interaction event.
+		/// </summary>
 		public virtual void OnInteraction()
 		{
+			// Run all interactions
+			for(int i = 0; i < _interactions.Length; i++)
+			{
+				_interactions[i].Run();
+			}
+
 			// Raise interaction event
 			if(InteractionEvent != null)
 				InteractionEvent();
