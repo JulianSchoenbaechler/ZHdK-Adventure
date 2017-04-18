@@ -12,7 +12,7 @@ namespace Adventure.Interaction
 	[CustomEditor(typeof(InteractionObject))]
 	public class InteractionObjectEditor : Editor
 	{
-		private InteractionObject _targetObject;
+		private SerializedProperty _activeProp;
 		private SerializedProperty _interactionDistanceProp;
 		private SerializedProperty _interactionsProp;
 		private List<bool> _interactionsFoldout;
@@ -23,9 +23,8 @@ namespace Adventure.Interaction
 		/// </summary>
 		private void OnEnable()
 		{
-			_targetObject = target as InteractionObject;
-
 			// Get serialized references
+			_activeProp = serializedObject.FindProperty("_active");
 			_interactionDistanceProp = serializedObject.FindProperty("_interactionDistance");
 			_interactionsProp = serializedObject.FindProperty("_interactions");
 			_interactionsFoldout = new List<bool>();
@@ -39,8 +38,7 @@ namespace Adventure.Interaction
 			// Update serialized property values
 			serializedObject.Update();
 
-			//EditorGUILayout.PropertyField(_activeProp);
-			_targetObject.Active = EditorGUILayout.Toggle("Active", _targetObject.Active);
+			EditorGUILayout.PropertyField(_activeProp);
 			EditorGUILayout.PropertyField(_interactionDistanceProp);
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(_interactionsProp.FindPropertyRelative("Array.size"), new GUIContent("Numbers Of Interactions"));
