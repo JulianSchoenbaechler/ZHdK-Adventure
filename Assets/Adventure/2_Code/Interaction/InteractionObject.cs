@@ -69,10 +69,17 @@ namespace Adventure.Interaction
 			}
 		}
 
-
+		/// <summary>
+		/// Occurs when player interacts with this object.
+		/// </summary>
 		public event Action InteractionEvent;
 
+		/// <summary>
+		/// Gets or sets a value indicating whether this <see cref="Adventure.Interaction.InteractionObject"/> is active.
+		/// </summary>
+		/// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
 		public bool Active { get; set; }
+
 
 		[SerializeField] protected float _interactionDistance = 1f;
 		[SerializeField] private InteractionPiece[] _interactions;
