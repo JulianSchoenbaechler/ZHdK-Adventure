@@ -25,6 +25,15 @@ public class CameraControl : MonoBehaviour
 
 
 	/// <summary>
+	/// On awake.
+	/// </summary>
+	private void Awake()
+	{
+		if(CameraControl.active == null)
+			CameraControl.active = Camera.main;
+	}
+
+	/// <summary>
 	/// Initialization.
 	/// </summary>
 	private void Start()
@@ -35,9 +44,6 @@ public class CameraControl : MonoBehaviour
 		_initialRotation = transform.rotation;
 
 		KeepChildTransform(true);
-
-		if(CameraControl.active == null)
-			CameraControl.active = Camera.main;
 	}
 
 
