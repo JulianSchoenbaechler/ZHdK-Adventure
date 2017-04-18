@@ -144,7 +144,7 @@ Material:
       second: 0
     - first:
         name: _SpecIntensity
-      second: 0.2
+      second: 0.3
     - first:
         name: _SpecSoftness
       second: 0.2
