@@ -45,7 +45,7 @@ namespace Adventure.Interaction
 
 			for(int i = 0; i < _interactionsProp.arraySize; i++)
 			{
-				
+
 				DisplayInteraction(_interactionsProp.GetArrayElementAtIndex(i), i);
 			}
 
