@@ -1,118 +1,144 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Adventure.CameraHandling;
 
-public class VisualNoise : MonoBehaviour
+namespace Adventure.UI
 {
-	[SerializeField] protected Texture[] _images;
-	[SerializeField] protected bool _randomizeImages = true;
-	[SerializeField] protected Transform[] _positions;
-	[SerializeField] protected bool _randomizePositions = true;
-	[SerializeField][Range(0.0f, 60.0f)] protected float _delayTime = 0.5f;
-
-	public bool PlayOneShot { get; set; }
-	public bool PlayOnAwake { get; set; }
-	public bool IsPlaying { get; protected set; }
-
-	[SerializeField] private bool _playOneShot = false;
-	[SerializeField] private bool _playOnAwake = false;
-
-	private float _timer;
-	private Texture _randomImage;
-	private Transform _randomPos;
-	private int _imageIndex, _posIndex;
-	private Vector3 _screenPosition;
-	private Vector2 _drawPosition;
-
-
-	private void Awake()
+	public class VisualNoise : MonoBehaviour
 	{
-		PlayOneShot = _playOneShot;
-		PlayOnAwake = _playOnAwake;	
-	}
+		// Properties
+		public bool PlayOneShot { get; set; }
+		public bool PlayOnAwake { get; set; }
+		public bool IsPlaying { get; protected set; }
 
-	// Use this for initialization
-	protected void Start()
-	{
-		if(PlayOnAwake)
+		// Serialized
+		[SerializeField] protected Texture[] _images;
+		[SerializeField] protected bool _randomizeImages = true;
+		[SerializeField] protected Transform[] _positions;
+		[SerializeField] protected bool _randomizePositions = true;
+		[SerializeField][Range(0.0f, 60.0f)] protected float _delayTime = 0.5f;
+
+		[SerializeField] private bool _playOneShot = false;
+		[SerializeField] private bool _playOnAwake = false;
+
+		// Private
+		protected float _timer;
+		protected Texture _randomImage;
+		protected Transform _randomPos;
+		protected int _imageIndex, _posIndex;
+		protected Vector3 _screenPosition;
+		protected Vector2 _drawPosition;
+
+
+		/// <summary>
+		/// On awake.
+		/// </summary>
+		private void Awake()
 		{
-			NextImage();
-			IsPlaying = true;
+			PlayOneShot = _playOneShot;
+			PlayOnAwake = _playOnAwake;	
 		}
-		else
-		{
-			IsPlaying = false;
-		}
-	}
 
-
-	protected void OnGUI()
-	{
-		if(IsPlaying)
+		/// <summary>
+		/// Initialization
+		/// </summary>
+		protected virtual void Start()
 		{
-			GUI.DrawTexture(new Rect(_drawPosition.x, _drawPosition.y, _randomImage.width, _randomImage.height), _randomImage, ScaleMode.ScaleToFit);
-		}
-	}
-
-	protected void Update()
-	{
-		if(IsPlaying)
-		{
-			if(_timer >= _delayTime)
+			if(PlayOnAwake)
 			{
-				if(PlayOneShot)
-				{
-					IsPlaying = false;
-				}
-
 				NextImage();
-
-				_timer = 0f;
+				IsPlaying = true;
 			}
 			else
 			{
-				_timer += Time.deltaTime;
+				IsPlaying = false;
 			}
 		}
-	}
 
-	protected void NextImage()
-	{
-		if(_randomizeImages)
+		/// <summary>
+		/// On GUI.
+		/// </summary>
+		protected virtual void OnGUI()
 		{
-			_randomImage = _images[Random.Range(0, _images.Length)];
-		}
-		else
-		{
-			_randomImage = _images[_imageIndex];
-			_imageIndex = (_imageIndex + 1) >= _images.Length ? 0 : (_imageIndex + 1);
+			if(IsPlaying)
+			{
+				GUI.DrawTexture(new Rect(_drawPosition.x, _drawPosition.y, _randomImage.width, _randomImage.height), _randomImage, ScaleMode.ScaleToFit);
+			}
 		}
 
-		if(_randomizePositions)
+		/// <summary>
+		/// Every frame.
+		/// </summary>
+		protected virtual void Update()
 		{
-			_randomPos = _positions[Random.Range(0, _positions.Length)];
+			if(IsPlaying)
+			{
+				if(_timer >= _delayTime)
+				{
+					if(PlayOneShot)
+					{
+						IsPlaying = false;
+					}
+
+					NextImage();
+
+					_timer = 0f;
+				}
+				else
+				{
+					_timer += Time.deltaTime;
+				}
+			}
 		}
-		else
+
+		/// <summary>
+		/// Preloads the next image to display. Calculations screen position.
+		/// </summary>
+		protected virtual void NextImage()
 		{
-			_randomPos = _positions[_posIndex];
-			_posIndex = (_posIndex + 1) >= _positions.Length ? 0 : (_posIndex + 1);
+			if(_randomizeImages)
+			{
+				_randomImage = _images[Random.Range(0, _images.Length)];
+			}
+			else
+			{
+				_randomImage = _images[_imageIndex];
+				_imageIndex = (_imageIndex + 1) >= _images.Length ? 0 : (_imageIndex + 1);
+			}
+
+			if(_randomizePositions)
+			{
+				_randomPos = _positions[Random.Range(0, _positions.Length)];
+			}
+			else
+			{
+				_randomPos = _positions[_posIndex];
+				_posIndex = (_posIndex + 1) >= _positions.Length ? 0 : (_posIndex + 1);
+			}
+
+			_screenPosition = CameraControl.active.WorldToScreenPoint(_randomPos.position);
+			_drawPosition = new Vector2(
+				_screenPosition.x - (_randomImage.width / 2f),
+				Screen.height - (_screenPosition.y + (_randomImage.height / 2f))
+			);
 		}
 
-		_screenPosition = CameraControl.active.WorldToScreenPoint(_randomPos.position);
-		_drawPosition = new Vector2(
-			_screenPosition.x - (_randomImage.width / 2f),
-			Screen.height - (_screenPosition.y + (_randomImage.height / 2f))
-		);
-	}
+		/// <summary>
+		/// Start playing this noise.
+		/// </summary>
+		public virtual void Play()
+		{
+			IsPlaying = true;
+		}
 
-	public void Play()
-	{
-		IsPlaying = true;
-	}
-
-	public void Stop()
-	{
-		IsPlaying = false;
-		_timer = 0f;
+		/// <summary>
+		/// Stop noise.
+		/// </summary>
+		public virtual void Stop()
+		{
+			IsPlaying = false;
+			_timer = 0f;
+		}
 	}
 }
