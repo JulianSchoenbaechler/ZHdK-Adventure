@@ -343,7 +343,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 806312384}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d502dd58703d1364e8854505871211f0, type: 3}
   m_Name: 
@@ -367,6 +367,34 @@ Transform:
   m_PrefabParentObject: {fileID: 4977393955161650, guid: e5e08a372bb116b468a43adb971b6ad3,
     type: 2}
   m_PrefabInternal: {fileID: 1247613805}
+--- !u!114 &806312387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806312384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2035bc0dc767ac14ca083aaa923a970e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _images:
+  - {fileID: 2800000, guid: b3bd21b6bd41ec442b5042807ee22c55, type: 3}
+  - {fileID: 2800000, guid: 25f2dcdd550b382499a1265aa3c9f430, type: 3}
+  - {fileID: 2800000, guid: ea418a90f86aba040be6f396cea7a5fd, type: 3}
+  - {fileID: 2800000, guid: eb3c3afc244791941a894eb179a0a7a9, type: 3}
+  _randomizeImages: 1
+  _positions:
+  - {fileID: 1714423753}
+  - {fileID: 495184785}
+  - {fileID: 805937530}
+  _randomizePositions: 1
+  _delayTime: 0.2
+  _playOneShot: 0
+  _playOnAwake: 1
+  _scale: 1
+  _randomDistance: 0.5
+  _maxRandomRotation: 25
 --- !u!1 &1047288296
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,6 +572,11 @@ Prefab:
     - target: {fileID: 4977393955161650, guid: e5e08a372bb116b468a43adb971b6ad3, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -117.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 95542896557838570, guid: e5e08a372bb116b468a43adb971b6ad3,
+        type: 2}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e5e08a372bb116b468a43adb971b6ad3, type: 2}

@@ -23,7 +23,7 @@ namespace Adventure.UI
 		[SerializeField] private bool _playOnAwake = false;
 
 		// Private
-		protected float _timer;
+		private float _timer;
 		protected Texture _randomImage;
 		protected Transform _randomPos;
 		protected int _imageIndex, _posIndex;
