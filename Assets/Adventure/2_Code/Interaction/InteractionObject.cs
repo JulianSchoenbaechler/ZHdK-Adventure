@@ -69,11 +69,19 @@ namespace Adventure.Interaction
 			}
 		}
 
-
+		/// <summary>
+		/// Occurs when player interacts with this object.
+		/// </summary>
 		public event Action InteractionEvent;
 
+		/// <summary>
+		/// Gets or sets a value indicating whether this <see cref="Adventure.Interaction.InteractionObject"/> is active.
+		/// </summary>
+		/// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
 		public bool Active { get; set; }
 
+
+		[SerializeField] private bool _active = true;
 		[SerializeField] protected float _interactionDistance = 1f;
 		[SerializeField] private InteractionPiece[] _interactions;
 
@@ -81,9 +89,17 @@ namespace Adventure.Interaction
 
 
 		/// <summary>
+		/// On awake...
+		/// </summary>
+		private void Awake()
+		{
+			Active = _active;
+		}
+
+		/// <summary>
 		/// Initialization.
 		/// </summary>
-		void Start()
+		private void Start()
 		{
 			_player = GameObject.FindGameObjectWithTag("Player").transform;
 		}
