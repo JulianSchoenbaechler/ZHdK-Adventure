@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using JulianSchoenbaechler.SnapPanel;
+using Adventure.CameraHandling;
 
 [RequireComponent(typeof(CapsuleCollider), typeof(Rigidbody), typeof(Animator))]
 public class FarmerShootController : MonoBehaviour
@@ -13,8 +15,11 @@ public class FarmerShootController : MonoBehaviour
 	[SerializeField] protected float _reloadInterval = 1f;
 	[SerializeField] protected float _turnSpeed = 1f;
 	[SerializeField] protected Transform _bulletSpawnPosition;
+	[SerializeField] protected Animator _visualShotAnimator;
+	[SerializeField] protected Animator _visualHitAnimator;
 
 	protected Animator _animator;
+	protected SnapPanel _snapPanel;
 
 	private float _timer = 0f;
 	private Quaternion _rotateToTarget;
@@ -24,6 +29,8 @@ public class FarmerShootController : MonoBehaviour
 	void Start()
 	{
 		_animator = GetComponent<Animator>();
+		_snapPanel = GetComponentInChildren<SnapPanel>();
+		_snapPanel.Invoke("StartSnapping", _pauseInterval - 1f);
 	}
 	
 	// Update is called once per frame
@@ -71,12 +78,12 @@ public class FarmerShootController : MonoBehaviour
 
 	public void OnReloadGun()
 	{
-		print("Load");
+		//GetComponentInChildren<SnapPanel>().StartSnapping();
 	}
 
 	public void OnShootGun()
 	{
-		print("Shoot");
+		_visualShotAnimator.SetTrigger("VisualShot");
 
 		if(Physics.Raycast(
 			_bulletSpawnPosition.position,
@@ -85,6 +92,10 @@ public class FarmerShootController : MonoBehaviour
 			_maxDistance
 		))
 		{
+			_visualHitAnimator.transform.position = _shotHit.point;
+			_visualHitAnimator.transform.rotation = CameraControl.active.transform.rotation;
+			_visualHitAnimator.SetTrigger("VisualHit");
+
 			if(_shotHit.transform.CompareTag("Player"))
 			{
 				print("Dead");
@@ -94,6 +105,8 @@ public class FarmerShootController : MonoBehaviour
 				print("Missed");
 			}
 		}
+
+		_snapPanel.Invoke("StartSnapping", _pauseInterval - 1f);
 	}
 
 
