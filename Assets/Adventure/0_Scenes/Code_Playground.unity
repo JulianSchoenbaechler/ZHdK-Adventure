@@ -689,6 +689,11 @@ Prefab:
       propertyPath: panelType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114069061340457414, guid: 390f9cdb68d5e46f4889d87c2f3b22a1,
+        type: 2}
+      propertyPath: _mutualLifetime
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 390f9cdb68d5e46f4889d87c2f3b22a1, type: 2}
   m_IsPrefabParent: 0

@@ -18,6 +18,7 @@ namespace JulianSchoenbaechler.SnapPanel
 		[SerializeField] protected bool _chooseRandom = false;
 		[SerializeField] private float _snapDelay = 0.2f;
 		[SerializeField] private float _panelLifetime = 2f;
+		[SerializeField] private bool _mutualLifetime = false;
 
 		// Public
 		public PanelType panelType;
@@ -27,6 +28,7 @@ namespace JulianSchoenbaechler.SnapPanel
 		private RenderCameraStack _renderCameraStack;
 		private WaitForSeconds _coroutineDelay;
 		private WaitForSeconds _lifetimeDelay;
+		private WaitUntil _sequenceFinishDelay;
 
 		#endregion
 
@@ -53,6 +55,7 @@ namespace JulianSchoenbaechler.SnapPanel
 		{
 			_coroutineDelay = new WaitForSeconds(_snapDelay);
 			_lifetimeDelay = new WaitForSeconds(_panelLifetime);
+			_sequenceFinishDelay = new WaitUntil(() => SequenceFinished);
 
 			// Prealloc new RenderCamera stack
 			_renderCameraStack = new RenderCameraStack(Camera.main.depth - 1f, _panels.Length);
@@ -143,7 +146,12 @@ namespace JulianSchoenbaechler.SnapPanel
 			panel.GetComponentInChildren<RawImage>(true).texture = content as Texture;
 			panel.SetActive(true);
 
-			yield return _lifetimeDelay;
+			// Delay before cleanup
+			if(_mutualLifetime)
+				yield return _sequenceFinishDelay;
+			else
+				yield return _lifetimeDelay;
+			
 
 			// Cleanup panel after its lifetime
 			panel.GetComponentInChildren<RawImage>(false).texture = null;
@@ -167,7 +175,11 @@ namespace JulianSchoenbaechler.SnapPanel
 			panel.GetComponentInChildren<RawImage>(true).texture = rendered as Texture;
 			panel.SetActive(true);
 
-			yield return _lifetimeDelay;
+			// Delay before cleanup
+			if(_mutualLifetime)
+				yield return _sequenceFinishDelay;
+			else
+				yield return _lifetimeDelay;
 
 			// Cleanup panel after its lifetime
 			panel.GetComponentInChildren<RawImage>(false).texture = null;

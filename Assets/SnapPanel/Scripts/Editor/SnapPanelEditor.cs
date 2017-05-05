@@ -17,6 +17,7 @@ namespace JulianSchoenbaechler.SnapPanel
 		private SerializedProperty _chooseRandomProp;
 		private SerializedProperty _snapDelayProp;
 		private SerializedProperty _panelLifetimeProp;
+		private SerializedProperty _mutualLifetimeProp;
 		private SerializedProperty _panelTypeProp;
 
 		#endregion
@@ -35,6 +36,7 @@ namespace JulianSchoenbaechler.SnapPanel
 			_chooseRandomProp = serializedObject.FindProperty("_chooseRandom");
 			_snapDelayProp = serializedObject.FindProperty("_snapDelay");
 			_panelLifetimeProp = serializedObject.FindProperty("_panelLifetime");
+			_mutualLifetimeProp = serializedObject.FindProperty("_mutualLifetime");
 			_panelTypeProp = serializedObject.FindProperty("panelType");
 
 			// Register playmode state change event
@@ -56,6 +58,7 @@ namespace JulianSchoenbaechler.SnapPanel
 			EditorGUILayout.PropertyField(_chooseRandomProp, new GUIContent("Choose Random", "If checked, the camera positions will be randomized."));
 			EditorGUILayout.PropertyField(_snapDelayProp, new GUIContent("Snap Delay", "The time delay between rendering the panels in seconds."));
 			EditorGUILayout.PropertyField(_panelLifetimeProp, new GUIContent("Lifetime", "The lifetime of the panels in seconds."));
+			EditorGUILayout.PropertyField(_mutualLifetimeProp, new GUIContent("Mutual Lifetime", "If checked, destroys panels all together after the lifetime of the last panel exceeded."));
 			EditorGUILayout.PropertyField(_panelTypeProp);
 
 			// Apply property changes
