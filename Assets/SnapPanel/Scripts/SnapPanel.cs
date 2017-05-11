@@ -40,11 +40,12 @@ namespace JulianSchoenbaechler.SnapPanel
 		private void Awake()
 		{
 			// Disable panels
+			/*
 			for(int i = 0;i < _panels.Length;i++)
 			{
 				_panels[i].SetActive(false);
 			}
-
+			*/
 			SequenceFinished = true;
 		}
 

@@ -12,7 +12,8 @@ public class FarmerShootController : MonoBehaviour
 	[SerializeField] protected float _maxDistance = 10f;
 	[SerializeField] protected float _yOffset = 0f;
 	[SerializeField] protected float _pauseInterval = 5f;
-	[SerializeField] protected float _reloadInterval = 1f;
+	[SerializeField] protected float _searchTime = 1f;
+	[SerializeField] protected float _loadTime = 1f;
 	[SerializeField] protected float _turnSpeed = 1f;
 	[SerializeField] protected Transform _bulletSpawnPosition;
 	[SerializeField] protected Animator _visualShotAnimator;
@@ -30,7 +31,7 @@ public class FarmerShootController : MonoBehaviour
 	{
 		_animator = GetComponent<Animator>();
 		_snapPanel = GetComponentInChildren<SnapPanel>();
-		_snapPanel.Invoke("StartSnapping", _pauseInterval - 1f);
+		_snapPanel.Invoke("StartSnapping", _pauseInterval + 3f);
 	}
 	
 	// Update is called once per frame
@@ -49,24 +50,52 @@ public class FarmerShootController : MonoBehaviour
 		transform.rotation = Quaternion.Lerp(transform.rotation, _rotateToTarget, Time.deltaTime * _turnSpeed);
 
 		// Idle, Load, Shoot
-		if(_animator.GetBool("Set"))
+		if(_animator.GetBool("Searching"))
 		{
-			if(_timer >= _reloadInterval)
+			// Searching...
+
+
+			if(_animator.GetBool("Set"))
 			{
-				_animator.SetTrigger("Shoot");
-				_animator.SetBool("Set", false);
-				_timer = 0f;
+				// Ready to shoot...
+
+				if(_timer >= _loadTime)
+				{
+					// Shoot!
+					_animator.SetTrigger("Shoot");
+					_animator.SetBool("Searching", false);
+					_animator.SetBool("Set", false);
+					_timer = 0f;
+				}
+				else
+				{
+					_timer += Time.deltaTime;
+				}
 			}
 			else
 			{
-				_timer += Time.deltaTime;
+				// Ready to load...
+
+				if(_timer >= _searchTime)
+				{
+					// Load!
+					_animator.SetBool("Set", true);
+					_timer = 0f;
+				}
+				else
+				{
+					_timer += Time.deltaTime;
+				}
 			}
 		}
 		else
 		{
+			// Idle...
+
 			if(_timer >= _pauseInterval)
 			{
-				_animator.SetBool("Set", true);
+				// Start searching!
+				_animator.SetBool("Searching", true);
 				_timer = 0f;
 			}
 			else
@@ -79,6 +108,7 @@ public class FarmerShootController : MonoBehaviour
 	public void OnReloadGun()
 	{
 		//GetComponentInChildren<SnapPanel>().StartSnapping();
+		print("reload");
 	}
 
 	public void OnShootGun()
@@ -106,7 +136,7 @@ public class FarmerShootController : MonoBehaviour
 			}
 		}
 
-		_snapPanel.Invoke("StartSnapping", _pauseInterval - 1f);
+		_snapPanel.Invoke("StartSnapping", _pauseInterval + 3f);
 	}
 
 

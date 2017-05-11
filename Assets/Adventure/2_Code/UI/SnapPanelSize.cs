@@ -19,6 +19,7 @@ namespace Adventure.UI
 			size.y = maxHeight - _borderSize;
 
 			rectTransform.sizeDelta = size;
+			gameObject.SetActive(false);
 		}
 	}
 }
