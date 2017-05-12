@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using JulianSchoenbaechler.SnapPanel;
 using Adventure.CameraHandling;
+using Adventure.UI;
 
 [RequireComponent(typeof(CapsuleCollider), typeof(Rigidbody), typeof(Animator))]
 public class FarmerShootController : MonoBehaviour
@@ -18,6 +19,7 @@ public class FarmerShootController : MonoBehaviour
 	[SerializeField] protected Transform _bulletSpawnPosition;
 	[SerializeField] protected Animator _visualShotAnimator;
 	[SerializeField] protected Animator _visualHitAnimator;
+	[SerializeField] protected UISpray _shotNoise;
 
 	protected Animator _animator;
 	protected SnapPanel _snapPanel;
@@ -31,7 +33,7 @@ public class FarmerShootController : MonoBehaviour
 	{
 		_animator = GetComponent<Animator>();
 		_snapPanel = GetComponentInChildren<SnapPanel>();
-		_snapPanel.Invoke("StartSnapping", _pauseInterval + 3f);
+		_snapPanel.Invoke("StartSnapping", _pauseInterval + 2f);
 	}
 	
 	// Update is called once per frame
@@ -114,6 +116,7 @@ public class FarmerShootController : MonoBehaviour
 	public void OnShootGun()
 	{
 		_visualShotAnimator.SetTrigger("VisualShot");
+		_shotNoise.Play();
 
 		if(Physics.Raycast(
 			_bulletSpawnPosition.position,
@@ -136,7 +139,7 @@ public class FarmerShootController : MonoBehaviour
 			}
 		}
 
-		_snapPanel.Invoke("StartSnapping", _pauseInterval + 3f);
+		_snapPanel.Invoke("StartSnapping", _pauseInterval + 1.3f);
 	}
 
 

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 95601a8260592c3479ac8d0441720b83
+timeCreated: 1494513976
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cartoonist
+  fontNames:
+  - Cartoonist
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
