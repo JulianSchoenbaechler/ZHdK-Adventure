@@ -1,0 +1,222 @@
+fileFormatVersion: 2
+guid: dc6beef98b409954693adbd9d295fb66
+timeCreated: 1492087333
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Harvester
+    100004: Harvester 1
+    100006: //RootNode
+    100008: Harvester_end
+    100010: Vehicle
+    100012: WheelBack.L
+    100014: WheelBack.L_end
+    100016: WheelBack.R
+    100018: WheelBack.R_end
+    100020: WheelFront.L
+    100022: WheelFront.L_end
+    100024: WheelFront.R
+    100026: WheelFront.R_end
+    400000: Armature
+    400002: Harvester
+    400004: Harvester 1
+    400006: //RootNode
+    400008: Harvester_end
+    400010: Vehicle
+    400012: WheelBack.L
+    400014: WheelBack.L_end
+    400016: WheelBack.R
+    400018: WheelBack.R_end
+    400020: WheelFront.L
+    400022: WheelFront.L_end
+    400024: WheelFront.R
+    400026: WheelFront.R_end
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Harvester
+    7400000: Armature|Driving
+    7400002: Armature|Idle
+    9500000: //RootNode
+    13700000: Harvester
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Driving
+      takeName: Armature|Driving
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Vehicle
+        weight: 1
+      - path: Armature/Vehicle/Harvester 1
+        weight: 1
+      - path: Armature/Vehicle/Harvester 1/Harvester_end
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.L
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.L/WheelBack.L_end
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.R
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.R/WheelBack.R_end
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.L
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.L/WheelFront.L_end
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.R
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.R/WheelFront.R_end
+        weight: 1
+      - path: Harvester
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle
+      takeName: Armature|Idle
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Vehicle
+        weight: 1
+      - path: Armature/Vehicle/Harvester 1
+        weight: 1
+      - path: Armature/Vehicle/Harvester 1/Harvester_end
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.L
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.L/WheelBack.L_end
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.R
+        weight: 1
+      - path: Armature/Vehicle/WheelBack.R/WheelBack.R_end
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.L
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.L/WheelFront.L_end
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.R
+        weight: 1
+      - path: Armature/Vehicle/WheelFront.R/WheelFront.R_end
+        weight: 1
+      - path: Harvester
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: Vehicle
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

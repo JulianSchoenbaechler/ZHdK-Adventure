@@ -1,34 +1,17 @@
 fileFormatVersion: 2
-guid: a78396989f3947344bd9b16074b7f4f4
-timeCreated: 1494588742
+guid: 0ba5d3a4d23d9334084b4209a50dc33f
+timeCreated: 1494589295
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Cube
-    100004: Cube_1
-    100006: Hindernis
-    100008: Scheune
     400000: //RootNode
-    400002: Cube
-    400004: Cube_1
-    400006: Hindernis
-    400008: Scheune
-    2300000: Cube
-    2300002: Cube_1
-    2300004: Hindernis
-    2300006: Scheune
-    3300000: Cube
-    3300002: Cube_1
-    3300004: Hindernis
-    3300006: Scheune
-    4300000: Cube_1
-    4300002: Cube
-    4300004: Hindernis
-    4300006: Scheune
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Stein1
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 84e74ab62c2db55409282881061ced10
-timeCreated: 1494588742
+guid: b85ed295edd95064681c32ec2dc9eecd
+timeCreated: 1494589295
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,9 +9,9 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
+    4300000: Stein2
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:

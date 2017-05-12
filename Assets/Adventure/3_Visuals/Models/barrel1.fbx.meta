@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 9752de8023211374883571e3e4e5c620
+timeCreated: 1494589295
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Blatt_1_9
+    100004: Blatt_33
+    100006: Blatt_34
+    100008: Blatt_35
+    100010: Blatt_36
+    100012: Blatt_37
+    100014: Blatt_klein
+    100016: Fass
+    100018: Polle_1_9
+    100020: Polle_2_9
+    100022: Polle_3_9
+    100024: Polle_4_9
+    100026: Polle_5_9
+    400000: //RootNode
+    400002: Blatt_1_9
+    400004: Blatt_33
+    400006: Blatt_34
+    400008: Blatt_35
+    400010: Blatt_36
+    400012: Blatt_37
+    400014: Blatt_klein
+    400016: Fass
+    400018: Polle_1_9
+    400020: Polle_2_9
+    400022: Polle_3_9
+    400024: Polle_4_9
+    400026: Polle_5_9
+    2300000: //RootNode
+    2300002: Blatt_1_9
+    2300004: Blatt_33
+    2300006: Blatt_34
+    2300008: Blatt_35
+    2300010: Blatt_36
+    2300012: Blatt_37
+    2300014: Blatt_klein
+    2300016: Fass
+    2300018: Polle_1_9
+    2300020: Polle_2_9
+    2300022: Polle_3_9
+    2300024: Polle_4_9
+    2300026: Polle_5_9
+    3300000: //RootNode
+    3300002: Blatt_1_9
+    3300004: Blatt_33
+    3300006: Blatt_34
+    3300008: Blatt_35
+    3300010: Blatt_36
+    3300012: Blatt_37
+    3300014: Blatt_klein
+    3300016: Fass
+    3300018: Polle_1_9
+    3300020: Polle_2_9
+    3300022: Polle_3_9
+    3300024: Polle_4_9
+    3300026: Polle_5_9
+    4300000: Fass
+    4300002: Blatt_37
+    4300004: Blatt_klein
+    4300006: Blatt_36
+    4300008: Blatt_35
+    4300010: Blatt_34
+    4300012: Blatt_33
+    4300014: Blatt_1_9
+    4300016: Polle_1_9
+    4300018: Polle_2_9
+    4300020: Polle_3_9
+    4300022: Polle_4_9
+    4300024: Polle_5_9
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
