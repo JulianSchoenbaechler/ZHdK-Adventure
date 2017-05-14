@@ -7,6 +7,7 @@ TagManager:
   - GameState
   - Camera
   - Farmer
+  - Barrel
   layers:
   - Default
   - TransparentFX

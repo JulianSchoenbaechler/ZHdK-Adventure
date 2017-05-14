@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Barn_Box
+  m_Name: Flower_Leaves
   m_Shader: {fileID: 4800000, guid: b41b57f7ff5599244bd435960238fd82, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
@@ -48,7 +48,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: 9784a9b650d121b418900627144b5682, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -60,7 +60,7 @@ Material:
     - first:
         name: _NormalMap
       second:
-        m_Texture: {fileID: 2800000, guid: 344d1f2bc8182e04ea0c6bf827829d85, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -105,13 +105,13 @@ Material:
       second: 1
     - first:
         name: _Glossiness
-      second: 5
+      second: 16
     - first:
         name: _GlossyReflections
       second: 1
     - first:
         name: _Lighting
-      second: 0.7
+      second: 0.5
     - first:
         name: _Metallic
       second: 0
@@ -123,7 +123,7 @@ Material:
       second: 1
     - first:
         name: _Outline
-      second: 0.2
+      second: 0.4
     - first:
         name: _OutlineSoftness
       second: 0.2
@@ -132,22 +132,22 @@ Material:
       second: 0.02
     - first:
         name: _Shading
-      second: 0.462
+      second: 0.5
     - first:
         name: _ShadowIntensity
-      second: 0.7
+      second: 0.8
     - first:
         name: _ShadowSoftness
-      second: 0.1
+      second: 0.2
     - first:
         name: _SmoothnessTextureChannel
       second: 0
     - first:
         name: _SpecIntensity
-      second: 0
+      second: 0.7
     - first:
         name: _SpecSoftness
-      second: 0.1
+      second: 0.2
     - first:
         name: _SpecularHighlights
       second: 1
@@ -163,7 +163,7 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 0.6911765, g: 0.6911765, b: 0.6911765, a: 1}
+      second: {r: 0.375, g: 0.375, b: 0.375, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
