@@ -41,7 +41,9 @@ namespace Adventure.CameraHandling
 		private void Start()
 		{
 			_camera = GetComponent<Camera>();
-			_camera.enabled = false;
+
+			if(!_camera.CompareTag("MainCamera"))
+				_camera.enabled = false;
 
 			_initialRotation = transform.rotation;
 
@@ -109,7 +111,7 @@ namespace Adventure.CameraHandling
 
 				for(int i = 0; i < _transformClones.Length; i++)
 				{
-					if(!children[i].CompareTag("Camera"))
+					if(!children[i].CompareTag("Camera") && !children[i].CompareTag("MainCamera"))
 					{
 						_transformClones[i].ApplyTransform(children[i]);
 					}

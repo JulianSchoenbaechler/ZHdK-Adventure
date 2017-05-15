@@ -28,6 +28,7 @@ namespace Adventure.Character
 
 		private float _timer = 0f;
 		private Quaternion _rotateToTarget;
+		private Vector3 _tempRotationMask;
 		private RaycastHit _shotHit;
 
 
@@ -43,7 +44,7 @@ namespace Adventure.Character
 		{
 			//Debug.DrawRay(_bulletSpawnPosition.position, _target.position - _bulletSpawnPosition.position + Vector3.up * _yOffset, Color.red);
 
-			if(!_active)
+			if(!_active &&  !_animator.GetBool("Searching"))
 				return;
 
 			if(Vector3.Distance(transform.position, _target.position) > _maxDistance)
@@ -51,6 +52,10 @@ namespace Adventure.Character
 
 			// Rotate to target
 			_rotateToTarget = Quaternion.LookRotation(_target.position - transform.position, Vector3.up);
+			_tempRotationMask = _rotateToTarget.eulerAngles;
+			_tempRotationMask.x = 0f;
+			_tempRotationMask.z = 0f;
+			_rotateToTarget = Quaternion.Euler(_tempRotationMask);
 			transform.rotation = Quaternion.Lerp(transform.rotation, _rotateToTarget, Time.deltaTime * _turnSpeed);
 
 			// Idle, Load, Shoot
@@ -141,14 +146,24 @@ namespace Adventure.Character
 				}
 			}
 
-			_snapPanel.Invoke("StartSnapping", _pauseInterval + 1.3f);
+			if(_active == true)
+				_snapPanel.Invoke("StartSnapping", _pauseInterval + 1.3f);
 		}
 
 
 		public bool Active
 		{
 			get { return _active; }
-			set { _active = value; }
+			set
+			{ 
+				_active = value;
+				_animator.SetBool("Searching", false);
+				_animator.SetBool("Set", false);
+				_timer = 0f;
+
+				if(_active == true)
+					_snapPanel.Invoke("StartSnapping", _pauseInterval + 1.3f);
+			}
 		}
 	}
 }
