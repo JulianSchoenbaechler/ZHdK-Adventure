@@ -36,7 +36,9 @@ namespace Adventure.Character
 		{
 			_animator = GetComponent<Animator>();
 			_snapPanel = GetComponentInChildren<SnapPanel>();
-			_snapPanel.Invoke("StartSnapping", _pauseInterval + 2f);
+
+			if(_active)
+				_snapPanel.Invoke("StartSnapping", _pauseInterval + 2f);
 		}
 		
 
@@ -139,6 +141,7 @@ namespace Adventure.Character
 				if(_shotHit.transform.CompareTag("Player"))
 				{
 					print("Dead");
+					GameObject.Find("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;	// Debug... Need fix
 				}
 				else
 				{
