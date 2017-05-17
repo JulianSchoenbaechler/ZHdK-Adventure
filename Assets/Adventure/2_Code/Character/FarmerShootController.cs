@@ -44,7 +44,7 @@ namespace Adventure.Character
 
 		void Update()
 		{
-			//Debug.DrawRay(_bulletSpawnPosition.position, _target.position - _bulletSpawnPosition.position + Vector3.up * _yOffset, Color.red);
+			// Debug.DrawRay(_bulletSpawnPosition.position, _target.position - _bulletSpawnPosition.position + Vector3.up * _yOffset, Color.red);
 
 			if(!_active &&  !_animator.GetBool("Searching"))
 				return;

@@ -73,9 +73,10 @@ namespace Adventure.CameraHandling
 						_initialRotation.eulerAngles.y - (_maxTurnAngle / 2f),
 						_initialRotation.eulerAngles.y + (_maxTurnAngle / 2f)),
 					_initialRotation.eulerAngles.z);
-
+				
 				// Apply transform
 				transform.rotation = Quaternion.Slerp(transform.rotation, _newRotation, Time.deltaTime * _turnSpeed);
+
 				KeepChildTransform(false);
 			}
 		}
