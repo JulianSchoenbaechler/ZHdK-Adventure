@@ -74,27 +74,27 @@ namespace Adventure.Interaction
 		/// </summary>
 		public event Action InteractionEvent;
 
-		/// <summary>
-		/// Gets or sets a value indicating whether this <see cref="Adventure.Interaction.InteractionObject"/> is active.
-		/// </summary>
-		/// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
-		public bool Active { get; set; }
-
 
 		[SerializeField] private bool _active = true;
+		[SerializeField] private bool _onMouseClick = true;
+		[SerializeField] private int _mouseButton = 0;
+		[SerializeField] private bool _onKeyDown = false;
+		[SerializeField] private KeyCode _interactionKey;
 		[SerializeField] protected float _interactionDistance = 1f;
 		[SerializeField] private InteractionPiece[] _interactions;
 
 		protected Transform _player;
 
-
 		/// <summary>
-		/// On awake...
+		/// Gets or sets a value indicating whether this <see cref="Adventure.Interaction.InteractionObject"/> is active.
 		/// </summary>
-		private void Awake()
+		/// <value><c>true</c> if active; otherwise, <c>false</c>.</value>
+		public bool Active
 		{
-			Active = _active;
+			get { return _active; }
+			set { _active = value; }
 		}
+
 
 		/// <summary>
 		/// Initialization.
@@ -105,15 +105,35 @@ namespace Adventure.Interaction
 		}
 
 		/// <summary>
+		/// Every frame.
+		/// </summary>
+		protected void Update()
+		{
+			if(_active)
+			{
+				if(_onKeyDown && Input.GetKeyDown(_interactionKey))
+				{
+					if(Vector3.Distance(transform.position, _player.position) <= _interactionDistance)
+					{
+						OnInteraction();
+					}
+				}
+			}
+		}
+
+		/// <summary>
 		/// Every frame while mouse over interaction object.
 		/// </summary>
 		protected void OnMouseOver()
 		{
-			if(Input.GetMouseButtonDown(0) && Active)
+			if(_active)
 			{
-				if(Vector3.Distance(transform.position, _player.position) <= _interactionDistance)
+				if(_onMouseClick && Input.GetMouseButtonDown(_mouseButton))
 				{
-					OnInteraction();
+					if(Vector3.Distance(transform.position, _player.position) <= _interactionDistance)
+					{
+						OnInteraction();
+					}
 				}
 			}
 		}
@@ -128,7 +148,7 @@ namespace Adventure.Interaction
 			{
 				_interactions[i].Run();
 			}
-
+			print("ga");
 			// Raise interaction event
 			if(InteractionEvent != null)
 				InteractionEvent();
