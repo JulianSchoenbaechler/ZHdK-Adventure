@@ -142,6 +142,7 @@ namespace Adventure.Character
 				{
 					print("Dead");
 					GameObject.Find("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;	// Debug... Need fix
+					_active = false;
 				}
 				else
 				{
