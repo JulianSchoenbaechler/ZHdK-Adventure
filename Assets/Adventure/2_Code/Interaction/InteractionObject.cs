@@ -148,7 +148,7 @@ namespace Adventure.Interaction
 			{
 				_interactions[i].Run();
 			}
-			print("ga");
+
 			// Raise interaction event
 			if(InteractionEvent != null)
 				InteractionEvent();
