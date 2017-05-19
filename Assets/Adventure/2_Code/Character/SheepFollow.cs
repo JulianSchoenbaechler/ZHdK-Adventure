@@ -22,7 +22,11 @@ namespace Adventure.Character
 		[SerializeField] protected float _walkSpeed = 1f;
 		[SerializeField] protected float _turnSpeed = 1f;
 		[SerializeField] protected float _jumpForce = 1f;
+		[SerializeField] protected Transform _sheepStairEntry;
+		[SerializeField] protected Transform _sheepStairEndpoint;
 
+		private bool _buildStair = false;
+		private bool _finishStair = false;
 		private bool _jump = false;
 		private float _jumpCooldown = 0.5f;
 		private float _time = 0f;
@@ -51,10 +55,7 @@ namespace Adventure.Character
 
 		private void Update()
 		{
-			if(!_active)
-				_speed = Mathf.Lerp(_speed, 0f, Time.deltaTime * 100f);
-			else
-				_speed = Mathf.Lerp(_speed, -1f, Time.deltaTime * 100f);
+			DistanceCheck();
 
 			_currentVelocity = _rigidbody.velocity;
 
@@ -107,6 +108,37 @@ namespace Adventure.Character
 			_rigidbody.velocity = _currentVelocity;
 		}
 
+		// Walk distance-check and speed calculation
+		protected void DistanceCheck()
+		{
+			if(Vector3.Distance(transform.position, _target.position) < _minDistance)
+			{
+				// Building stairs
+				if(_buildStair)
+				{
+					_buildStair = false;
+					_finishStair = true;
+					_target = _sheepStairEndpoint;
+					_rigidbody.useGravity = false;
+					GetComponentInChildren<Collider>().enabled = false;
+				}
+				else if(_finishStair)
+				{
+					_finishStair = false;
+					Destroy(gameObject);
+				}
+
+				// Slow down
+				_speed = Mathf.Lerp(_speed, 0f, Time.deltaTime * 100f);
+			}
+			else
+			{
+				if(!_active)
+					_speed = Mathf.Lerp(_speed, 0f, Time.deltaTime * 100f);
+				else
+					_speed = Mathf.Lerp(_speed, -1f, Time.deltaTime * 100f);
+			}
+		}
 
 		// Collision handling
 		protected virtual void OnCollisionStay(Collision collisionInfo)
@@ -139,9 +171,19 @@ namespace Adventure.Character
 		}
 
 
+		// Trigger handling
+		protected virtual void OnTriggerEnter(Collider other)
+		{
+			if(other.CompareTag("SheepStair"))
+			{
+				_target = _sheepStairEntry;
+				_buildStair = true;
+			}
+		}
+
+
 		public void PlayerInteraction()
 		{
-			print("gu");
 			_active = true;
 		}
 	}

@@ -8,6 +8,7 @@ TagManager:
   - Camera
   - Farmer
   - Barrel
+  - SheepStair
   layers:
   - Default
   - TransparentFX
