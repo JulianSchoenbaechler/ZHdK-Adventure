@@ -9,6 +9,7 @@ TagManager:
   - Farmer
   - Barrel
   - SheepStair
+  - Corn
   layers:
   - Default
   - TransparentFX
