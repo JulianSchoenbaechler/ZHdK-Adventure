@@ -183,7 +183,7 @@ Material:
       second: 0.02
     - first:
         name: _Shading
-      second: 0.83
+      second: 0.8
     - first:
         name: _ShadowIntensity
       second: 1
