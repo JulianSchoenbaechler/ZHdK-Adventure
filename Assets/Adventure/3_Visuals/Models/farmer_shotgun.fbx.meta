@@ -1,0 +1,1116 @@
+fileFormatVersion: 2
+guid: ccbd1906362c8f546b36d346aa69a82d
+timeCreated: 1494448538
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: ArmControl.L
+    100004: ArmControl.L_end
+    100006: ArmControl.R
+    100008: ArmControl.R_end
+    100010: Belly
+    100012: Belly_end
+    100014: Brow.L
+    100016: Brow.L_end
+    100018: Brow.R
+    100020: Brow.R_end
+    100022: ElbowControl.L
+    100024: ElbowControl.L_end
+    100026: ElbowControl.R
+    100028: ElbowControl.R_end
+    100030: //RootNode
+    100032: FarmerShotgun
+    100034: Feet.L
+    100036: Feet.R
+    100038: FeetControl.L
+    100040: FeetControl.R
+    100042: Forefinger.L
+    100044: Forefinger.R
+    100046: ForefingerPad.L
+    100048: ForefingerPad.L_end
+    100050: ForefingerPad.R
+    100052: ForefingerPad.R_end
+    100054: Gun
+    100056: Gun_end
+    100058: Hand.L
+    100060: Hand.R
+    100062: Hat
+    100064: Hat_end
+    100066: Head
+    100068: KneeControl.L
+    100070: KneeControl.L_end
+    100072: KneeControl.R
+    100074: KneeControl.R_end
+    100076: LowerArm.L
+    100078: LowerArm.R
+    100080: LowerBody
+    100082: LowerLeg.L
+    100084: LowerLeg.L_end
+    100086: LowerLeg.R
+    100088: LowerLeg.R_end
+    100090: MainControl
+    100092: Middlefinger.L
+    100094: Middlefinger.R
+    100096: MiddlefingerPad.L
+    100098: MiddlefingerPad.L_end
+    100100: MiddlefingerPad.R
+    100102: MiddlefingerPad.R_end
+    100104: Mouth
+    100106: Mouth_end
+    100108: Smallfinger.L
+    100110: Smallfinger.R
+    100112: SmallfingerPad.L
+    100114: SmallfingerPad.L_end
+    100116: SmallfingerPad.R
+    100118: SmallfingerPad.R_end
+    100120: Thumb.L
+    100122: Thumb.L_end
+    100124: Thumb.R
+    100126: Thumb.R_end
+    100128: Toes.L
+    100130: Toes.L_end
+    100132: Toes.R
+    100134: Toes.R_end
+    100136: UpperArm.L
+    100138: UpperArm.R
+    100140: UpperBody
+    100142: UpperLeg.L
+    100144: UpperLeg.R
+    400000: Armature
+    400002: ArmControl.L
+    400004: ArmControl.L_end
+    400006: ArmControl.R
+    400008: ArmControl.R_end
+    400010: Belly
+    400012: Belly_end
+    400014: Brow.L
+    400016: Brow.L_end
+    400018: Brow.R
+    400020: Brow.R_end
+    400022: ElbowControl.L
+    400024: ElbowControl.L_end
+    400026: ElbowControl.R
+    400028: ElbowControl.R_end
+    400030: //RootNode
+    400032: FarmerShotgun
+    400034: Feet.L
+    400036: Feet.R
+    400038: FeetControl.L
+    400040: FeetControl.R
+    400042: Forefinger.L
+    400044: Forefinger.R
+    400046: ForefingerPad.L
+    400048: ForefingerPad.L_end
+    400050: ForefingerPad.R
+    400052: ForefingerPad.R_end
+    400054: Gun
+    400056: Gun_end
+    400058: Hand.L
+    400060: Hand.R
+    400062: Hat
+    400064: Hat_end
+    400066: Head
+    400068: KneeControl.L
+    400070: KneeControl.L_end
+    400072: KneeControl.R
+    400074: KneeControl.R_end
+    400076: LowerArm.L
+    400078: LowerArm.R
+    400080: LowerBody
+    400082: LowerLeg.L
+    400084: LowerLeg.L_end
+    400086: LowerLeg.R
+    400088: LowerLeg.R_end
+    400090: MainControl
+    400092: Middlefinger.L
+    400094: Middlefinger.R
+    400096: MiddlefingerPad.L
+    400098: MiddlefingerPad.L_end
+    400100: MiddlefingerPad.R
+    400102: MiddlefingerPad.R_end
+    400104: Mouth
+    400106: Mouth_end
+    400108: Smallfinger.L
+    400110: Smallfinger.R
+    400112: SmallfingerPad.L
+    400114: SmallfingerPad.L_end
+    400116: SmallfingerPad.R
+    400118: SmallfingerPad.R_end
+    400120: Thumb.L
+    400122: Thumb.L_end
+    400124: Thumb.R
+    400126: Thumb.R_end
+    400128: Toes.L
+    400130: Toes.L_end
+    400132: Toes.R
+    400134: Toes.R_end
+    400136: UpperArm.L
+    400138: UpperArm.R
+    400140: UpperBody
+    400142: UpperLeg.L
+    400144: UpperLeg.R
+    4300000: FarmerShotgun
+    7400000: Idle1.001
+    7400002: Search
+    7400004: Load
+    7400006: Armature|Idle1
+    7400008: Armature|Idle2
+    7400010: Armature|Load
+    7400012: Armature|Search
+    7400014: Armature|Shoot
+    9500000: //RootNode
+    13700000: FarmerShotgun
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|Idle1
+      takeName: Armature|Idle1
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainControl
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L/ArmControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R/ArmControl.R_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L/ElbowControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R/ElbowControl.R_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L/Toes.L_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R/Toes.R_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L/KneeControl.L_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R/KneeControl.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly/Belly_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L/Brow.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R/Brow.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat/Hat_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth/Mouth_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L/ForefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L/MiddlefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L/SmallfingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L/Thumb.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R/ForefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun/Gun_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R/MiddlefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R/SmallfingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R/Thumb.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L/LowerLeg.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R/LowerLeg.R_end
+        weight: 1
+      - path: FarmerShotgun
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Idle2
+      takeName: Armature|Idle2
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainControl
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L/ArmControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R/ArmControl.R_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L/ElbowControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R/ElbowControl.R_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L/Toes.L_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R/Toes.R_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L/KneeControl.L_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R/KneeControl.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly/Belly_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L/Brow.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R/Brow.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat/Hat_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth/Mouth_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L/ForefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L/MiddlefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L/SmallfingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L/Thumb.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R/ForefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun/Gun_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R/MiddlefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R/SmallfingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R/Thumb.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L/LowerLeg.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R/LowerLeg.R_end
+        weight: 1
+      - path: FarmerShotgun
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Load
+      takeName: Armature|Load
+      firstFrame: 0
+      lastFrame: 88
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.21158691
+        functionName: OnReloadGun
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainControl
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L/ArmControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R/ArmControl.R_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L/ElbowControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R/ElbowControl.R_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L/Toes.L_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R/Toes.R_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L/KneeControl.L_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R/KneeControl.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly/Belly_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L/Brow.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R/Brow.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat/Hat_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth/Mouth_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L/ForefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L/MiddlefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L/SmallfingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L/Thumb.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R/ForefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun/Gun_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R/MiddlefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R/SmallfingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R/Thumb.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L/LowerLeg.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R/LowerLeg.R_end
+        weight: 1
+      - path: FarmerShotgun
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Search
+      takeName: Armature|Search
+      firstFrame: 0
+      lastFrame: 100
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainControl
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L/ArmControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R/ArmControl.R_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L/ElbowControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R/ElbowControl.R_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L/Toes.L_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R/Toes.R_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L/KneeControl.L_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R/KneeControl.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly/Belly_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L/Brow.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R/Brow.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat/Hat_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth/Mouth_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L/ForefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L/MiddlefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L/SmallfingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L/Thumb.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R/ForefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun/Gun_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R/MiddlefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R/SmallfingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R/Thumb.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L/LowerLeg.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R/LowerLeg.R_end
+        weight: 1
+      - path: FarmerShotgun
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature|Shoot
+      takeName: Armature|Shoot
+      firstFrame: 0
+      lastFrame: 130
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.07616258
+        functionName: OnShootGun
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/MainControl
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L
+        weight: 1
+      - path: Armature/MainControl/ArmControl.L/ArmControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R
+        weight: 1
+      - path: Armature/MainControl/ArmControl.R/ArmControl.R_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.L/ElbowControl.L_end
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R
+        weight: 1
+      - path: Armature/MainControl/ElbowControl.R/ElbowControl.R_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L
+        weight: 1
+      - path: Armature/MainControl/FeetControl.L/Feet.L/Toes.L/Toes.L_end
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R
+        weight: 1
+      - path: Armature/MainControl/FeetControl.R/Feet.R/Toes.R/Toes.R_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L
+        weight: 1
+      - path: Armature/MainControl/KneeControl.L/KneeControl.L_end
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R
+        weight: 1
+      - path: Armature/MainControl/KneeControl.R/KneeControl.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly
+        weight: 1
+      - path: Armature/MainControl/LowerBody/Belly/Belly_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.L/Brow.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Brow.R/Brow.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Hat/Hat_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/Head/Mouth/Mouth_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Forefinger.L/ForefingerPad.L/ForefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Middlefinger.L/MiddlefingerPad.L/MiddlefingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Smallfinger.L/SmallfingerPad.L/SmallfingerPad.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.L/LowerArm.L/Hand.L/Thumb.L/Thumb.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Forefinger.R/ForefingerPad.R/ForefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Gun/Gun_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Middlefinger.R/MiddlefingerPad.R/MiddlefingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Smallfinger.R/SmallfingerPad.R/SmallfingerPad.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperBody/UpperArm.R/LowerArm.R/Hand.R/Thumb.R/Thumb.R_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.L/LowerLeg.L/LowerLeg.L_end
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R
+        weight: 1
+      - path: Armature/MainControl/LowerBody/UpperLeg.R/LowerLeg.R/LowerLeg.R_end
+        weight: 1
+      - path: FarmerShotgun
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 0
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

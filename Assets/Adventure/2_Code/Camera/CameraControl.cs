@@ -5,7 +5,7 @@ using JulianSchoenbaechler.Core;
 
 namespace Adventure.CameraHandling
 {
-	[RequireComponent(typeof(Rigidbody))]
+	[RequireComponent(typeof(Rigidbody), typeof(AudioListener))]
 	public class CameraControl : MonoBehaviour
 	{
 		public static Camera active									// Active camera
@@ -17,6 +17,7 @@ namespace Adventure.CameraHandling
 		[SerializeField] protected float _maxTurnAngle = 0f;		// Maximal turn angle in degree
 		[SerializeField] protected float _turnSpeed = 1f;			// Turn speed
 
+		protected AudioListener _audioListener;						// AudioListener component
 		protected Camera _camera;									// Camera component
 		protected Transform _target;								// Target transform
 		protected Quaternion _initialRotation;						// Initial rotation
@@ -41,7 +42,12 @@ namespace Adventure.CameraHandling
 		private void Start()
 		{
 			_camera = GetComponent<Camera>();
-			_camera.enabled = false;
+			_audioListener = GetComponent<AudioListener>();
+
+			if(!_camera.CompareTag("MainCamera"))
+				_camera.enabled = false;
+
+			_audioListener.enabled = _camera.enabled;
 
 			_initialRotation = transform.rotation;
 
@@ -71,9 +77,10 @@ namespace Adventure.CameraHandling
 						_initialRotation.eulerAngles.y - (_maxTurnAngle / 2f),
 						_initialRotation.eulerAngles.y + (_maxTurnAngle / 2f)),
 					_initialRotation.eulerAngles.z);
-
+				
 				// Apply transform
 				transform.rotation = Quaternion.Slerp(transform.rotation, _newRotation, Time.deltaTime * _turnSpeed);
+
 				KeepChildTransform(false);
 			}
 		}
@@ -85,10 +92,13 @@ namespace Adventure.CameraHandling
 		{
 			if(other.CompareTag("Player"))
 			{
-				CameraControl.active.enabled = false;		// Deactivate active camera
-				_camera.enabled = true;						// Activate this camera
-				_target = other.transform;					// Target the player
-				CameraControl.active = _camera;				// Set this camera as new globally active camera
+				CameraControl.active.enabled = false;			// Deactivate active camera
+				CameraControl.active.
+				GetComponent<AudioListener>().enabled = false;	// Deactivate active audio listener
+				_camera.enabled = true;							// Activate this camera
+				_audioListener.enabled = true;					// Activate this audio listener
+				_target = other.transform;						// Target the player
+				CameraControl.active = _camera;					// Set this camera as new globally active camera
 			}
 		}
 
@@ -109,7 +119,7 @@ namespace Adventure.CameraHandling
 
 				for(int i = 0; i < _transformClones.Length; i++)
 				{
-					if(!children[i].CompareTag("Camera"))
+					if(!children[i].CompareTag("Camera") && !children[i].CompareTag("MainCamera"))
 					{
 						_transformClones[i].ApplyTransform(children[i]);
 					}

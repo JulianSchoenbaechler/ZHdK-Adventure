@@ -14,6 +14,10 @@ namespace Adventure.Interaction
 	{
 		private SerializedProperty _activeProp;
 		private SerializedProperty _interactionDistanceProp;
+		private SerializedProperty _onMouseClickProp;
+		private SerializedProperty _mouseButtonProp;
+		private SerializedProperty _onKeyDownProp;
+		private SerializedProperty _interactionKeyProp;
 		private SerializedProperty _interactionsProp;
 		private List<bool> _interactionsFoldout;
 
@@ -26,6 +30,10 @@ namespace Adventure.Interaction
 			// Get serialized references
 			_activeProp = serializedObject.FindProperty("_active");
 			_interactionDistanceProp = serializedObject.FindProperty("_interactionDistance");
+			_onMouseClickProp = serializedObject.FindProperty("_onMouseClick");
+			_mouseButtonProp = serializedObject.FindProperty("_mouseButton");
+			_onKeyDownProp = serializedObject.FindProperty("_onKeyDown");
+			_interactionKeyProp = serializedObject.FindProperty("_interactionKey");
 			_interactionsProp = serializedObject.FindProperty("_interactions");
 			_interactionsFoldout = new List<bool>();
 		}
@@ -40,6 +48,16 @@ namespace Adventure.Interaction
 
 			EditorGUILayout.PropertyField(_activeProp);
 			EditorGUILayout.PropertyField(_interactionDistanceProp);
+			_onMouseClickProp.boolValue = EditorGUILayout.Toggle(new GUIContent("Mouse Interaction"), _onMouseClickProp.boolValue);
+
+			if(_onMouseClickProp.boolValue)
+				EditorGUILayout.PropertyField(_mouseButtonProp);
+			
+			_onKeyDownProp.boolValue = EditorGUILayout.Toggle(new GUIContent("Keypress Interaction"), _onKeyDownProp.boolValue);
+
+			if(_onKeyDownProp.boolValue)
+				EditorGUILayout.PropertyField(_interactionKeyProp);
+
 			EditorGUILayout.Space();
 			EditorGUILayout.PropertyField(_interactionsProp.FindPropertyRelative("Array.size"), new GUIContent("Numbers Of Interactions"));
 
