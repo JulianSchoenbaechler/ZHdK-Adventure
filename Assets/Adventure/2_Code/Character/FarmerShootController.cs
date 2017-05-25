@@ -141,8 +141,9 @@ namespace Adventure.Character
 				if(_shotHit.transform.CompareTag("Player"))
 				{
 					print("Dead");
-					GameObject.Find("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;	// Debug... Need fix
+					//GameObject.Find("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;	// Debug... Need fix
 					_active = false;
+					_target.GetComponent<SheepController>().Dead = true;
 				}
 				else
 				{

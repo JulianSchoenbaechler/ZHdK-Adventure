@@ -19,23 +19,39 @@ namespace Adventure.Character
 		[SerializeField] protected float _turnSpeed = 1f;
 		[SerializeField] protected float _jumpForce = 1f;
 
+		private bool _dead = false;
 		private float _jumpCooldown = 0.1f;
 		private float _time = 0f;
 		private Vector3 _currentVelocity;
 		private Vector3 _velocityDir;
 
 		public bool IsGrounded { get; private set; }
+		public bool Dead
+		{
+			get { return _dead; }
+			set
+			{
+				_dead = value;
+				Die();
+			}
+		}
 
 		protected Rigidbody _rigidbody;
+		protected Camera _deathCam;
 
 		void Start()
 		{
 			IsGrounded = false;
 			_rigidbody = GetComponent<Rigidbody>();
+			_deathCam = GetComponentInChildren<Camera>();
+			_deathCam.enabled = false;
 		}
 
 		void Update()
 		{
+			if(_dead)
+				return;
+
 			float horizontalAxis = Input.GetAxis("Horizontal");
 			float verticalAxis = Input.GetAxis("Vertical");
 
@@ -96,6 +112,13 @@ namespace Adventure.Character
 					IsGrounded = true;
 				}
 			}
+		}
+
+		// Death
+		void Die()
+		{
+			Time.timeScale = 0.2f;
+			_deathCam.enabled = true;
 		}
 	}
 }
