@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Character
 {
@@ -18,12 +21,17 @@ namespace Adventure.Character
 		[SerializeField] protected float _walkSpeed = 1f;
 		[SerializeField] protected float _turnSpeed = 1f;
 		[SerializeField] protected float _jumpForce = 1f;
+		[SerializeField] protected GameObject _deadPanel;
 
-		private bool _dead = false;
 		private float _jumpCooldown = 0.1f;
 		private float _time = 0f;
 		private Vector3 _currentVelocity;
 		private Vector3 _velocityDir;
+
+		private bool _dead = false;
+		private bool _fadeout = false;
+		private Image _deadPanelImage;
+		private Color _deadPanelColor;
 
 		public bool IsGrounded { get; private set; }
 		public bool Dead
@@ -32,12 +40,14 @@ namespace Adventure.Character
 			set
 			{
 				_dead = value;
-				Die();
+				StartCoroutine(Die());
 			}
 		}
 
 		protected Rigidbody _rigidbody;
 		protected Camera _deathCam;
+
+
 
 		void Start()
 		{
@@ -45,13 +55,29 @@ namespace Adventure.Character
 			_rigidbody = GetComponent<Rigidbody>();
 			_deathCam = GetComponentInChildren<Camera>();
 			_deathCam.enabled = false;
+
+			_deadPanelColor = new Color(0f, 0f, 0f, 0f);
+			_deadPanelImage = _deadPanel.GetComponent<Image>();
+			_deadPanelImage.color = _deadPanelColor;
+			_deadPanel.SetActive(false);
 		}
 
 		void Update()
 		{
+			// Fade-out when dead
 			if(_dead)
-				return;
+			{
+				if(_fadeout)
+				{
+					if(!_deadPanel.activeInHierarchy)
+						_deadPanel.SetActive(true);
 
+					_deadPanelImage.color = Color.Lerp(_deadPanelImage.color, Color.black, Time.unscaledDeltaTime);
+				}
+				return;
+			}
+
+			// Character-controller
 			float horizontalAxis = Input.GetAxis("Horizontal");
 			float verticalAxis = Input.GetAxis("Vertical");
 
@@ -115,10 +141,17 @@ namespace Adventure.Character
 		}
 
 		// Death
-		void Die()
+		IEnumerator Die()
 		{
 			Time.timeScale = 0.2f;
 			_deathCam.enabled = true;
+
+			yield return new WaitForSecondsRealtime(3f);
+			_fadeout = true;
+			yield return new WaitForSecondsRealtime(10f);
+			print("Restart...");
+			SceneManager.LoadScene(0);
+			Time.timeScale = 1f;
 		}
 	}
 }

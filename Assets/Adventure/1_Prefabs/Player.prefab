@@ -41,6 +41,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4366149769151028}
   - component: {fileID: 20841086615240732}
+  - component: {fileID: 114464655377769744}
+  - component: {fileID: 114379917873074498}
   m_Layer: 0
   m_Name: DeathCam
   m_TagString: Untagged
@@ -54,13 +56,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1214267985890014}
-  m_LocalRotation: {x: 0.21353912, y: -0.886109, z: -0.36242357, w: 0.19457936}
-  m_LocalPosition: {x: 0.51, y: -0.81, z: 1.27}
+  m_LocalRotation: {x: 0.26412803, y: -0.8096925, z: -0.49727297, w: 0.16539103}
+  m_LocalPosition: {x: 0.5279997, y: -0.9130002, z: 1.2700001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4707967938640612}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 214, y: 37.06, z: 141.2}
+  m_LocalEulerAnglesHint: {x: 225.882, y: 49.648987, z: 121.711}
 --- !u!4 &4707967938640612
 Transform:
   m_ObjectHideFlags: 1
@@ -162,6 +164,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &114379917873074498
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1214267985890014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b5bc27a658f447b1d929fd5ffbd70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 3
+  showGeneratedNormals: 0
+  offsetScale: 0.05
+  blurRadius: 10
+  edgeThresholdMin: 0.44
+  edgeThreshold: 0.85
+  edgeSharpness: 4
+  dlaaSharp: 0
+  ssaaShader: {fileID: 4800000, guid: b3728d1488b02490cbd196c7941bf1f8, type: 3}
+  dlaaShader: {fileID: 4800000, guid: 017ca72b9e8a749058d13ebd527e98fa, type: 3}
+  nfaaShader: {fileID: 4800000, guid: ce0cb2621f6d84e21a87414e471a3cce, type: 3}
+  shaderFXAAPreset2: {fileID: 4800000, guid: 6f1418cffd12146f2a83be795f6fa5a7, type: 3}
+  shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
+  shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
+  shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
+--- !u!114 &114464655377769744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1214267985890014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd6d4281e5d7cd44d8c6e38bc2c1b8d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mode: 0
+  intensity: 0.32
+  chromaticAberration: 0.2
+  axialAberration: 0.5
+  blur: 0.23
+  blurSpread: 0.75
+  luminanceDependency: 0.25
+  blurDistance: 2.5
+  vignetteShader: {fileID: 4800000, guid: 627943dc7a9a74286b70a4f694a0acd5, type: 3}
+  separableBlurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
+  chromAberrationShader: {fileID: 4800000, guid: 2b4f29398d9484ccfa9fd220449f5eee,
+    type: 3}
 --- !u!114 &114562324563706160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -190,6 +241,7 @@ MonoBehaviour:
   _walkSpeed: 3
   _turnSpeed: 1
   _jumpForce: 2.5
+  _deadPanel: {fileID: 0}
 --- !u!136 &136981082811190988
 CapsuleCollider:
   m_ObjectHideFlags: 1
