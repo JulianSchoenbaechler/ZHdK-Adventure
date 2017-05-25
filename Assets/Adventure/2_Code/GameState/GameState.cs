@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
 
 namespace JulianSchoenbaechler.GameState
@@ -52,6 +53,56 @@ namespace JulianSchoenbaechler.GameState
 					Debug.LogWarning("[GameState] GameState '" + value + "' does not exist. Cannot switch to new state.");
 				}
 			}
+		}
+
+		#endregion
+
+		#region Public Methods
+
+		/// <summary>
+		/// Invoke the specified method from active game state.
+		/// </summary>
+		/// <param name="method">Method name.</param>
+		/// <param name="parameters">Additional method parameters.</param>
+		public static void Invoke(string method, params object[] parameters)
+		{
+			if((GameState._active != null) && (method != null))
+			{
+				MethodInfo mi = GameState._active.GetType().GetMethod(method);
+
+				if(mi != null)
+				{
+					mi.Invoke(GameState._active, parameters);
+				}
+				else
+				{
+					Debug.LogWarning("[GameState] GameState '" + GameState.active + "' does not hold a method called '" + method + "'.");
+				}
+			}
+		}
+
+		/// <summary>
+		/// Invoke the specified method from active game state.
+		/// </summary>
+		/// <param name="method">Method name.</param>
+		/// <param name="parameters">Additional method parameters.</param>
+		/// <typeparam name="T">The return type of the method.</typeparam>
+		public static T Invoke<T>(string method, params object[] parameters)
+		{
+			if((GameState._active != null) && (method != null))
+			{
+				MethodInfo mi = GameState._active.GetType().GetMethod(method);
+
+				if(mi != null)
+				{
+					return (T)mi.Invoke(GameState._active, parameters);
+				}
+				else
+				{
+					Debug.LogWarning("[GameState] GameState '" + GameState.active + "' does not hold a method called '" + method + "'.");
+				}
+			}
+			return default(T);
 		}
 
 		#endregion
