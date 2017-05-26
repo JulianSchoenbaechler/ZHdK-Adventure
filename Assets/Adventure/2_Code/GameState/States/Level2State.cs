@@ -11,7 +11,6 @@ public class Level2State : IGameState
 
 	public void Start()
 	{
-		Debug.Log("Start");
 		SceneManager.sceneLoaded -= SceneLoadedHandler;
 		SceneManager.sceneLoaded += SceneLoadedHandler;
 	}
@@ -30,7 +29,7 @@ public class Level2State : IGameState
 
 	public void ResetState()
 	{
-		Debug.Log("Reset");
+		SceneManager.sceneLoaded -= SceneLoadedHandler;
 	}
 
 
