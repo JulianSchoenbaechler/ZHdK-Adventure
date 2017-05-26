@@ -650,6 +650,11 @@ MonoBehaviour:
   shaderFXAAPreset3: {fileID: 4800000, guid: c182fa94a5a0a4c02870641efcd38cd5, type: 3}
   shaderFXAAII: {fileID: 4800000, guid: cd5b323dcc592457790ff18b528f5e67, type: 3}
   shaderFXAAIII: {fileID: 4800000, guid: c547503fff0e8482ea5793727057041c, type: 3}
+--- !u!1 &23641066 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1649667838443252, guid: f94b63d7ea4e303458ac931ed6b46cb1,
+    type: 2}
+  m_PrefabInternal: {fileID: 117373991}
 --- !u!4 &24321875 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4748432559128458, guid: aed6a778f45987e478f2c16aac8bde36,
@@ -1943,16 +1948,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114121563417263284, guid: f94b63d7ea4e303458ac931ed6b46cb1,
         type: 2}
-      propertyPath: _active
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114121563417263284, guid: f94b63d7ea4e303458ac931ed6b46cb1,
-        type: 2}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1649667838443252, guid: f94b63d7ea4e303458ac931ed6b46cb1, type: 2}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114121563417263284, guid: f94b63d7ea4e303458ac931ed6b46cb1,
+        type: 2}
+      propertyPath: _active
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12791,7 +12796,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 850471589}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.635, y: -24.785, z: 25.91}
+  m_LocalPosition: {x: 12.73, y: -24.785, z: 25.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 977807462}
@@ -13118,6 +13123,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47adce2e0542c1b4da57561a02f3841e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _farmerShoot: {fileID: 23641066}
 --- !u!65 &876938421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15241,6 +15247,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4326955807463840, guid: ca7cfffbbf04a93478e0bc48af2c6645,
     type: 2}
   m_PrefabInternal: {fileID: 1004529631}
+--- !u!1 &1007295619 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1683662255779598, guid: 27b3061ec6a3afa48bfb7309cb963549,
+    type: 2}
+  m_PrefabInternal: {fileID: 1966587379}
 --- !u!1 &1013694368
 GameObject:
   m_ObjectHideFlags: 0
@@ -23421,6 +23432,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4326955807463840, guid: ca7cfffbbf04a93478e0bc48af2c6645,
     type: 2}
   m_PrefabInternal: {fileID: 1547171084}
+--- !u!1 &1557306398 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1325381453705964, guid: 27b3061ec6a3afa48bfb7309cb963549,
+    type: 2}
+  m_PrefabInternal: {fileID: 1966587379}
 --- !u!1001 &1558044593
 Prefab:
   m_ObjectHideFlags: 0
@@ -27325,7 +27341,7 @@ Prefab:
     - target: {fileID: 114869513746510020, guid: 082f7774eda835d4c9457bbf5b2552ef,
         type: 2}
       propertyPath: _defaultState
-      value: Level2State
+      value: Level1State
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 082f7774eda835d4c9457bbf5b2552ef, type: 2}
@@ -28765,6 +28781,11 @@ Prefab:
       propertyPath: _levelSaves.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114305808964821772, guid: 3a2575517ca2fac4e83154e76d9403b6,
+        type: 2}
+      propertyPath: _levelSaves.Array.data[1]._gameStateReferences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4465013723602748, guid: 3a2575517ca2fac4e83154e76d9403b6, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -28802,6 +28823,31 @@ Prefab:
       propertyPath: _levelSaves.Array.data[1]._playerPosition
       value: 
       objectReference: {fileID: 850471590}
+    - target: {fileID: 114305808964821772, guid: 3a2575517ca2fac4e83154e76d9403b6,
+        type: 2}
+      propertyPath: _levelSaves.Array.data[1]._gameStateReferences.Array.data[0]
+      value: 
+      objectReference: {fileID: 23641066}
+    - target: {fileID: 114305808964821772, guid: 3a2575517ca2fac4e83154e76d9403b6,
+        type: 2}
+      propertyPath: _levelSaves.Array.data[1]._gameStateReferences.Array.data[1]
+      value: 
+      objectReference: {fileID: 1007295619}
+    - target: {fileID: 114305808964821772, guid: 3a2575517ca2fac4e83154e76d9403b6,
+        type: 2}
+      propertyPath: _levelSaves.Array.data[1]._gameStateReferences.Array.data[2]
+      value: 
+      objectReference: {fileID: 1557306398}
+    - target: {fileID: 114305808964821772, guid: 3a2575517ca2fac4e83154e76d9403b6,
+        type: 2}
+      propertyPath: _levelSaves.Array.data[1]._gameStateReferences.Array.data[3]
+      value: 
+      objectReference: {fileID: 876938416}
+    - target: {fileID: 114305808964821772, guid: 3a2575517ca2fac4e83154e76d9403b6,
+        type: 2}
+      propertyPath: _levelSaves.Array.data[1]._gameStateReferences.Array.data[4]
+      value: 
+      objectReference: {fileID: 1121399148}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3a2575517ca2fac4e83154e76d9403b6, type: 2}
   m_IsPrefabParent: 0

@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Entity
 {
 	[RequireComponent(typeof(Collider), typeof(Animator))]
 	public class CloseFence : MonoBehaviour
 	{
+		[SerializeField] protected GameObject _farmerShoot;
+
 		protected Animator _animator;
 
 
@@ -21,6 +24,8 @@ namespace Adventure.Entity
 			if(collider.transform.CompareTag("Player"))
 			{
 				_animator.enabled = true;
+				_farmerShoot.SetActive(true);
+				GameState.active = "Level2State";
 			}
 		}
 	}
