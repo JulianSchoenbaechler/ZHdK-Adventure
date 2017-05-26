@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using Adventure.Inventory;
 using Adventure.UI;
+using Adventure.Character;
 using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Interaction
@@ -122,8 +123,11 @@ namespace Adventure.Interaction
 					// Edit only for Adventure -> hack
 					if(GetComponent<WorldspaceImage>() != null)
 					{
-						if(!GetComponent<WorldspaceImage>().enabled)
-							GetComponent<WorldspaceImage>().enabled = true;
+						if(GetComponent<SheepFollow>() == null)
+						{
+							if(!GetComponent<WorldspaceImage>().enabled)
+								GetComponent<WorldspaceImage>().enabled = true;
+						}
 					}
 				}
 				else
@@ -131,8 +135,11 @@ namespace Adventure.Interaction
 					// Edit only for Adventure -> hack
 					if(GetComponent<WorldspaceImage>() != null)
 					{
-						if(GetComponent<WorldspaceImage>().enabled)
-							GetComponent<WorldspaceImage>().enabled = false;
+						if(GetComponent<SheepFollow>() == null)
+						{
+							if(GetComponent<WorldspaceImage>().enabled)
+								GetComponent<WorldspaceImage>().enabled = false;
+						}
 					}
 				}
 			}

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Adventure.Interaction;
+using Adventure.UI;
 
 namespace Adventure.Character
 {
@@ -24,6 +25,7 @@ namespace Adventure.Character
 		[SerializeField] protected float _jumpForce = 1f;
 		[SerializeField] protected Transform _sheepStairEntry;
 		[SerializeField] protected Transform _sheepStairEndpoint;
+		[SerializeField] protected float _hintDistance = 6f;
 
 		private bool _buildStair = false;
 		private bool _finishStair = false;
@@ -36,6 +38,7 @@ namespace Adventure.Character
 		protected Rigidbody _rigidbody;
 		private Quaternion _rotateToTarget;
 		private Vector3 _tempRotationMask;
+		protected WorldspaceImage _hint;
 
 		public bool IsGrounded { get; private set; }
 		public bool Active
@@ -50,6 +53,9 @@ namespace Adventure.Character
 		{
 			IsGrounded = false;
 			_rigidbody = GetComponent<Rigidbody>();
+			_hint = GetComponent<WorldspaceImage>();
+			_hint.enabled = false;
+
 			GetComponent<InteractionObject>().InteractionEvent += PlayerInteraction;
 		}
 
@@ -111,6 +117,26 @@ namespace Adventure.Character
 		// Walk distance-check and speed calculation
 		protected void DistanceCheck()
 		{
+			if(Vector3.Distance(transform.position, _target.position) < _hintDistance)
+			{
+				if(!_active)
+				{
+					if(!_hint.enabled)
+						_hint.enabled = true;
+				}
+				else
+				{
+					if(_hint.enabled)
+						_hint.enabled = false;
+				}
+			}
+			else
+			{
+				if(_hint.enabled)
+					_hint.enabled = false;
+
+			}
+
 			if(Vector3.Distance(transform.position, _target.position) < _minDistance)
 			{
 				// Building stairs

@@ -21,6 +21,18 @@ public class Level1State : IGameState
 
 	public void Update()
 	{
+#if UNITY_EDITOR
+		if(Input.GetKeyDown(KeyCode.Alpha2))
+		{
+			GameState.active = "Level2State";
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+		else if(Input.GetKeyDown(KeyCode.Alpha3))
+		{
+			GameState.active = "Level3State";
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+#endif
 	}
 
 	public void LateUpdate()

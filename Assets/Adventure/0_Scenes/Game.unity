@@ -7892,6 +7892,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547716466}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &559430851 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1636009968705546, guid: aab25cd34059dd444a456d4872939da6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1016349519}
+--- !u!114 &559430859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 559430851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 2800000, guid: 6077eae9acd14304e80c0076733372db, type: 3}
+  _scale: 1
+  _angle: 0
+  _target: {fileID: 0}
+  _pixelOffset: {x: 0, y: 120}
 --- !u!4 &564949616 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4286951128148636, guid: 390f9cdb68d5e46f4889d87c2f3b22a1,
@@ -12566,6 +12587,27 @@ Transform:
   m_PrefabParentObject: {fileID: 4788897708284160, guid: 87dbac0937fd6bc4a857e0cec6ae1b4b,
     type: 2}
   m_PrefabInternal: {fileID: 818201039}
+--- !u!1 &826156619 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1636009968705546, guid: aab25cd34059dd444a456d4872939da6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1587716990}
+--- !u!114 &826156627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 826156619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 2800000, guid: 6077eae9acd14304e80c0076733372db, type: 3}
+  _scale: 1
+  _angle: 0
+  _target: {fileID: 0}
+  _pixelOffset: {x: 0, y: 120}
 --- !u!4 &832009833 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4209581717523634, guid: 27b3061ec6a3afa48bfb7309cb963549,
@@ -15460,6 +15502,11 @@ Prefab:
       value: 
       objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 114898514903573182, guid: aab25cd34059dd444a456d4872939da6,
+        type: 2}
+      propertyPath: _hintDistance
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aab25cd34059dd444a456d4872939da6, type: 2}
   m_IsPrefabParent: 0
@@ -21680,6 +21727,27 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1423869439}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1424326280 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1636009968705546, guid: aab25cd34059dd444a456d4872939da6,
+    type: 2}
+  m_PrefabInternal: {fileID: 1844123355}
+--- !u!114 &1424326288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424326280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 2800000, guid: 6077eae9acd14304e80c0076733372db, type: 3}
+  _scale: 1
+  _angle: 0
+  _target: {fileID: 0}
+  _pixelOffset: {x: 0, y: 120}
 --- !u!1001 &1426330102
 Prefab:
   m_ObjectHideFlags: 0
@@ -24088,6 +24156,11 @@ Prefab:
       value: 
       objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 114898514903573182, guid: aab25cd34059dd444a456d4872939da6,
+        type: 2}
+      propertyPath: _hintDistance
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aab25cd34059dd444a456d4872939da6, type: 2}
   m_IsPrefabParent: 0
@@ -28041,6 +28114,11 @@ Prefab:
       value: 
       objectReference: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000,
         type: 0}
+    - target: {fileID: 114898514903573182, guid: aab25cd34059dd444a456d4872939da6,
+        type: 2}
+      propertyPath: _hintDistance
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aab25cd34059dd444a456d4872939da6, type: 2}
   m_IsPrefabParent: 0
