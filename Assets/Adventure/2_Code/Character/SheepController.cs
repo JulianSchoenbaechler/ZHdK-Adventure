@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Adventure.UI;
 using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Character
@@ -32,6 +33,7 @@ namespace Adventure.Character
 		private bool _fadeout = false;
 		private Image _deadPanelImage;
 		private Color _deadPanelColor;
+		private float _deadColorLerp = 0f;
 
 		public bool IsGrounded { get; private set; }
 		public bool Dead
@@ -71,8 +73,9 @@ namespace Adventure.Character
 				{
 					if(!_deadPanel.activeInHierarchy)
 						_deadPanel.SetActive(true);
-
-					_deadPanelImage.color = Color.Lerp(_deadPanelImage.color, Color.black, Time.unscaledDeltaTime);
+					
+					_deadPanelImage.color = Color.Lerp(_deadPanelColor, Color.black, _deadColorLerp);
+					_deadColorLerp = _deadColorLerp + (Time.unscaledDeltaTime * 0.3f);
 				}
 				return;
 			}
@@ -143,15 +146,17 @@ namespace Adventure.Character
 		// Death
 		IEnumerator Die()
 		{
+			GetComponent<FarmerNavigator>().enabled = false;
 			Time.timeScale = 0.2f;
 			_deathCam.enabled = true;
 
 			yield return new WaitForSecondsRealtime(3f);
 			_fadeout = true;
 			yield return new WaitForSecondsRealtime(10f);
-			print("Restart...");
-			SceneManager.LoadScene(0);
+
+			// Restart level
 			Time.timeScale = 1f;
+			SceneManager.LoadScene(0);
 		}
 	}
 }

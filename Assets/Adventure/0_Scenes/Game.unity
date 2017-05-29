@@ -6073,37 +6073,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
-    - target: {fileID: 114611774416350492, guid: 496715b9b9156b14c9574eccb47eb22b,
-        type: 2}
-      propertyPath: _deadPanel
-      value: 
-      objectReference: {fileID: 120679736}
     - target: {fileID: 114562324563706160, guid: 496715b9b9156b14c9574eccb47eb22b,
         type: 2}
       propertyPath: _farmer
       value: 
       objectReference: {fileID: 2102875025}
-    - target: {fileID: 4707967938640612, guid: 496715b9b9156b14c9574eccb47eb22b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 233.424
-      objectReference: {fileID: 0}
-    - target: {fileID: 4707967938640612, guid: 496715b9b9156b14c9574eccb47eb22b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90.00001
-      objectReference: {fileID: 0}
-    - target: {fileID: 4707967938640612, guid: 496715b9b9156b14c9574eccb47eb22b, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 54889203239253554, guid: 496715b9b9156b14c9574eccb47eb22b,
+    - target: {fileID: 114611774416350492, guid: 496715b9b9156b14c9574eccb47eb22b,
         type: 2}
-      propertyPath: m_Constraints
-      value: 112
+      propertyPath: _deadPanel
+      value: 
+      objectReference: {fileID: 120679736}
+    - target: {fileID: 4366149769151028, guid: 496715b9b9156b14c9574eccb47eb22b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.733
       objectReference: {fileID: 0}
-    - target: {fileID: 114562324563706160, guid: 496715b9b9156b14c9574eccb47eb22b,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
+    - target: {fileID: 4366149769151028, guid: 496715b9b9156b14c9574eccb47eb22b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366149769151028, guid: 496715b9b9156b14c9574eccb47eb22b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 1.681
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 496715b9b9156b14c9574eccb47eb22b, type: 2}
@@ -7908,7 +7898,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 2800000, guid: 6077eae9acd14304e80c0076733372db, type: 3}
+  _image: {fileID: 2800000, guid: 5cb655ba172a20f44baf09535fba5634, type: 3}
   _scale: 1
   _angle: 0
   _target: {fileID: 0}
@@ -12603,7 +12593,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 2800000, guid: 6077eae9acd14304e80c0076733372db, type: 3}
+  _image: {fileID: 2800000, guid: 5cb655ba172a20f44baf09535fba5634, type: 3}
   _scale: 1
   _angle: 0
   _target: {fileID: 0}
@@ -21743,7 +21733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _image: {fileID: 2800000, guid: 6077eae9acd14304e80c0076733372db, type: 3}
+  _image: {fileID: 2800000, guid: 5cb655ba172a20f44baf09535fba5634, type: 3}
   _scale: 1
   _angle: 0
   _target: {fileID: 0}
