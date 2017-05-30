@@ -5,7 +5,6 @@ using JulianSchoenbaechler.SnapPanel;
 
 namespace Adventure.Entity
 {
-	[RequireComponent(typeof(Collider))]
 	public class CornDestroy : MonoBehaviour
 	{
 		protected virtual void OnTriggerEnter(Collider collider)

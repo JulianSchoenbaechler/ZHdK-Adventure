@@ -142,6 +142,15 @@ namespace Adventure.Character
 				}
 			}
 		}
+			
+		void OnTriggerEnter(Collider collider)
+		{
+			if(collider.transform.CompareTag("Harvester"))
+			{
+				Dead = true;
+			}
+		}
+
 
 		// Death
 		IEnumerator Die()

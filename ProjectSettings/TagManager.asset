@@ -12,6 +12,7 @@ TagManager:
   - Corn
   - LevelManager
   - Harvester
+  - StopHarvester
   layers:
   - Default
   - TransparentFX

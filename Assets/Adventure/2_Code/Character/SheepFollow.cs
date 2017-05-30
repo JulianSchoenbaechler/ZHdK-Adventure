@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Adventure.Interaction;
 using Adventure.UI;
+using Adventure.Entity;
+using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Character
 {
@@ -25,6 +27,8 @@ namespace Adventure.Character
 		[SerializeField] protected float _jumpForce = 1f;
 		[SerializeField] protected Transform _sheepStairEntry;
 		[SerializeField] protected Transform _sheepStairEndpoint;
+		[SerializeField] protected SheepStair _sheepStair;
+		[SerializeField] protected int _sheepStairIndex = 1;
 		[SerializeField] protected float _hintDistance = 6f;
 
 		private bool _buildStair = false;
@@ -151,6 +155,8 @@ namespace Adventure.Character
 				else if(_finishStair)
 				{
 					_finishStair = false;
+					GameState.Invoke("SheepIncrement");
+					_sheepStair.Activate(_sheepStairIndex);
 					Destroy(gameObject);
 				}
 

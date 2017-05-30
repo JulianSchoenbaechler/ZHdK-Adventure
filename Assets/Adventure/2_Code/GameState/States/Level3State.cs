@@ -60,5 +60,7 @@ public class Level3State : IGameState
 		LevelManager.GetReference(_levelIndex - 1, 2).GetComponent<Animator>().SetTrigger("Open");		// Open barn door 2
 		LevelManager.GetReference(_levelIndex - 1, 3).GetComponent<Animator>().enabled = true;			// Close fence
 		player.transform.position = LevelManager.GetPlayerPosition(_levelIndex);						// Move player
+
+		LevelManager.GetReference(_levelIndex, 0).SetActive(false);										// Close fence
 	}
 }

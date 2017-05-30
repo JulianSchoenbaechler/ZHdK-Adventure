@@ -59,7 +59,7 @@ namespace JulianSchoenbaechler.SnapPanel
 			_sequenceFinishDelay = new WaitUntil(() => SequenceFinished);
 
 			// Prealloc new RenderCamera stack
-			_renderCameraStack = new RenderCameraStack(Camera.main.depth - 1f, _panels.Length);
+			_renderCameraStack = new RenderCameraStack(/*Camera.main.depth - 1f*/2f, _panels.Length);
 			ShufflePositionsIndex();
 		}
 
