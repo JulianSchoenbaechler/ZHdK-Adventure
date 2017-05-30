@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 4115401471509174}
   - component: {fileID: 54820703829295488}
   - component: {fileID: 65004619845806876}
+  - component: {fileID: 114770197107406668}
   m_Layer: 0
   m_Name: Corn
   m_TagString: Corn
@@ -206,3 +207,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 5, z: 1}
   m_Center: {x: 0, y: 2.5, z: 0}
+--- !u!114 &114770197107406668
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727332729957470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44629a64e8cce784cb5c28d354a21368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

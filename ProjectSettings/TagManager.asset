@@ -11,6 +11,7 @@ TagManager:
   - SheepStair
   - Corn
   - LevelManager
+  - Harvester
   layers:
   - Default
   - TransparentFX
