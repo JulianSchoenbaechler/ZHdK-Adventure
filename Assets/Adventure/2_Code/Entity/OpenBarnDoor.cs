@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Adventure.UI;
+using Adventure.Interaction;
 
 namespace Adventure.Entity
 {
@@ -20,6 +22,16 @@ namespace Adventure.Entity
 			if(collision.transform.CompareTag("Barrel"))
 			{
 				_animator.SetTrigger("Open");
+
+				if(GetComponent<WorldspaceImage>() != null)
+				{
+					GetComponent<WorldspaceImage>().enabled = false;
+				}
+
+				if(GetComponent<InteractionObject>() != null)
+				{
+					GetComponent<InteractionObject>().enabled = false;
+				}
 			}
 		}
 	}

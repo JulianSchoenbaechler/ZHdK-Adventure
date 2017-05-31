@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 136981082811190988}
   - component: {fileID: 114611774416350492}
   - component: {fileID: 114562324563706160}
+  - component: {fileID: 114961933764466390}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -69,7 +70,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1173246501721192}
-  m_LocalRotation: {x: 0.31784874, y: 0.6316425, z: 0.6316425, w: -0.31784874}
+  m_LocalRotation: {x: 0.3178487, y: 0.63164246, z: 0.63164246, w: -0.3178487}
   m_LocalPosition: {x: 29.64, y: 0.18599999, z: 10.663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -245,6 +246,22 @@ MonoBehaviour:
   _turnSpeed: 1
   _jumpForce: 2.5
   _deadPanel: {fileID: 0}
+--- !u!114 &114961933764466390
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1173246501721192}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 0}
+  _scale: 0.6
+  _angle: 0
+  _target: {fileID: 0}
+  _pixelOffset: {x: 120, y: 400}
 --- !u!136 &136981082811190988
 CapsuleCollider:
   m_ObjectHideFlags: 1
