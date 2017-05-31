@@ -21,6 +21,7 @@ namespace Adventure.Character
 		[SerializeField] protected Transform _bulletSpawnPosition;
 		[SerializeField] protected Animator _visualShotAnimator;
 		[SerializeField] protected Animator _visualHitAnimator;
+		[SerializeField] protected UISpray _loadNoise;
 		[SerializeField] protected UISpray _shotNoise;
 
 		protected Animator _animator;
@@ -118,8 +119,8 @@ namespace Adventure.Character
 
 		public void OnReloadGun()
 		{
-			//GetComponentInChildren<SnapPanel>().StartSnapping();
-			print("reload");
+			_loadNoise.Play();
+			//print("reload");
 		}
 
 		public void OnShootGun()
@@ -140,14 +141,14 @@ namespace Adventure.Character
 
 				if(_shotHit.transform.CompareTag("Player"))
 				{
-					print("Dead");
+					//print("Dead");
 					//GameObject.Find("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;	// Debug... Need fix
 					_active = false;
 					_target.GetComponent<SheepController>().Dead = true;
 				}
 				else
 				{
-					print("Missed");
+					//print("Missed");
 				}
 			}
 
