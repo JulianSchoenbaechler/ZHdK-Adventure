@@ -63,6 +63,9 @@ public class Level2State : IGameState
 	{
 		SceneManager.sceneLoaded -= SceneLoadedHandler;
 		LevelManager.GetReference(_levelIndex, 4).SetActive(false);
+
+		_player = GameObject.FindWithTag("Player");
+		_player.GetComponent<FarmerNavigator>().enabled = false;
 	}
 
 	public void SheepIncrement()
