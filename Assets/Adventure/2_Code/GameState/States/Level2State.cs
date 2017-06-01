@@ -30,10 +30,10 @@ public class Level2State : IGameState
 		SceneManager.sceneLoaded += SceneLoadedHandler;
 
 		_player = GameObject.FindWithTag("Player");
-		_player.GetComponent<FarmerNavigator>().enabled = true;
 
 		LevelManager.GetReference(_levelIndex, 4).SetActive(true);
 		LevelManager.GetReference(_levelIndex, 5).SetActive(true);
+		_player.GetComponent<FarmerNavigator>().enabled = true;
 	}
 
 	public void Update()

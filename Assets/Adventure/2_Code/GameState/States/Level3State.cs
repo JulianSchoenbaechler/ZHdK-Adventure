@@ -66,5 +66,6 @@ public class Level3State : IGameState
 		player.GetComponent<SheepController>().InBarnFootsteps = false;
 
 		LevelManager.GetReference(_levelIndex, 0).SetActive(false);										// Close fence
+		LevelManager.GetReference(_levelIndex, 1).SetActive(true);
 	}
 }

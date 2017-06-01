@@ -9,6 +9,7 @@ namespace Adventure.CameraHandling
 	{
 		[SerializeField] protected bool _active = false;
 		[SerializeField] protected Transform _target;
+		[SerializeField] protected GameObject _exitIndicator;
 
 		private Vector3 _initialPosition;
 		private Vector3 _differenceVector;
@@ -40,6 +41,7 @@ namespace Adventure.CameraHandling
 				_initialPosition = transform.position;
 				_differenceVector = _target.position - transform.position;
 				_active = true;
+				_exitIndicator.SetActive(false);
 			}
 			else if(!GetComponent<Camera>().enabled && _active)
 			{

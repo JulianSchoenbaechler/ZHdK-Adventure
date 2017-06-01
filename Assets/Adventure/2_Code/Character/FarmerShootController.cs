@@ -35,12 +35,14 @@ namespace Adventure.Character
 		private Vector3 _tempRotationMask;
 		private RaycastHit _shotHit;
 		private bool _audioPlayed = false;
+		private WorldspaceImage _curseImage;
 
 
 		void Start()
 		{
 			_animator = GetComponent<Animator>();
 			_snapPanel = GetComponentInChildren<SnapPanel>();
+			_curseImage = GetComponent<WorldspaceImage>();
 
 			if(_active)
 				_snapPanel.Invoke("StartSnapping", _pauseInterval + 2f);
@@ -122,6 +124,11 @@ namespace Adventure.Character
 				{
 					_timer += Time.deltaTime;
 				}
+
+				if((_timer >= 3f) && _curseImage.enabled)
+				{
+					_curseImage.enabled = false;
+				}
 			}
 		}
 
@@ -159,6 +166,7 @@ namespace Adventure.Character
 				else
 				{
 					//print("Missed");
+					_curseImage.enabled = true;
 				}
 			}
 

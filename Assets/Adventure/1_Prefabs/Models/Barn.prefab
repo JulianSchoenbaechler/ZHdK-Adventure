@@ -1975,7 +1975,7 @@ MonoBehaviour:
   _mouseButton: 0
   _onKeyDown: 1
   _interactionKey: 32
-  _interactionDistance: 4
+  _interactionDistance: 2
   _interactions: []
 --- !u!136 &136447533616273496
 CapsuleCollider:
