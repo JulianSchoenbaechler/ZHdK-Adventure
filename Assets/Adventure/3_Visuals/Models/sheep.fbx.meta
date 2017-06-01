@@ -103,7 +103,109 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: CINEMA_4D_Main
+      takeName: CINEMA_4D_Main
+      firstFrame: 5
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: SCHAAF
+        weight: 1
+      - path: SCHAAF/L_Hinterhufgelenk_Goal_Controller
+        weight: 1
+      - path: SCHAAF/L_Vorderhufgelenk_Goal_Controller
+        weight: 1
+      - path: SCHAAF/Neck
+        weight: 1
+      - path: SCHAAF/Neck/Kopf
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/L_Ohr
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte/Joint_2
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte/Joint_2/Joint_3
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/R_Ohr
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/R_Ohr/Joint_4
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/R_Ohr/Joint_4/Joint_5
+        weight: 1
+      - path: SCHAAF/Neck/Kopf/R_Ohr/Joint_4/Joint_5/Joint_6
+        weight: 1
+      - path: SCHAAF/Neck/Schulter
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/Hintern"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/Hintern/Schwanz"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/Hintern/Schwanz/Ende"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1/Joint_2_2"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1/Joint_2_2/Fussgelenk"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2/Joint_6_2"
+        weight: 1
+      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2/Joint_6_2/Fussgelenk_2"
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/L_Oberarm
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen/Vorderhufgelenk
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen/Vorderhufgelenk/Vorderhufe
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/R_Oberarm
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2/Vorderhufgelenk_2
+        weight: 1
+      - path: SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2/Vorderhufgelenk_2/Vorderhufe_2
+        weight: 1
+      - path: SCHAAF/R_Hinterhufgelenk_Goal_Controller
+        weight: 1
+      - path: SCHAAF/R_Vorderhufgelenk_Goal_Controller
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
