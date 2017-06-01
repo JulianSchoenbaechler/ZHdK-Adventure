@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "5.40/OSX64" 1496332819
+<REAPER_PROJECT 0.1 "5.40/OSX64" 1496338337
   RIPPLE 0
   GROUPOVERRIDE 0 0 0
   AUTOXFADE 1
@@ -13,8 +13,8 @@
   TIMEMODE 0 5 -1 30 0
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0
-  ZOOM 77.74115671172835 0 0
+  CURSOR 10.5
+  ZOOM 34.74745342403727 0 0
   VZOOMEX 6
   USE_REC_CFG 0
   RECMODE 1
@@ -28,7 +28,7 @@
   <APPLYFX_CFG
   >
   RENDER_FILE ""
-  RENDER_PATTERN Belohnungs-Sound
+  RENDER_PATTERN Ambientsound-Lvl.2
   RENDER_FMT 0 2 44100
   RENDER_1X 0
   RENDER_RANGE 2 0 0 18 1000
@@ -56,8 +56,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4
   PLAYRATE 1 0 0.25 4
-  SELECTION 0 2.81704066755879
-  SELECTION2 0 2.81704066755879
+  SELECTION 3.5 15.5
+  SELECTION2 3.5 15.5
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0
   MASTERPEAKCOL 16576
@@ -76,14 +76,19 @@
     DEFSHAPE 0 -1 -1
   >
   <TEMPOENVEX
-    ACT 1
+    ACT 0
     VIS 1 0 1
     LANEHEIGHT 0 0
     ARM 0
     DEFSHAPE 1 -1 -1
   >
-  MARKER 1 0 "" 1 0 1 B
-  MARKER 1 2.81704066755879 "" 1 0 1 B
+  MARKER 1 3.5 "" 1 0 1 B
+  <REGIONRENDER 1
+    TRACK {32F85A21-EAAB-8F4E-B0E1-EB8C6A76CD91}
+    TRACK {F6131B64-5927-B043-AAEA-4F5BD9624AA9}
+    TRACK {1B581EC4-38DF-E949-80E2-869E92EB1C41}
+  >
+  MARKER 1 15.5 "" 1 0 1 B
   <PROJBAY
   >
   <TRACK {ECF4AAAB-0517-234D-A06D-BDE208997142}
@@ -153,7 +158,7 @@
       CHANMODE 0
       GUID {393CA658-CC73-7A46-B283-986648530331}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/22 Door - Cupboard Door Opening Rummaging Closing.aif"
+        FILE "Media Files/22 Door - Cupboard Door Opening Rummaging Closing.aif"
       >
     >
   >
@@ -224,7 +229,7 @@
       CHANMODE 0
       GUID {546DAD48-7763-864D-9452-FF28EC146C2A}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/15 Door - Heavy Opening Closing With Footsteps.aif"
+        FILE "Media Files/15 Door - Heavy Opening Closing With Footsteps.aif"
       >
     >
   >
@@ -295,7 +300,7 @@
       CHANMODE 0
       GUID {96160E49-36F8-A748-8564-2C1D6D5F282B}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/18 Door - Opening Slowly Creaking.aif"
+        FILE "Media Files/18 Door - Opening Slowly Creaking.aif"
       >
     >
   >
@@ -356,7 +361,7 @@
       CHANMODE 0
       GUID {0F2572EA-DCF1-3F4C-87B1-2B3BEBED91D2}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/19 Door - Closing Slowly Creaking.aif"
+        FILE "Media Files/19 Door - Closing Slowly Creaking.aif"
       >
     >
   >
@@ -427,7 +432,7 @@
       CHANMODE 0
       GUID {C2C70180-FF06-D64F-8C5D-5A650A540B77}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/10 Door - Shop Door With Bell Opening.aif"
+        FILE "Media Files/10 Door - Shop Door With Bell Opening.aif"
       >
     >
   >
@@ -498,7 +503,7 @@
       CHANMODE 0
       GUID {4E052742-34AA-4543-A0B5-74CBA828B968}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/10 Door - Shop Door With Bell Opening.aif"
+        FILE "Media Files/10 Door - Shop Door With Bell Opening.aif"
       >
     >
   >
@@ -569,7 +574,7 @@
       CHANMODE 0
       GUID {BBE57015-91BF-184A-BFEE-6086B36B23B1}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/11 AP14 11 Clocks - Chime Medium-Size - Striking 12 O'clock.aiff"
+        FILE "Media Files/11 AP14 11 Clocks - Chime Medium-Size - Striking 12 O'clock.aiff"
       >
     >
   >
@@ -585,7 +590,7 @@
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0
@@ -620,7 +625,7 @@
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 5.1 1.06362 0 5.1 0 0
       MUTE 0
-      SEL 1
+      SEL 0
       IGUID {6897AE29-FF02-9245-A0F3-3768DCC40F21}
       IID 3
       NAME "10 Door - Shop Door With Bell Opening.aif"
@@ -630,7 +635,7 @@
       CHANMODE 0
       GUID {189EF98E-DDB2-9A4D-BE7A-0B7489959014}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/10 Door - Shop Door With Bell Opening.aif"
+        FILE "Media Files/10 Door - Shop Door With Bell Opening.aif"
       >
     >
   >
@@ -646,7 +651,7 @@
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0
@@ -691,7 +696,7 @@
       CHANMODE 0
       GUID {1158375B-0F18-624C-8A3D-7B9DAD819485}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/11 AP14 11 Clocks - Chime Medium-Size - Striking 12 O'clock.aiff"
+        FILE "Media Files/11 AP14 11 Clocks - Chime Medium-Size - Striking 12 O'clock.aiff"
       >
     >
   >
@@ -707,7 +712,7 @@
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 1
+    SEL 0
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0
@@ -752,7 +757,77 @@
       CHANMODE 0
       GUID {B5E3726A-4085-AC44-882D-7AFC946E619D}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time.aiff"
+        FILE "Media Files/14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time.aiff"
+      >
+    >
+  >
+  <TRACK {8A840AE5-669D-8949-BE5E-78494E3C2C40}
+    NAME "14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time"
+    PEAKCOL 17549698
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8A840AE5-669D-8949-BE5E-78494E3C2C40}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 460 41 932 504
+      SHOW 0
+      LASTSEL 1
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAHnmePwAAAAAAAAAAAACAP3WT2D5U4+U+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C256317D-F087-6542-9B11-20A9FB5B78DA}
+      WAK 0
+      BYPASS 0 0 0
+      <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
+        cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAADNStlD2g4Dv3zBRkXv1qLBAAAAAAAAAACtVQM8xN4iQLOiBDgAAAA+AAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {4FF77FA7-26A0-F94F-BC8A-AFA1C0B47AF5}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0.00457117153773
+      SNAPOFFS 0
+      LENGTH 1.65988546992646
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.090925 0 1 0 0
+      FADEOUT 5 0.330987 0 5 0 0
+      MUTE 0
+      SEL 0
+      IGUID {8DC22575-565F-D345-8C3F-9BAB17DDB24F}
+      IID 23
+      NAME "14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time.aiff"
+      VOLPAN 0.54 0 1 -1
+      SOFFS 2.00457117153773
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EE2A06D6-3E4F-7A44-991F-4AB52E1A638D}
+      <SOURCE WAVE
+        FILE "Media Files/14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time.aiff"
       >
     >
   >
@@ -787,7 +862,7 @@
       BYPASS 0 0 0
       <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
         Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
-        AAAAAP////8BAAAALAAAAAIAAAAAAAAAcYiAPwAAAAAAAAAAAACAP3e+nz4X2U4+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAcYiAPwAAAAAAAAAAAACAP8UgsD3y0o0+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -795,86 +870,25 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
+      POSITION 0.00457117153773
       SNAPOFFS 0
-      LENGTH 1.5
+      LENGTH 1.31301282649901
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.275673 0 1 0 0
-      FADEOUT 1 1.040891 0 1 0 0
+      FADEOUT 5 1.040891 0 5 0 0
       MUTE 0
       SEL 0
       IGUID {411D3BD5-5C93-7E45-B54B-D5DF27B9012D}
       IID 19
       NAME "11 AP14 11 Clocks - Chime Medium-Size - Striking 12 O'clock.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 2
+      VOLPAN 0.6 0 1 -1
+      SOFFS 2.18698717350099
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {22771E6D-09C3-9344-AA8F-27E0D8E2DD9B}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/11 AP14 11 Clocks - Chime Medium-Size - Striking 12 O'clock.aiff"
-      >
-    >
-  >
-  <TRACK {8A840AE5-669D-8949-BE5E-78494E3C2C40}
-    NAME "14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time"
-    PEAKCOL 30432974
-    BEAT -1
-    AUTOMODE 0
-    VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
-    IPHASE 0
-    ISBUS 0 0
-    BUSCOMP 0 0
-    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
-    FREEMODE 0
-    SEL 0
-    REC 0 0 0 0 0 0 0
-    VU 2
-    TRACKHEIGHT 0 0
-    INQ 0 0 0 0.5 100 0 0 100
-    NCHAN 2
-    FX 1
-    TRACKID {8A840AE5-669D-8949-BE5E-78494E3C2C40}
-    PERF 0
-    MIDIOUT -1
-    MAINSEND 1 0
-    <FXCHAIN
-      WNDRECT 460 42 813 502
-      SHOW 0
-      LASTSEL 0
-      DOCKED 0
-      BYPASS 0 0 0
-      <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
-        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
-        AAAAAP////8BAAAALAAAAAIAAAAAAAAAHnmePwAAAAAAAAAAAACAP/7UGD++nxo/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
-        AAAQAAAA
-      >
-      FLOATPOS 0 0 0 0
-      FXID {C256317D-F087-6542-9B11-20A9FB5B78DA}
-      WAK 0
-    >
-    <ITEM
-      POSITION 0.18241600196326
-      SNAPOFFS 0
-      LENGTH 1.66445664146419
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {8DC22575-565F-D345-8C3F-9BAB17DDB24F}
-      IID 23
-      NAME "14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 2
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {EE2A06D6-3E4F-7A44-991F-4AB52E1A638D}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/14 AP14 14 Clocks - Chime Medium-Size - Striking 1 Time.aiff"
+        FILE "Media Files/11 AP14 11 Clocks - Chime Medium-Size - Striking 12 O'clock.aiff"
       >
     >
   >
@@ -919,45 +933,23 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 3.5
+      LENGTH 4.5
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0.257107 0 1 0 0
+      FADEOUT 5 2.611764 0 5 0 0
       MUTE 0
       SEL 0
       IGUID {45686926-7199-6B48-9C99-65272B5F3FFA}
       IID 26
       NAME "26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
       VOLPAN 1 0 1 -1
-      SOFFS 0.21739807925786
+      SOFFS 0.39981408122112
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {064EDB66-0DCD-8446-99F5-C0214AECECC3}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 1.80155634434761
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 1.791556 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {3FD3713D-2216-8A43-962A-9E30364D31EE}
-      IID 26
-      NAME "26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 4.19844365565239
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {2E1DEBCE-9F8C-784A-8118-3687787AB1DB}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
+        FILE "Media Files/26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
       >
     >
     <ITEM
@@ -979,7 +971,7 @@
       CHANMODE 0
       GUID {674163DD-8BF2-4C4C-9D46-9F73D3BE40CD}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
+        FILE "Media Files/26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
       >
     >
   >
@@ -1007,14 +999,14 @@
     MIDIOUT -1
     MAINSEND 1 0
     <FXCHAIN
-      WNDRECT 446 -26 813 502
+      WNDRECT 446 41 813 502
       SHOW 0
       LASTSEL 0
       DOCKED 0
       BYPASS 0 0 0
       <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
         Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
-        AAAAAP////8BAAAALAAAAAIAAAAAAAAAZzvHPwAAAAAAAAAAAACAPyuHNj+kcB0/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAZzvHPwAAAAAAAAAAAACAP3WTGD+kcB0/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -1022,25 +1014,25 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
+      POSITION 0.00457117153773
       SNAPOFFS 0
-      LENGTH 3.5
+      LENGTH 4.49542882846227
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 2.487477 0 1 0 0
+      FADEIN 1 0.099347 0 1 0 0
+      FADEOUT 5 3.653574 0 5 0 0
       MUTE 0
       SEL 0
       IGUID {BAA05200-6003-1D41-864F-C2F7C9D65C4E}
       IID 28
       NAME "32 AP14 32 Bells - Church Bell Striking 1 Time - Church #4.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 0.21739807925786
+      VOLPAN 0.6 0 1 -1
+      SOFFS 0.40438525275885
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {DB39C629-5DEE-9E4F-AAF4-9DB0FBAF7AE1}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/32 AP14 32 Bells - Church Bell Striking 1 Time - Church #4.aiff"
+        FILE "Media Files/32 AP14 32 Bells - Church Bell Striking 1 Time - Church #4.aiff"
       >
     >
   >
@@ -1083,47 +1075,25 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
+      POSITION 0.00457117153773
       SNAPOFFS 0
-      LENGTH 3.5
+      LENGTH 4.49542882846227
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0.095136 0 1 0 0
+      FADEOUT 5 2.253313 0 5 0 0
       MUTE 0
       SEL 0
       IGUID {1335BDD8-6CB2-DC42-B82D-B1F72E8D14ED}
       IID 29
       NAME "34 AP14 34 Bells - Church Bell Striking 1 Time - Church #5.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 0.21739807925786
+      VOLPAN 0.4 0 1 -1
+      SOFFS 0.40438525275885
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {8DB261DB-6CC0-714C-B7DA-03F79E3580C2}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/34 AP14 34 Bells - Church Bell Striking 1 Time - Church #5.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 1.80155634434761
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 1.791556 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {1AB0F906-0D77-3349-AE12-23A559B4672C}
-      IID 29
-      NAME "34 AP14 34 Bells - Church Bell Striking 1 Time - Church #5.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 4.19844365565239
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {76C4DA18-D98D-AB4A-8EEF-226DF3BA7503}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/34 AP14 34 Bells - Church Bell Striking 1 Time - Church #5.aiff"
+        FILE "Media Files/34 AP14 34 Bells - Church Bell Striking 1 Time - Church #5.aiff"
       >
     >
     <ITEM
@@ -1145,7 +1115,7 @@
       CHANMODE 0
       GUID {5D895015-D5B3-0243-97DD-4C399D8A4D73}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/34 AP14 34 Bells - Church Bell Striking 1 Time - Church #5.aiff"
+        FILE "Media Files/34 AP14 34 Bells - Church Bell Striking 1 Time - Church #5.aiff"
       >
     >
   >
@@ -1190,45 +1160,23 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 3.5
+      LENGTH 4.5
       LOOP 1
       ALLTAKES 0
       FADEIN 1 1.108484 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEOUT 5 2.009321 0 5 0 0
       MUTE 0
       SEL 0
       IGUID {5F238F9B-666F-1648-9CDF-A7AA711BD5D8}
       IID 30
       NAME "38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
       VOLPAN 0.62 0 1 -1
-      SOFFS 0.0996216687894
+      SOFFS 0.28203767075266
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {E5922B7D-A3BE-A848-A29E-E20C16F135AE}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 1.80155634434761
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.96916 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {444F337D-5D6A-374C-A31C-15CF79A6CF72}
-      IID 30
-      NAME "38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
-      VOLPAN 0.62 0 1 -1
-      SOFFS 4.08066724518393
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {E6E7ADC5-0CA7-3340-AFCF-B5C08D734525}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
+        FILE "Media Files/38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
       >
     >
     <ITEM
@@ -1250,7 +1198,7 @@
       CHANMODE 0
       GUID {F3ED2E7B-F63B-1C49-8E43-29DD8B973A5D}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
+        FILE "Media Files/38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
       >
     >
   >
@@ -1285,7 +1233,7 @@
       BYPASS 0 0 0
       <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
         Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
-        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP23nGz8fhUs/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAPzEI7D4fhUs/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -1293,25 +1241,25 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
+      POSITION 0.00457117153773
       SNAPOFFS 0
-      LENGTH 3.28260192074214
+      LENGTH 4.27803074920441
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 1.275938 0 1 0 0
+      FADEOUT 5 1.275938 0 5 0 0
       MUTE 0
       SEL 0
       IGUID {FA570FA4-764C-214B-95ED-699C13B943FE}
       IID 31
       NAME "40 AP14 40 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 0.21739807925786
+      VOLPAN 0.98 0 1 -1
+      SOFFS 0.40438525275885
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {86E2B714-4800-674F-83AC-A9CCE3B26D40}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/40 AP14 40 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
+        FILE "Media Files/40 AP14 40 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
       >
     >
   >
@@ -1339,14 +1287,14 @@
     MIDIOUT -1
     MAINSEND 1 0
     <FXCHAIN
-      WNDRECT 412 33 813 502
+      WNDRECT 412 41 813 502
       SHOW 0
       LASTSEL 0
       DOCKED 0
       BYPASS 0 0 0
       <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
         Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
-        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAPz813j4OLRI/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP90khj4fhes+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -1354,47 +1302,25 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
+      POSITION 0.00457117153773
       SNAPOFFS 0
-      LENGTH 3.5
+      LENGTH 4.49542882846227
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEOUT 5 2.004255 0 5 0 0
       MUTE 0
       SEL 0
       IGUID {33469BDB-C63B-E245-8B33-4BED9C9CF087}
       IID 35
       NAME "49 AP14 49 Musical - Bells  Twang .aiff"
       VOLPAN 1 0 1 -1
-      SOFFS 0.21739807925786
+      SOFFS 0.40438525275885
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {D756A3F8-621E-6248-8E61-B1E2A7554835}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/49 AP14 49 Musical - Bells  Twang .aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 1.80155634434761
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 1.791556 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {25CE383D-CBD8-024E-AA09-8514115C5B7B}
-      IID 35
-      NAME "49 AP14 49 Musical - Bells  Twang .aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 4.19844365565239
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {A06DB886-5C64-5041-9C3B-4B43F3871EF2}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/49 AP14 49 Musical - Bells  Twang .aiff"
+        FILE "Media Files/49 AP14 49 Musical - Bells  Twang .aiff"
       >
     >
     <ITEM
@@ -1416,7 +1342,7 @@
       CHANMODE 0
       GUID {A6660C86-6645-074F-A84A-17EB4D0982AC}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/49 AP14 49 Musical - Bells  Twang .aiff"
+        FILE "Media Files/49 AP14 49 Musical - Bells  Twang .aiff"
       >
     >
   >
@@ -1477,7 +1403,7 @@
       CHANMODE 0
       GUID {852EE7FB-D039-F84B-91A3-9D38462EE433}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
+        FILE "Media Files/26 AP14 26 Bells - Church Bell Striking 1 Time - Small Church - Cs - Church #1.aiff"
       >
     >
   >
@@ -1538,7 +1464,7 @@
       CHANMODE 0
       GUID {B8FA1FF9-1DDE-C34D-A84A-6E0BBCDE302D}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/32 AP14 32 Bells - Church Bell Striking 1 Time - Church #4.aiff"
+        FILE "Media Files/32 AP14 32 Bells - Church Bell Striking 1 Time - Church #4.aiff"
       >
     >
   >
@@ -1599,7 +1525,7 @@
       CHANMODE 0
       GUID {15DDE562-4EA9-8F43-B124-F4621C3AB6C7}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
+        FILE "Media Files/38 AP14 38 Bells - Knell Tolling 1 Time - Hiroshima Memorial Park.aiff"
       >
     >
   >
@@ -1644,7 +1570,7 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 2.5
+      LENGTH 2.46205364896732
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
@@ -1660,7 +1586,7 @@
       CHANMODE 0
       GUID {464D97FA-2B1D-E746-A01B-0FCE1560D638}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/49 AP14 49 Musical - Bells  Twang .aiff"
+        FILE "Media Files/49 AP14 49 Musical - Bells  Twang .aiff"
       >
     >
   >
@@ -1731,7 +1657,7 @@
       CHANMODE 0
       GUID {A279B107-0693-A641-8B1A-3118D2044A9A}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Impact_Orchestra_Strings_Percussive.wav"
+        FILE "Media Files/Impact_Orchestra_Strings_Percussive.wav"
       >
     >
     <ITEM
@@ -1753,7 +1679,7 @@
       CHANMODE 0
       GUID {29C44A14-5B8A-AA48-B9F5-DA9BA1BB350F}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Impact_Orchestra_Strings_Percussive.wav"
+        FILE "Media Files/Impact_Orchestra_Strings_Percussive.wav"
       >
     >
   >
@@ -1799,7 +1725,7 @@
       CHANMODE 0
       GUID {98CEA542-1D7A-F944-B364-0789963C0292}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/82 Hospital_Medical - Heartbeat, 80 Bpm.aiff"
+        FILE "Media Files/82 Hospital_Medical - Heartbeat, 80 Bpm.aiff"
       >
     >
     <ITEM
@@ -1821,7 +1747,7 @@
       CHANMODE 0
       GUID {EDA1165A-6DAA-AE4C-9981-12DC8BA63417}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/82 Hospital_Medical - Heartbeat, 80 Bpm.aiff"
+        FILE "Media Files/82 Hospital_Medical - Heartbeat, 80 Bpm.aiff"
       >
     >
     <ITEM
@@ -1843,7 +1769,7 @@
       CHANMODE 0
       GUID {3B0226ED-C0E2-1140-96BA-A0668F470567}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/82 Hospital_Medical - Heartbeat, 80 Bpm.aiff"
+        FILE "Media Files/82 Hospital_Medical - Heartbeat, 80 Bpm.aiff"
       >
     >
   >
@@ -1889,7 +1815,7 @@
       CHANMODE 0
       GUID {0B13E6E7-287C-214D-B640-34802726A755}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/83 Hospital - Medical - Heartbeat, Regular.aiff"
+        FILE "Media Files/83 Hospital - Medical - Heartbeat, Regular.aiff"
       >
     >
     <ITEM
@@ -1911,7 +1837,7 @@
       CHANMODE 0
       GUID {C27CF72C-4E09-EE43-B255-3533BD48F17F}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/83 Hospital - Medical - Heartbeat, Regular.aiff"
+        FILE "Media Files/83 Hospital - Medical - Heartbeat, Regular.aiff"
       >
     >
     <ITEM
@@ -1933,7 +1859,7 @@
       CHANMODE 0
       GUID {929AA443-7009-5F43-83F1-0C47A6FECD2A}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/83 Hospital - Medical - Heartbeat, Regular.aiff"
+        FILE "Media Files/83 Hospital - Medical - Heartbeat, Regular.aiff"
       >
     >
   >
@@ -2004,7 +1930,7 @@
       CHANMODE 0
       GUID {54B8FA26-D23E-A649-952C-414EA93F3199}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/44 Train - Switchyard -String Of Cars Roll By And Stop - Grinding.aiff"
+        FILE "Media Files/44 Train - Switchyard -String Of Cars Roll By And Stop - Grinding.aiff"
       >
     >
     <ITEM
@@ -2026,7 +1952,7 @@
       CHANMODE 0
       GUID {59BB6F6F-4CAB-0B41-9C1D-F006734D36C2}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/44 Train - Switchyard -String Of Cars Roll By And Stop - Grinding.aiff"
+        FILE "Media Files/44 Train - Switchyard -String Of Cars Roll By And Stop - Grinding.aiff"
       >
     >
     <ITEM
@@ -2048,7 +1974,7 @@
       CHANMODE 0
       GUID {FC59C73A-F834-A344-B755-D4CEB41377EF}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/44 Train - Switchyard -String Of Cars Roll By And Stop - Grinding.aiff"
+        FILE "Media Files/44 Train - Switchyard -String Of Cars Roll By And Stop - Grinding.aiff"
       >
     >
   >
@@ -2109,7 +2035,7 @@
       CHANMODE 0
       GUID {91F32123-9713-B24B-9A34-33780CEF87D9}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
+        FILE "Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
       >
     >
     <ITEM
@@ -2131,7 +2057,7 @@
       CHANMODE 0
       GUID {9FB0B54B-F838-A045-AF32-C0CCC26BDABB}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
+        FILE "Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
       >
     >
     <ITEM
@@ -2153,7 +2079,7 @@
       CHANMODE 0
       GUID {53F0CCD6-36D7-DC4C-9B19-CD9E923FA65F}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
+        FILE "Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
       >
     >
     <ITEM
@@ -2175,7 +2101,7 @@
       CHANMODE 0
       GUID {B2E9C46D-5117-674F-AA57-49F0685F0358}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
+        FILE "Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
       >
     >
     <ITEM
@@ -2197,7 +2123,7 @@
       CHANMODE 0
       GUID {22D438B9-85D2-2840-9FA9-C826C9584ABC}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
+        FILE "Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
       >
     >
     <ITEM
@@ -2219,7 +2145,7 @@
       CHANMODE 0
       GUID {9CC87DAB-3DE5-6C47-A4B9-B218C521CB8D}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
+        FILE "Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
       >
     >
     <ITEM
@@ -2241,7 +2167,7 @@
       CHANMODE 0
       GUID {420DEADE-F2AB-1242-8BB3-C70D87584D6A}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
+        FILE "Media Files/Stinger_Piano_Scrape_Single_String_Long.wav"
       >
     >
   >
@@ -2302,7 +2228,7 @@
       CHANMODE 0
       GUID {2EC908F1-D688-9144-91B6-9B7871956989}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2324,7 +2250,7 @@
       CHANMODE 0
       GUID {EE41DA18-E88B-5A47-AEBE-B21CAB39E574}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2346,7 +2272,7 @@
       CHANMODE 0
       GUID {B8F69BE9-6BD8-8D47-BC9D-F4CB84739B5C}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2368,7 +2294,7 @@
       CHANMODE 0
       GUID {533DFB0B-39E5-DC46-B36F-4DAE2C5F2CE5}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2390,7 +2316,7 @@
       CHANMODE 0
       GUID {C236CDD9-B968-A54E-BC57-608164C68696}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2412,7 +2338,7 @@
       CHANMODE 0
       GUID {D683F2AD-835E-C443-A3E0-7F3ED5B4F7AD}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2434,7 +2360,7 @@
       CHANMODE 0
       GUID {98CA69FA-D457-394A-AB64-DCDF4FF6F156}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2456,7 +2382,7 @@
       CHANMODE 0
       GUID {74149FD2-5516-8D4A-9FE8-73E71C515B33}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2478,7 +2404,7 @@
       CHANMODE 0
       GUID {F30F89AD-CFA8-2640-B9D1-A14E4A62A544}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2500,7 +2426,7 @@
       CHANMODE 0
       GUID {DD588A81-74F6-0D4B-B570-65BFE3BBFB22}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
     <ITEM
@@ -2522,7 +2448,7 @@
       CHANMODE 0
       GUID {A427A332-CC84-064A-8BFB-959974A1ECE4}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Eerie.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Eerie.wav"
       >
     >
   >
@@ -2593,7 +2519,7 @@
       CHANMODE 0
       GUID {F76CBEB4-B9DF-E24C-9E2C-8988D49368D0}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Impact_Orchestra_Strings_High.wav"
+        FILE "Media Files/Impact_Orchestra_Strings_High.wav"
       >
     >
     <ITEM
@@ -2615,7 +2541,7 @@
       CHANMODE 0
       GUID {6A7C1693-1113-CC4F-9BB2-2D04296058E9}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Impact_Orchestra_Strings_High.wav"
+        FILE "Media Files/Impact_Orchestra_Strings_High.wav"
       >
     >
     <ITEM
@@ -2637,7 +2563,7 @@
       CHANMODE 0
       GUID {FC9A7756-C48B-3949-8571-4A96B4FCBC52}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Impact_Orchestra_Strings_High.wav"
+        FILE "Media Files/Impact_Orchestra_Strings_High.wav"
       >
     >
   >
@@ -2707,7 +2633,7 @@
       CHANMODE 0
       GUID {732F48AD-0D60-3649-AC8C-DF5AC19AECD8}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Tremolator.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Tremolator.wav"
       >
     >
     <ITEM
@@ -2729,7 +2655,7 @@
       CHANMODE 0
       GUID {8901F094-9049-EC44-B253-73A0DB0A9052}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Tremolator.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Tremolator.wav"
       >
     >
     <ITEM
@@ -2751,7 +2677,7 @@
       CHANMODE 0
       GUID {C31EA6BD-5D9F-4B4D-B1A6-52683939CBA8}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Tremolator.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Tremolator.wav"
       >
     >
     <ITEM
@@ -2773,7 +2699,7 @@
       CHANMODE 0
       GUID {C1570759-6CD2-E24E-8573-C71604ADAF90}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Tremolator.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Tremolator.wav"
       >
     >
     <ITEM
@@ -2795,7 +2721,7 @@
       CHANMODE 0
       GUID {152145DC-67BC-CC46-A795-63F0C35E0EDA}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Tremolator.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Tremolator.wav"
       >
     >
     <ITEM
@@ -2817,7 +2743,7 @@
       CHANMODE 0
       GUID {CDAD1DBF-A1B7-5545-8C2E-734010E1A66F}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Tremolator.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Tremolator.wav"
       >
     >
     <ITEM
@@ -2839,7 +2765,7 @@
       CHANMODE 0
       GUID {08285A95-D8E3-3642-9D7F-1B9C9737BC0B}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/Rise_Orchestra_Strings_Tremolator.wav"
+        FILE "Media Files/Rise_Orchestra_Strings_Tremolator.wav"
       >
     >
   >
@@ -2900,7 +2826,7 @@
       CHANMODE 0
       GUID {859A6E8A-6F08-8A40-8278-4C5B151B1FE8}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/31 StringLayers Gliss _ Pizz Low Register.aiff"
+        FILE "Media Files/31 StringLayers Gliss _ Pizz Low Register.aiff"
       >
     >
     <ITEM
@@ -2922,7 +2848,7 @@
       CHANMODE 0
       GUID {FFC893D1-F266-1747-BAFA-11987EDE9BA2}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/31 StringLayers Gliss _ Pizz Low Register.aiff"
+        FILE "Media Files/31 StringLayers Gliss _ Pizz Low Register.aiff"
       >
     >
   >
@@ -2992,7 +2918,7 @@
       CHANMODE 0
       GUID {DDF3906B-B7E5-A747-B28C-A45E67A6FAB7}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/8 Birds - Evening.aiff"
+        FILE "Media Files/8 Birds - Evening.aiff"
       >
     >
     <ITEM
@@ -3014,13 +2940,13 @@
       CHANMODE 0
       GUID {326BE9EE-AD8E-3F40-A5C6-7971DCD017F2}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/8 Birds - Evening.aiff"
+        FILE "Media Files/8 Birds - Evening.aiff"
       >
     >
   >
   <TRACK {492DC0DE-C85B-CD40-8AA0-B30F23AE7668}
     NAME "4 Crow Caws"
-    PEAKCOL 17301726
+    PEAKCOL 17420513
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -3059,11 +2985,11 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 3.5
+      LENGTH 2.89483783219249
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEOUT 1 2.568659 0 1 0 0
       MUTE 0
       SEL 0
       IGUID {6669F066-0CCE-2A44-8CC5-9A2DD9FD73AD}
@@ -3075,57 +3001,13 @@
       CHANMODE 0
       GUID {17947F26-9EF7-7542-921F-6C44E72B6868}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/4 Crow Caws.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 3.1922877569388
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {5419AB38-173F-9A46-9FB5-28C4B2B3B642}
-      IID 127
-      NAME "4 Crow Caws.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 3.98104557639453
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {91993B7E-F2C8-5443-851C-ED5F28EB9F44}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/4 Crow Caws.aiff"
-      >
-    >
-    <ITEM
-      POSITION 13.51895442360547
-      SNAPOFFS 0
-      LENGTH 0.48104557639453
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {87F55866-B8AD-3B49-910A-FF38E7E43F4A}
-      IID 127
-      NAME "4 Crow Caws.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 3.5
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {F60C90D9-D4FF-9449-881C-89E41481C604}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/4 Crow Caws.aiff"
+        FILE "Media Files/4 Crow Caws.aiff"
       >
     >
   >
   <TRACK {775DD63B-15F4-1546-AD36-C429AA1D5AF8}
     NAME "08 Bird,Crow Common Crow_Calls"
-    PEAKCOL 16576
+    PEAKCOL 17420513
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
@@ -3146,14 +3028,29 @@
     PERF 0
     MIDIOUT -1
     MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 425 109 813 502
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP7x0Ez+DwAo/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {C1999286-5A02-7248-A0A0-6738D71B975D}
+      WAK 0
+    >
     <ITEM
-      POSITION 0
+      POSITION 0.5
       SNAPOFFS 0
       LENGTH 3.5
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEOUT 1 3.013309 0 1 0 0
       MUTE 0
       SEL 0
       IGUID {D432636A-EBFB-9843-8539-9DE196787349}
@@ -3165,73 +3062,147 @@
       CHANMODE 0
       GUID {18DF6688-671E-6944-BC36-4764AD6F354A}
       <SOURCE MP3
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/08 Bird,Crow Common Crow_Calls.mp3" 1
+        FILE "Media Files/08 Bird,Crow Common Crow_Calls.mp3" 1
       >
     >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 10.01895442360547
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {7CFA6F24-CBDE-A045-9F37-B89851BE1DA1}
-      IID 135
-      NAME "08 Bird,Crow Common Crow_Calls.mp3"
-      VOLPAN 1 0 1 -1
-      SOFFS 3.98104557639453
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {4B355555-E0CB-FA4D-B1CD-9048C5A845F3}
-      <SOURCE MP3
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/08 Bird,Crow Common Crow_Calls.mp3" 1
+  >
+  <TRACK {8444DDE3-A7D9-794B-A5DD-11C5E232DAD5}
+    NAME "46 Birds - Pigeons Flying Away - Medium-Size Bird Flying Away - Fast - Large Bird Flying Away - Slow"
+    PEAKCOL 17420513
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {8444DDE3-A7D9-794B-A5DD-11C5E232DAD5}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 430 137 932 504
+      SHOW 0
+      LASTSEL 1
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAPwaB1T78qfE+AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAQAAAA
       >
+      FLOATPOS 0 0 0 0
+      FXID {C7830EF6-4AB7-A14E-AAF8-EF1D80A17D2F}
+      WAK 0
+      BYPASS 0 0 0
+      <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
+        cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAADXOb9DAAAAADV7OEV8CuTAAAAAAAAAAACtVQM8AACAP7OiBDgAAAA+AAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {20FCECBA-B9D7-D649-97AE-0ACEA0C64F81}
+      WAK 0
     >
     <ITEM
-      POSITION 13.51895442360547
+      POSITION 0
       SNAPOFFS 0
-      LENGTH 0.48104557639453
+      LENGTH 6.5
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0.841477 0 1 0 0
+      FADEOUT 2 3.359402 0 2 0 -1
       MUTE 0
       SEL 0
-      IGUID {951575AA-312F-FA43-A63E-A98EF4D03EC3}
-      IID 135
-      NAME "08 Bird,Crow Common Crow_Calls.mp3"
+      IGUID {A66A86DE-CF04-7143-ACC3-8CABEEC2691E}
+      IID 173
+      NAME "46 Birds - Pigeons Flying Away - Medium-Size Bird Flying Away - Fast - Large Bird Flying Away - Slow.aiff"
       VOLPAN 1 0 1 -1
-      SOFFS 3.5
-      PLAYRATE 1 1 0 -1 0 0.0025
+      SOFFS 18.5
+      PLAYRATE 1.09435534974645 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {113B872F-E072-C342-9656-894A855649AF}
-      <SOURCE MP3
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/08 Bird,Crow Common Crow_Calls.mp3" 1
+      GUID {AFF8B2C4-0204-2C4F-9909-0911373450B3}
+      <SOURCE WAVE
+        FILE "Media Files/46 Birds - Pigeons Flying Away - Medium-Size Bird Flying Away - Fast - Large Bird Flying Away - Slow.aiff"
       >
     >
+  >
+  <TRACK {003762A1-A132-7B44-8BFC-D0F24AE2E778}
+    NAME "46 Birds - Pigeons Flying Away - Medium-Size Bird Flying Away - Fast - Large Bird Flying Away - Slow"
+    PEAKCOL 17420513
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {003762A1-A132-7B44-8BFC-D0F24AE2E778}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 430 139 813 502
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP166CT8MAgs/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {E5A65789-CF8B-C24A-95FD-0155193F7682}
+      WAK 0
+      BYPASS 0 0 0
+      <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
+        cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAADXOb9DAAAAADV7OEV8CuTAAAAAAAAAAACtVQM8AACAP7OiBDgAAAA+AAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {9D156EC8-B5C2-2045-82FD-4794D1BFBC5A}
+      WAK 0
+    >
     <ITEM
-      POSITION 14
+      POSITION 0.5
       SNAPOFFS 0
-      LENGTH 5.30553287981859
+      LENGTH 6
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0.760519 0 1 0 0
+      FADEOUT 2 3.673292 0 2 0 -1
       MUTE 0
       SEL 0
-      IGUID {DC66A4E4-95B1-1749-9F40-A5930ED9D4C9}
-      IID 135
-      NAME "08 Bird,Crow Common Crow_Calls.mp3"
+      IGUID {DD98602B-FEB2-CC40-AC83-5C0266092FEB}
+      IID 173
+      NAME "46 Birds - Pigeons Flying Away - Medium-Size Bird Flying Away - Fast - Large Bird Flying Away - Slow.aiff"
       VOLPAN 1 0 1 -1
-      SOFFS 14
-      PLAYRATE 1 1 0 -1 0 0.0025
+      SOFFS 18.5
+      PLAYRATE 1.21085017369274 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {4CF88AAA-DD9D-5748-8A85-2479735EC53B}
-      <SOURCE MP3
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/08 Bird,Crow Common Crow_Calls.mp3" 1
+      GUID {6C78AA4A-E00C-1347-A336-B0E37B6CB8B7}
+      <SOURCE WAVE
+        FILE "Media Files/46 Birds - Pigeons Flying Away - Medium-Size Bird Flying Away - Fast - Large Bird Flying Away - Slow.aiff"
       >
     >
   >
@@ -3266,7 +3237,7 @@
       BYPASS 0 0 0
       <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
         Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
-        AAAAAP////8BAAAALAAAAAIAAAAAAAAA/J4vQAAAAAAAAAAAAACAP8l2vj4AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAWJllQJrhhTsAAAAAAACAP8l2vj4AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3275,7 +3246,7 @@
       BYPASS 0 0 0
       <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
         cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
-        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAAAgHMNDnwIZwiecUUWZvbvBAAAAAAAAAACtVQM8AACAP7OiBDgAAAA+AAAAAAAAAAA=
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAAAgHMNDnwIZwiecUUWZvbvBAAAAAAAAAACtVQM84cl+QLOiBDgAAAA+AAAAAAAAAAA=
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3293,12 +3264,34 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
+      POSITION 3.51895442360547
+      SNAPOFFS 0
+      LENGTH 10.01895442360547
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 1.037909 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {2F97D651-0259-484E-A88C-70928BE232FD}
+      IID 117
+      NAME "3 Birds - Dawn.aiff"
+      VOLPAN 1 0 1 -1
+      SOFFS 5.98104557639453
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6F48DC8F-4657-5845-B31D-6863144E42B8}
+      <SOURCE WAVE
+        FILE "Media Files/3 Birds - Dawn.aiff"
+      >
+    >
+    <ITEM
+      POSITION 12.5
       SNAPOFFS 0
       LENGTH 3.5
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
+      FADEIN 1.1 0.01 1.037909 1 1 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
       SEL 0
@@ -3311,73 +3304,7 @@
       CHANMODE 0
       GUID {9DACD130-1412-9148-8B3F-104C5EF37F0C}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/3 Birds - Dawn.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 10.01895442360547
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {2F97D651-0259-484E-A88C-70928BE232FD}
-      IID 117
-      NAME "3 Birds - Dawn.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 5.98104557639453
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {6F48DC8F-4657-5845-B31D-6863144E42B8}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/3 Birds - Dawn.aiff"
-      >
-    >
-    <ITEM
-      POSITION 13.51895442360547
-      SNAPOFFS 0
-      LENGTH 0.48104557639453
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {43E416F6-3E5F-0E40-9063-2090411231E6}
-      IID 117
-      NAME "3 Birds - Dawn.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 5.5
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {79D07719-968F-BA4F-8267-2ECCE6680378}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/3 Birds - Dawn.aiff"
-      >
-    >
-    <ITEM
-      POSITION 14
-      SNAPOFFS 0
-      LENGTH 168.73333333333332
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {D616C9EB-1B90-1641-9E95-97929F02C9BD}
-      IID 117
-      NAME "3 Birds - Dawn.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 16
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {AD8BD101-FA60-7D47-89D2-F9EC4CF93459}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/3 Birds - Dawn.aiff"
+        FILE "Media Files/3 Birds - Dawn.aiff"
       >
     >
   >
@@ -3405,15 +3332,15 @@
     MIDIOUT -1
     MAINSEND 1 0
     <FXCHAIN
-      WNDRECT 508 130 932 504
+      WNDRECT 508 190 835 444
       SHOW 0
-      LASTSEL 1
+      LASTSEL 0
       DOCKED 0
       BYPASS 0 0 0
       <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729
         cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAqAAAAAEAAAAAABAA
         IQAAAAQAAAAAAAAAAQAAAMGmbdSug15AgO21oPfGsD4AAAAAAAAAQAEIAAAAAQAAAMCGIdEyCnJAAIk4NQFT4z8AAAAAAAAAQAEIAAAAAQAAAEBL+fm+JIpAAaaGPjQL
-        2j8AAAAAAAAAQAEBAAAAAQAAAH9gthmip6BAgO21oPfGsD4AAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAAAFQCAABwAQAA
+        2j8AAAAAAAAAQAEBAAAAAQAAAH9gthmip6BAgO21oPfGsD4AAAAAAAAAQAEBAAAAAQAAAKOMxi306wpAAAAAAFQCAABwAQAA
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3422,7 +3349,7 @@
       BYPASS 0 0 0
       <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
         cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
-        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAAA4tsxDA/lnwC10PEVD98HBAAAAAAAAAACtVQM8AACAP7OiBDgAAAA+AAAAAAAAAAA=
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAAA4tsxDA/lnwC10PEVD98HBAAAAAAAAAACtVQM84cl+QLOiBDgAAAA+AAAAAAAAAAA=
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3430,12 +3357,34 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
+      POSITION 3.5
+      SNAPOFFS 0
+      LENGTH 10.01895442360547
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0
+      FADEOUT 1.1 0.01 1.018954 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {5241A34F-19EE-5E4E-8083-0BF676A58D45}
+      IID 123
+      NAME "25 Animals - Cowbells And Goats.aiff"
+      VOLPAN 1 0 1 -1
+      SOFFS 4.98104557639453
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BEFDC6A6-3A4F-C043-A891-7916667AF7DF}
+      <SOURCE WAVE
+        FILE "Media Files/25 Animals - Cowbells And Goats.aiff"
+      >
+    >
+    <ITEM
+      POSITION 12.5
       SNAPOFFS 0
       LENGTH 3.5
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
+      FADEIN 1.1 0.01 1.018954 1 1 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
       SEL 0
@@ -3448,73 +3397,7 @@
       CHANMODE 0
       GUID {0B161845-DCDC-714E-97BD-410B660CCEFB}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/25 Animals - Cowbells And Goats.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 10.01895442360547
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {5241A34F-19EE-5E4E-8083-0BF676A58D45}
-      IID 123
-      NAME "25 Animals - Cowbells And Goats.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 4.98104557639453
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {BEFDC6A6-3A4F-C043-A891-7916667AF7DF}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/25 Animals - Cowbells And Goats.aiff"
-      >
-    >
-    <ITEM
-      POSITION 13.51895442360547
-      SNAPOFFS 0
-      LENGTH 0.48104557639453
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {6A7734D2-53D6-2D40-9AE4-36D90A7AB6DE}
-      IID 123
-      NAME "25 Animals - Cowbells And Goats.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 4.5
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {3DEC38FE-8B8A-6E48-9DFD-9CDE3819F999}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/25 Animals - Cowbells And Goats.aiff"
-      >
-    >
-    <ITEM
-      POSITION 14
-      SNAPOFFS 0
-      LENGTH 80.24
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {117CBF97-52EC-FF4E-A804-8295D29DC1A9}
-      IID 123
-      NAME "25 Animals - Cowbells And Goats.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 15
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {5DCD4D02-66F9-5046-9D0B-82FA290AA045}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/25 Animals - Cowbells And Goats.aiff"
+        FILE "Media Files/25 Animals - Cowbells And Goats.aiff"
       >
     >
   >
@@ -3542,14 +3425,14 @@
     MIDIOUT -1
     MAINSEND 1 0
     <FXCHAIN
-      WNDRECT 584 202 813 502
+      WNDRECT 508 200 932 504
       SHOW 0
-      LASTSEL 1
+      LASTSEL 0
       DOCKED 0
       BYPASS 0 0 0
       <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
         cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
-        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAADXOb9DAAAAAJqCQEXIPzvCAAAAAAAAAACtVQM8AACAP7OiBDgAAAA+AAAAAAAAAAA=
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAADXOb9DAAAAAJqCQEXIPzvCAAAAAAAAAACtVQM84cl+QLOiBDgAAAA+AAAAAAAAAAA=
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3571,30 +3454,30 @@
       LENGTH 3.5
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0.450526 0 1 0 0
+      FADEOUT 1.1 0.01 1 1 1 0
       MUTE 0
       SEL 0
       IGUID {BD6881D2-F37A-3C48-8B0B-5E905943EFDC}
       IID 129
       NAME "29 Cow Moos, X3.aiff"
-      VOLPAN 1 0 1 -1
+      VOLPAN 0.74 0 1 -1
       SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {85AEF422-24C6-904B-9B4D-6E2A3B8EF2F8}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/29 Cow Moos, X3.aiff"
+        FILE "Media Files/29 Cow Moos, X3.aiff"
       >
     >
     <ITEM
-      POSITION 3.5
+      POSITION 2.5
       SNAPOFFS 0
       LENGTH 6.28562109027214
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1.1 0.01 1 1 1 0
+      FADEOUT 1.1 0.01 3.785621 1 1 0
       MUTE 0
       SEL 0
       IGUID {5F1510E8-AFD4-6D4E-83E8-9493FD916C35}
@@ -3606,29 +3489,143 @@
       CHANMODE 0
       GUID {D69841FE-1F24-0843-9CDC-130BFC3B21DB}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/29 Cow Moos, X3.aiff"
+        FILE "Media Files/29 Cow Moos, X3.aiff"
       >
     >
     <ITEM
-      POSITION 13.51895442360547
+      POSITION 5
       SNAPOFFS 0
-      LENGTH 0.48104557639453
+      LENGTH 5.78562109027214
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1.1 0.01 3.785621 1 1 0
+      FADEOUT 1 1.587377 0 1 0 0
       MUTE 0
       SEL 0
-      IGUID {42C282F3-A6C3-0B4F-8CFB-0E94C15503DC}
+      IGUID {6D3B90CA-0F1B-9141-AB70-5292632025DC}
+      IID 129
+      NAME "29 Cow Moos, X3.aiff"
+      VOLPAN 0.66 0 1 -1
+      SOFFS 4.48104557639453
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {FE88B301-4D2D-2641-BD60-6EE525C2170F}
+      <SOURCE WAVE
+        FILE "Media Files/29 Cow Moos, X3.aiff"
+      >
+    >
+  >
+  <TRACK {93DBE343-EEAC-BD45-B554-E63DEBB5A6F0}
+    NAME "29 Cow Moos, X3"
+    PEAKCOL 28804881
+    BEAT -1
+    AUTOMODE 0
+    VOLPAN 1 0 -1 -1 1
+    MUTESOLO 0 0 0
+    IPHASE 0
+    ISBUS 0 0
+    BUSCOMP 0 0
+    SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
+    FREEMODE 0
+    SEL 0
+    REC 0 0 0 0 0 0 0
+    VU 2
+    TRACKHEIGHT 0 0
+    INQ 0 0 0 0.5 100 0 0 100
+    NCHAN 2
+    FX 1
+    TRACKID {93DBE343-EEAC-BD45-B554-E63DEBB5A6F0}
+    PERF 0
+    MIDIOUT -1
+    MAINSEND 1 0
+    <FXCHAIN
+      WNDRECT 508 200 932 504
+      SHOW 0
+      LASTSEL 0
+      DOCKED 0
+      BYPASS 0 0 0
+      <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
+        cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAADXOb9DAAAAAJqCQEXIPzvCAAAAAAAAAACtVQM84cl+QLOiBDgAAAA+AAAAAAAAAAA=
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {6D8312ED-B4D7-F045-9795-C842758200DB}
+      WAK 0
+      BYPASS 0 0 0
+      <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
+        Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP+F6FD8nMQg/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAQAAAA
+      >
+      FLOATPOS 0 0 0 0
+      FXID {00A93C93-E3BE-494A-9B46-B5384B0C4DAF}
+      WAK 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 6.15719163044076
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.300351 0 1 0 0
+      FADEOUT 1.1 0.01 3.657192 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {EFA8CFD5-8B0D-D445-8327-153B99933434}
       IID 129
       NAME "29 Cow Moos, X3.aiff"
       VOLPAN 1 0 1 -1
-      SOFFS 3.5
+      SOFFS 3.98104557639453
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {8EDC8C1F-BFA4-5B4A-9984-AF77F016BF07}
+      GUID {1D6B5B04-DB56-0D43-823E-F927A558DE5E}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/29 Cow Moos, X3.aiff"
+        FILE "Media Files/29 Cow Moos, X3.aiff"
+      >
+    >
+    <ITEM
+      POSITION 2.5
+      SNAPOFFS 0
+      LENGTH 5.78562109027214
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 3.657192 1 1 0
+      FADEOUT 1.1 0.01 1.785621 1 1 0
+      MUTE 0
+      SEL 0
+      IGUID {2C63EC68-A7D7-3046-BFD2-68C02E77CC3A}
+      IID 129
+      NAME "29 Cow Moos, X3.aiff"
+      VOLPAN 0.42 0 1 -1
+      SOFFS 4.48104557639453
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8C39612F-7493-734E-8697-ED50119C7A74}
+      <SOURCE WAVE
+        FILE "Media Files/29 Cow Moos, X3.aiff"
+      >
+    >
+    <ITEM
+      POSITION 6.5
+      SNAPOFFS 0
+      LENGTH 3.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.785621 1 1 0
+      FADEOUT 1 1.177195 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {97DF4C35-34C4-EB4A-A744-5C320924983B}
+      IID 129
+      NAME "29 Cow Moos, X3.aiff"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {618C842F-F3B9-A745-86FF-686B5BD1CC67}
+      <SOURCE WAVE
+        FILE "Media Files/29 Cow Moos, X3.aiff"
       >
     >
   >
@@ -3656,15 +3653,15 @@
     MIDIOUT -1
     MAINSEND 1 0
     <FXCHAIN
-      WNDRECT 361 85 813 502
+      WNDRECT 431 227 835 444
       SHOW 0
-      LASTSEL 1
+      LASTSEL 0
       DOCKED 0
       BYPASS 0 0 0
       <VST "VST: ReaEQ (Cockos)" reaeq.vst.dylib 0 "" 1919247729
         cWVlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAqAAAAAEAAAAAABAA
-        IQAAAAQAAAAAAAAAAQAAAMD5yVhn4VtAHWWlK1Qr0T8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAwHJAAAAAAAAA8D8AAAAAAAAAQAEIAAAAAQAAAAAAAAAAQI9AAAAAAAAA
-        8D8AAAAAAAAAQAEBAAAAAQAAAEC4RpTK0bFAgav9//5QC0AAAAAAAAAAQAEBAAAAAQAAAAAAAAAAAPA/AAAAAFQCAABwAQAA
+        IQAAAAQAAAAAAAAAAQAAAJhgVLG2wGNAwmHHqfyQEkAAAAAAAAAAQAEIAAAAAQAAAMBFGUcywXlAcb/nMFC5CkAAAAAAAAAAQAEIAAAAAQAAAID01PdxP49AvLVqTOi5
+        3z8AAAAAAAAAQAEBAAAAAQAAAE+I4HjJb6pAgW1SHzzZD0AAAAAAAAAAQAEBAAAAAQAAAFtOLt0nz/I/AAAAAFQCAABwAQAA
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3673,7 +3670,7 @@
       BYPASS 0 0 0
       <VST "VST: ReaPitch (Cockos)" reapitch.vst.dylib 0 "" 1919250531
         Y3Blcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAATAAAAAEAAAAAABAA
-        AAAAAP////8BAAAALAAAAAIAAAAAAAAAAACAPwAAAAAAAAAAAACAP4lB4D4AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
+        AAAAAP////8BAAAALAAAAAIAAAAAAAAAjeeBPwAAAAAAAAAAAACAP4lB4D4AAAA/AAAAPwAAAD8AAAA/AAAAPwAAAD8AAIA/AAAAPw==
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3681,47 +3678,47 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
-      SNAPOFFS 0
-      LENGTH 3.5
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {1B8BC56A-EE28-D541-9475-1A0856963EB6}
-      IID 118
-      NAME "1 Birds - Sparrows.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {5EAC8C33-B60C-9340-B7B3-6FF784FFA883}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/1 Birds - Sparrows.aiff"
-      >
-    >
-    <ITEM
       POSITION 3.5
       SNAPOFFS 0
       LENGTH 10.01895442360547
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1.1 0 1.518954 1 1 0
       MUTE 0
       SEL 0
       IGUID {A5C18369-5145-2F48-B305-C948D1F2EC07}
       IID 118
       NAME "1 Birds - Sparrows.aiff"
-      VOLPAN 1 0 1 -1
+      VOLPAN 0.26 0 1 -1
       SOFFS 3.98104557639453
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {7A72ABE8-AD08-7944-8609-64F047A044BF}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/1 Birds - Sparrows.aiff"
+        FILE "Media Files/1 Birds - Sparrows.aiff"
+      >
+    >
+    <ITEM
+      POSITION 12
+      SNAPOFFS 0
+      LENGTH 3.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.518954 1 1 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {1B8BC56A-EE28-D541-9475-1A0856963EB6}
+      IID 118
+      NAME "1 Birds - Sparrows.aiff"
+      VOLPAN 0.26 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5EAC8C33-B60C-9340-B7B3-6FF784FFA883}
+      <SOURCE WAVE
+        FILE "Media Files/1 Birds - Sparrows.aiff"
       >
     >
     <ITEM
@@ -3730,42 +3727,20 @@
       LENGTH 0.48104557639453
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
       MUTE 0
       SEL 0
       IGUID {8F13E1B5-5CA7-3540-A726-59B3C1D5EC40}
       IID 118
       NAME "1 Birds - Sparrows.aiff"
-      VOLPAN 1 0 1 -1
+      VOLPAN 0.26 0 1 -1
       SOFFS 3.5
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {5A8D47A1-301B-C541-9441-D0AE6F82409B}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/1 Birds - Sparrows.aiff"
-      >
-    >
-    <ITEM
-      POSITION 14
-      SNAPOFFS 0
-      LENGTH 171.33333333333334
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {C8AE439A-75C7-9941-A6CD-A0DFC90E65C1}
-      IID 118
-      NAME "1 Birds - Sparrows.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 14
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {A76A366C-8CFE-E141-A728-4EA2513774DD}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/1 Birds - Sparrows.aiff"
+        FILE "Media Files/1 Birds - Sparrows.aiff"
       >
     >
   >
@@ -3818,35 +3793,13 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
-      SNAPOFFS 0
-      LENGTH 3.5
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {51F8E82D-E9BA-5D40-81CC-AA46BB0AE384}
-      IID 125
-      NAME "2 Canary Sings.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {C8C6D112-E839-1948-9ED9-72C69769BE74}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/2 Canary Sings.aiff"
-      >
-    >
-    <ITEM
       POSITION 3.5
       SNAPOFFS 0
       LENGTH 10.01895442360547
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1.1 0 1.518954 1 1 0
       MUTE 0
       SEL 0
       IGUID {33FA2E62-42B3-0544-B213-59C129477EC2}
@@ -3858,7 +3811,29 @@
       CHANMODE 0
       GUID {D5648A97-DE65-8649-A973-7322CAF9B070}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/2 Canary Sings.aiff"
+        FILE "Media Files/2 Canary Sings.aiff"
+      >
+    >
+    <ITEM
+      POSITION 12
+      SNAPOFFS 0
+      LENGTH 3.5
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1.1 0.01 1.518954 1 1 0
+      FADEOUT 1 0 0 1 0 0
+      MUTE 0
+      SEL 0
+      IGUID {51F8E82D-E9BA-5D40-81CC-AA46BB0AE384}
+      IID 125
+      NAME "2 Canary Sings.aiff"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C8C6D112-E839-1948-9ED9-72C69769BE74}
+      <SOURCE WAVE
+        FILE "Media Files/2 Canary Sings.aiff"
       >
     >
     <ITEM
@@ -3867,8 +3842,8 @@
       LENGTH 0.48104557639453
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0.000343 0 1 0 0
+      FADEOUT 1 0 0 1 0 0
       MUTE 0
       SEL 0
       IGUID {BDFB2FCB-14A4-B94C-995B-E22A132E2397}
@@ -3880,29 +3855,7 @@
       CHANMODE 0
       GUID {4BFB330F-A242-BF4B-AA7B-198391184D41}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/2 Canary Sings.aiff"
-      >
-    >
-    <ITEM
-      POSITION 14
-      SNAPOFFS 0
-      LENGTH 2.2
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {5EB8A338-A62F-E942-BD8B-649164B10D83}
-      IID 125
-      NAME "2 Canary Sings.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 14
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {9AE4AA35-A742-EB40-ABA1-3783522E976D}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/2 Canary Sings.aiff"
+        FILE "Media Files/2 Canary Sings.aiff"
       >
     >
   >
@@ -3937,7 +3890,7 @@
       BYPASS 0 0 0
       <VST "VST: ReaFir (FFT EQ+Dynamics Processor) (Cockos)" reafir.vst.dylib 0 "" 1919247986
         cmZlcu5e7f4CAAAAAQAAAAAAAAACAAAAAAAAAAIAAAABAAAAAAAAAAIAAAAAAAAAUAAAAAEAAAAAABAA
-        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAACarqpDO7k8wa14PkWAVpnAAAAAAAAAAACtVQM8AACAP7OiBDgAAAA+AAAAAAAAAAA=
+        nBIAAAAAtMIAAMBBABAAAAAAgD8AAAAAAgAAAAIAAACarqpDO7k8wa14PkWAVpnAAAAAAAAAAACtVQM8a8BMQLOiBDgAAAA+AAAAAAAAAAA=
         AAAQAAAA
       >
       FLOATPOS 0 0 0 0
@@ -3945,35 +3898,13 @@
       WAK 0
     >
     <ITEM
-      POSITION 0
-      SNAPOFFS 0
-      LENGTH 3.5
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {1E31779E-509F-C849-AD08-920CAA7B8E85}
-      IID 121
-      NAME "21 Insects - Crickets And Flies.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {C4A5CD07-601C-0347-A10C-02AA08B0780E}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/21 Insects - Crickets And Flies.aiff"
-      >
-    >
-    <ITEM
       POSITION 3.5
       SNAPOFFS 0
-      LENGTH 10.01895442360547
+      LENGTH 9.5
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1 0 0 1 0 0
+      FADEOUT 1.1 0.01 1 1 1 0
       MUTE 0
       SEL 0
       IGUID {9DFC2611-AC8D-294C-8255-E747DB84B590}
@@ -3985,51 +3916,29 @@
       CHANMODE 0
       GUID {A59C5F2C-4072-CA4F-A405-FD4294B6C5B5}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/21 Insects - Crickets And Flies.aiff"
+        FILE "Media Files/21 Insects - Crickets And Flies.aiff"
       >
     >
     <ITEM
-      POSITION 13.51895442360547
+      POSITION 12
       SNAPOFFS 0
-      LENGTH 0.48104557639453
+      LENGTH 3.5
       LOOP 1
       ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
+      FADEIN 1.1 0.01 1 1 1 0
+      FADEOUT 1 0 0 1 0 0
       MUTE 0
       SEL 0
-      IGUID {F0C66749-14A2-C742-83B9-20987C078D09}
+      IGUID {1E31779E-509F-C849-AD08-920CAA7B8E85}
       IID 121
       NAME "21 Insects - Crickets And Flies.aiff"
       VOLPAN 1 0 1 -1
-      SOFFS 3.5
+      SOFFS 0
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
-      GUID {A87CEF96-214D-934A-953E-1BDCB52195FB}
+      GUID {C4A5CD07-601C-0347-A10C-02AA08B0780E}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/21 Insects - Crickets And Flies.aiff"
-      >
-    >
-    <ITEM
-      POSITION 14
-      SNAPOFFS 0
-      LENGTH 171.42666666666668
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {8A5322CA-EBBF-A041-8CAE-086B221BB82F}
-      IID 121
-      NAME "21 Insects - Crickets And Flies.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 14
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {57BABC45-2732-4C4A-85AA-2E2FB7910141}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/21 Insects - Crickets And Flies.aiff"
+        FILE "Media Files/21 Insects - Crickets And Flies.aiff"
       >
     >
   >
@@ -4039,7 +3948,7 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
+    MUTESOLO 0 2 0
     IPHASE 0
     ISBUS 0 0
     BUSCOMP 0 0
@@ -4075,51 +3984,7 @@
       CHANMODE 0
       GUID {1844F410-CE8A-EF48-8D80-7E3F70171884}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/70 Sheep Baa.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 1.48562109027214
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {4504EC24-631B-0A44-8CE0-84CE0B21824D}
-      IID 133
-      NAME "70 Sheep Baa.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 3.98104557639453
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {BBED3CB5-E4A1-D94B-A413-AD14EF162E2B}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/70 Sheep Baa.aiff"
-      >
-    >
-    <ITEM
-      POSITION 13.51895442360547
-      SNAPOFFS 0
-      LENGTH 0.48104557639453
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {88ADA501-5992-2B49-8A02-69522E6C7BC4}
-      IID 133
-      NAME "70 Sheep Baa.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 3.5
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {7F0EB749-14FB-6146-BBBA-A8E00B87EE4C}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/70 Sheep Baa.aiff"
+        FILE "Media Files/70 Sheep Baa.aiff"
       >
     >
   >
@@ -4129,13 +3994,13 @@
     BEAT -1
     AUTOMODE 0
     VOLPAN 1 0 -1 -1 1
-    MUTESOLO 0 0 0
+    MUTESOLO 0 2 0
     IPHASE 0
     ISBUS 0 0
     BUSCOMP 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0
     FREEMODE 0
-    SEL 0
+    SEL 1
     REC 0 0 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0
@@ -4149,89 +4014,23 @@
     <ITEM
       POSITION 0
       SNAPOFFS 0
-      LENGTH 3.5
+      LENGTH 3.83333333333333
       LOOP 1
       ALLTAKES 0
       FADEIN 1 0.01 0 1 0 0
       FADEOUT 1 0.01 0 1 0 0
       MUTE 0
-      SEL 0
-      IGUID {17FF93BA-D648-3149-AB1E-6AE8C3BAE29D}
-      IID 134
-      NAME "71 Multiple Sheep Baa.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 0
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {7D899418-F9B2-354B-8EC3-1867145B4573}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/71 Multiple Sheep Baa.aiff"
-      >
-    >
-    <ITEM
-      POSITION 3.5
-      SNAPOFFS 0
-      LENGTH 10.01895442360547
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {DD255D4D-D26B-BC45-8702-E722583ACD3C}
-      IID 134
-      NAME "71 Multiple Sheep Baa.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 3.98104557639453
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {47844368-BD03-CD41-9B8A-E67BB8404E6F}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/71 Multiple Sheep Baa.aiff"
-      >
-    >
-    <ITEM
-      POSITION 13.51895442360547
-      SNAPOFFS 0
-      LENGTH 0.48104557639453
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
-      IGUID {7E319BEF-0E42-164A-B53E-DE5C4A3B74B0}
-      IID 134
-      NAME "71 Multiple Sheep Baa.aiff"
-      VOLPAN 1 0 1 -1
-      SOFFS 3.5
-      PLAYRATE 1 1 0 -1 0 0.0025
-      CHANMODE 0
-      GUID {5EB7FC95-9DCE-7D4D-A782-208AC82F0E7F}
-      <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/71 Multiple Sheep Baa.aiff"
-      >
-    >
-    <ITEM
-      POSITION 14
-      SNAPOFFS 0
-      LENGTH 12.33333333333333
-      LOOP 1
-      ALLTAKES 0
-      FADEIN 1 0.01 0 1 0 0
-      FADEOUT 1 0.01 0 1 0 0
-      MUTE 0
-      SEL 0
+      SEL 1
       IGUID {9E94EDCF-1560-2D40-8193-DF634E3E3E31}
       IID 134
       NAME "71 Multiple Sheep Baa.aiff"
       VOLPAN 1 0 1 -1
-      SOFFS 14
+      SOFFS 22.5
       PLAYRATE 1 1 0 -1 0 0.0025
       CHANMODE 0
       GUID {53C477FE-E3DA-774F-BC6F-905E46BEF003}
       <SOURCE WAVE
-        FILE "/Users/itz/Documents/Adventure/Adventure-Sounddesign/Media Files/71 Multiple Sheep Baa.aiff"
+        FILE "Media Files/71 Multiple Sheep Baa.aiff"
       >
     >
   >
