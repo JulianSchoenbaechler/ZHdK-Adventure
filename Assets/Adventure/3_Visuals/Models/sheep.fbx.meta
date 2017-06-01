@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: b4e9939358d931e40b4ed396e89ebefc
+timeCreated: 1496333455
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Ellbogen
+    100002: Ellbogen_2
+    100004: Ende
+    100006: Fussgelenk
+    100008: Fussgelenk_2
+    100010: Hintern
+    100012: "H\xFCfte"
+    100014: Joint_1
+    100016: Joint_2
+    100018: Joint_2_2
+    100020: Joint_3
+    100022: Joint_4
+    100024: Joint_5
+    100026: Joint_5_2
+    100028: Joint_6
+    100030: Joint_6_2
+    100032: Kopf
+    100034: L_Hinterhufgelenk_Goal_Controller
+    100036: L_Oberarm
+    100038: L_Oberschenkel
+    100040: L_Ohr
+    100042: L_Vorderhufgelenk_Goal_Controller
+    100044: Neck
+    100046: Ohrmitte
+    100048: R_Hinterhufgelenk_Goal_Controller
+    100050: R_Oberarm
+    100052: R_Oberschenkel
+    100054: R_Ohr
+    100056: R_Vorderhufgelenk_Goal_Controller
+    100058: SCHAAF
+    100060: Schulter
+    100062: Schwanz
+    100064: //RootNode
+    100066: Vorderhufe
+    100068: Vorderhufe_2
+    100070: Vorderhufgelenk
+    100072: Vorderhufgelenk_2
+    400000: Ellbogen
+    400002: Ellbogen_2
+    400004: Ende
+    400006: Fussgelenk
+    400008: Fussgelenk_2
+    400010: Hintern
+    400012: "H\xFCfte"
+    400014: Joint_1
+    400016: Joint_2
+    400018: Joint_2_2
+    400020: Joint_3
+    400022: Joint_4
+    400024: Joint_5
+    400026: Joint_5_2
+    400028: Joint_6
+    400030: Joint_6_2
+    400032: Kopf
+    400034: L_Hinterhufgelenk_Goal_Controller
+    400036: L_Oberarm
+    400038: L_Oberschenkel
+    400040: L_Ohr
+    400042: L_Vorderhufgelenk_Goal_Controller
+    400044: Neck
+    400046: Ohrmitte
+    400048: R_Hinterhufgelenk_Goal_Controller
+    400050: R_Oberarm
+    400052: R_Oberschenkel
+    400054: R_Ohr
+    400056: R_Vorderhufgelenk_Goal_Controller
+    400058: SCHAAF
+    400060: Schulter
+    400062: Schwanz
+    400064: //RootNode
+    400066: Vorderhufe
+    400068: Vorderhufe_2
+    400070: Vorderhufgelenk
+    400072: Vorderhufgelenk_2
+    4300000: SCHAAF
+    7400000: CINEMA_4D_Main
+    9500000: //RootNode
+    13700000: SCHAAF
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

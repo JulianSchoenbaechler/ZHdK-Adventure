@@ -78,7 +78,7 @@ public class Level2State : IGameState
 		LevelManager.GetReference(_levelIndex, 4).GetComponent<Text>().text = _uiCount[_uiCountIndex];
 
 		// Destroy farmer when last sheep returned
-		if(_uiCountIndex >= 2)
+		if(_uiCountIndex > 2)
 		{
 			GameObject.FindWithTag("Player").GetComponent<FarmerNavigator>().enabled = false;
 			GameObject.Destroy(LevelManager.GetReference(_levelIndex, 0));							// Destroy farmer

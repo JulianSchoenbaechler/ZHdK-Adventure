@@ -869,6 +869,7 @@ GameObject:
   - component: {fileID: 136630343953213234}
   - component: {fileID: 82287831323315770}
   - component: {fileID: 114121563417263284}
+  - component: {fileID: 114779791031825226}
   m_Layer: 0
   m_Name: FarmerShotgun
   m_TagString: Farmer
@@ -2394,7 +2395,8 @@ AudioSource:
   m_GameObject: {fileID: 1649667838443252}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243633337444002996, guid: d48617255e97584478aa39d19f5f92a3,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2406,9 +2408,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 200
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -2422,6 +2424,12 @@ AudioSource:
       outSlope: 0
       tangentMode: 0
     - serializedVersion: 2
+      time: 0.37512147
+      value: 0.40790543
+      inSlope: -1.4999509
+      outSlope: -1.4999509
+      tangentMode: 0
+    - serializedVersion: 2
       time: 1
       value: 0
       inSlope: 0
@@ -2429,19 +2437,25 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   panLevelCustomCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.9723405
       inSlope: 0
       outSlope: 0
       tangentMode: 0
+    - serializedVersion: 2
+      time: 0.069841295
+      value: 0.22340424
+      inSlope: -0.02207718
+      outSlope: -0.02207718
+      tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2453,7 +2467,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -2465,7 +2479,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!95 &95102693944219310
 Animator:
   serializedVersion: 3
@@ -2541,6 +2555,9 @@ MonoBehaviour:
   _visualHitAnimator: {fileID: 95276822264472442}
   _loadNoise: {fileID: 0}
   _shotNoise: {fileID: 0}
+  _searchingAudio: {fileID: 8300000, guid: 9a08ed289d9ac2d468f60fb5be81d7f4, type: 3}
+  _loadingAudio: {fileID: 8300000, guid: ff48b9d95f0e2d944b194f9f07459a0f, type: 3}
+  _shotAudio: {fileID: 8300000, guid: 3af88c873a8a03d4ab32fa10be228c29, type: 3}
 --- !u!114 &114594011500245142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2566,6 +2583,23 @@ MonoBehaviour:
   _panelLifetime: 2.5
   _mutualLifetime: 1
   panelType: 2
+--- !u!114 &114779791031825226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649667838443252}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48d01d6c811d2ad4aa76c16c0bb72133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _camera: {fileID: 0}
+  _image: {fileID: 2800000, guid: 3c816f647dfd0734eb95c1cb2cd8f6c5, type: 3}
+  _scale: 0.5
+  _angle: 0
+  _target: {fileID: 0}
+  _pixelOffset: {x: 20, y: 300}
 --- !u!136 &136630343953213234
 CapsuleCollider:
   m_ObjectHideFlags: 1
