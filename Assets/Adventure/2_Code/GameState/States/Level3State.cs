@@ -18,11 +18,13 @@ public class Level3State : IGameState
 	{
 		SceneManager.sceneLoaded -= SceneLoadedHandler;
 		SceneManager.sceneLoaded += SceneLoadedHandler;
+
+		LevelManager.GetReference(_levelIndex, 1).SetActive(true);
 	}
 
 	public void Update()
 	{
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
 		if(Input.GetKeyDown(KeyCode.Alpha1))
 		{
 			GameState.active = "Level1State";
@@ -33,7 +35,7 @@ public class Level3State : IGameState
 			GameState.active = "Level2State";
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
-#endif
+//#endif
 	}
 
 	public void LateUpdate()
@@ -47,6 +49,7 @@ public class Level3State : IGameState
 	public void ResetState()
 	{
 		SceneManager.sceneLoaded -= SceneLoadedHandler;
+		LevelManager.GetReference(_levelIndex, 1).SetActive(false);
 	}
 
 
@@ -60,6 +63,7 @@ public class Level3State : IGameState
 		LevelManager.GetReference(_levelIndex - 1, 2).GetComponent<Animator>().SetTrigger("Open");		// Open barn door 2
 		LevelManager.GetReference(_levelIndex - 1, 3).GetComponent<Animator>().enabled = true;			// Close fence
 		player.transform.position = LevelManager.GetPlayerPosition(_levelIndex);						// Move player
+		player.GetComponent<SheepController>().InBarnFootsteps = false;
 
 		LevelManager.GetReference(_levelIndex, 0).SetActive(false);										// Close fence
 	}

@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Adventure.UI;
+using Adventure.Audio;
 using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Character
 {
-	[RequireComponent(typeof(CapsuleCollider), typeof(Rigidbody))]
+	[RequireComponent(typeof(CapsuleCollider), typeof(Rigidbody), typeof(AudioSource))]
 	public class SheepController : MonoBehaviour
 	{
 		public enum CharacterTransform
@@ -22,12 +23,19 @@ namespace Adventure.Character
 		[SerializeField] protected float _walkSpeed = 1f;
 		[SerializeField] protected float _turnSpeed = 1f;
 		[SerializeField] protected float _jumpForce = 1f;
+		[SerializeField] protected AudioClip[] _footstepsBarn;
+		[SerializeField] protected AudioClip[] _footstepsOutside;
+		[SerializeField] protected bool _inBarn = true;
+		[SerializeField] protected float _footstepDelay = 0.2f;
 		[SerializeField] protected GameObject _deadPanel;
+
 
 		private float _jumpCooldown = 0.1f;
 		private float _time = 0f;
 		private Vector3 _currentVelocity;
 		private Vector3 _velocityDir;
+		private float _footstepTime = 0f;
+		private AudioSource _audioSource;
 
 		private bool _dead = false;
 		private bool _fadeout = false;
@@ -44,6 +52,11 @@ namespace Adventure.Character
 				_dead = value;
 				StartCoroutine(Die());
 			}
+		}
+		public bool InBarnFootsteps
+		{
+			get { return _inBarn; }
+			set { _inBarn = value; }
 		}
 
 		protected Rigidbody _rigidbody;
@@ -62,6 +75,8 @@ namespace Adventure.Character
 			_deadPanelImage = _deadPanel.GetComponent<Image>();
 			_deadPanelImage.color = _deadPanelColor;
 			_deadPanel.SetActive(false);
+
+			_audioSource = GetComponent<AudioSource>();
 		}
 
 		void Update()
@@ -102,7 +117,6 @@ namespace Adventure.Character
 					_velocityDir = -verticalAxis * _walkSpeed * transform.up;
 					transform.Rotate(Vector3.forward * horizontalAxis * _turnSpeed * Time.deltaTime * 100f);
 					break;
-					
 			}
 
 			if(IsGrounded)
@@ -116,6 +130,21 @@ namespace Adventure.Character
 
 				_currentVelocity.x = _velocityDir.x;
 				_currentVelocity.z = _velocityDir.z;
+			}
+
+			// Footstep play
+			if((_footstepTime >= _footstepDelay) && (verticalAxis != 0f))
+			{
+				if(_inBarn)
+					_audioSource.PlayRandomizedShot(0.1f, _footstepsBarn);
+				else
+					_audioSource.PlayRandomizedShot(0.1f, _footstepsOutside);
+
+				_footstepTime = 0f;
+			}
+			else
+			{
+				_footstepTime += Time.deltaTime;
 			}
 
 			_rigidbody.velocity = _currentVelocity;

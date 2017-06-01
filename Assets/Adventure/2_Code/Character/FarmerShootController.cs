@@ -23,6 +23,9 @@ namespace Adventure.Character
 		[SerializeField] protected Animator _visualHitAnimator;
 		[SerializeField] protected UISpray _loadNoise;
 		[SerializeField] protected UISpray _shotNoise;
+		[SerializeField] protected AudioClip _searchingAudio;
+		[SerializeField] protected AudioClip _loadingAudio;
+		[SerializeField] protected AudioClip _shotAudio;
 
 		protected Animator _animator;
 		protected SnapPanel _snapPanel;
@@ -31,6 +34,7 @@ namespace Adventure.Character
 		private Quaternion _rotateToTarget;
 		private Vector3 _tempRotationMask;
 		private RaycastHit _shotHit;
+		private bool _audioPlayed = false;
 
 
 		void Start()
@@ -65,7 +69,11 @@ namespace Adventure.Character
 			if(_animator.GetBool("Searching"))
 			{
 				// Searching...
-
+				if(!_audioPlayed)
+				{
+					GetComponent<AudioSource>().PlayOneShot(_searchingAudio);
+					_audioPlayed = true;
+				}
 
 				if(_animator.GetBool("Set"))
 				{
@@ -119,6 +127,7 @@ namespace Adventure.Character
 
 		public void OnReloadGun()
 		{
+			GetComponent<AudioSource>().PlayOneShot(_loadingAudio);
 			_loadNoise.Play();
 			//print("reload");
 		}
@@ -127,6 +136,7 @@ namespace Adventure.Character
 		{
 			_visualShotAnimator.SetTrigger("VisualShot");
 			_shotNoise.Play();
+			GetComponent<AudioSource>().PlayOneShot(_shotAudio);
 
 			if(Physics.Raycast(
 				_bulletSpawnPosition.position,
@@ -154,6 +164,8 @@ namespace Adventure.Character
 
 			if(_active == true)
 				_snapPanel.Invoke("StartSnapping", _pauseInterval + 1.3f);
+
+			_audioPlayed = false;
 		}
 
 

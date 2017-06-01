@@ -867,6 +867,7 @@ GameObject:
   - component: {fileID: 95583420575336108}
   - component: {fileID: 54373054955756970}
   - component: {fileID: 136630343953213234}
+  - component: {fileID: 82287831323315770}
   - component: {fileID: 114121563417263284}
   m_Layer: 0
   m_Name: FarmerShotgun
@@ -874,7 +875,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1658559982144692
 GameObject:
   m_ObjectHideFlags: 1
@@ -1569,7 +1570,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1649667838443252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: 0.495, z: 0}
+  m_LocalPosition: {x: 6.66, y: 1.724, z: -0.631}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4362195810844190}
@@ -2385,6 +2386,86 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!82 &82287831323315770
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1649667838443252}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!95 &95102693944219310
 Animator:
   serializedVersion: 3
@@ -2449,7 +2530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _active: 1
   _target: {fileID: 0}
-  _maxDistance: 30
+  _maxDistance: 50
   _yOffset: 0.63
   _pauseInterval: 15
   _searchTime: 5
@@ -2458,6 +2539,7 @@ MonoBehaviour:
   _bulletSpawnPosition: {fileID: 4474035484765534}
   _visualShotAnimator: {fileID: 95102693944219310}
   _visualHitAnimator: {fileID: 95276822264472442}
+  _loadNoise: {fileID: 0}
   _shotNoise: {fileID: 0}
 --- !u!114 &114594011500245142
 MonoBehaviour:
@@ -2481,7 +2563,7 @@ MonoBehaviour:
   _focus: {fileID: 4815971839694170}
   _chooseRandom: 0
   _snapDelay: 4
-  _panelLifetime: 4
+  _panelLifetime: 2.5
   _mutualLifetime: 1
   panelType: 2
 --- !u!136 &136630343953213234
@@ -2496,7 +2578,7 @@ CapsuleCollider:
   m_Radius: 0.45
   m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0.9, z: 0}
+  m_Center: {x: 0, y: 0.92, z: 0}
 --- !u!137 &137485618715885638
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

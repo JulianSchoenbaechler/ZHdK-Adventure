@@ -30,6 +30,9 @@ namespace Adventure.Character
 		[SerializeField] protected SheepStair _sheepStair;
 		[SerializeField] protected int _sheepStairIndex = 1;
 		[SerializeField] protected float _hintDistance = 6f;
+		[SerializeField] protected float _keypressDistance = 1f;
+		[SerializeField] protected Texture _hintImage;
+		[SerializeField] protected Texture _keypressImage;
 
 		private bool _buildStair = false;
 		private bool _finishStair = false;
@@ -139,6 +142,15 @@ namespace Adventure.Character
 				if(_hint.enabled)
 					_hint.enabled = false;
 
+			}
+
+			if(Vector3.Distance(transform.position, _target.position) < _keypressDistance)
+			{
+				GetComponent<WorldspaceImage>().Image = _keypressImage;
+			}
+			else
+			{
+				GetComponent<WorldspaceImage>().Image = _hintImage;
 			}
 
 			if(Vector3.Distance(transform.position, _target.position) < _minDistance)

@@ -605,6 +605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4237968872715296}
   - component: {fileID: 95771083636007902}
+  - component: {fileID: 82658002538446986}
   - component: {fileID: 114346766565282116}
   m_Layer: 0
   m_Name: FarmerPitchfork
@@ -2073,6 +2074,92 @@ Transform:
   m_Father: {fileID: 4406492267176310}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &82658002538446986
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1440560992425318}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 40
+  Pan2D: 0
+  rolloffMode: 2
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 0.23251455
+      value: 0.42239514
+      inSlope: -1.4936924
+      outSlope: -1.4936924
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95771083636007902
 Animator:
   serializedVersion: 3
@@ -2104,6 +2191,11 @@ MonoBehaviour:
   _animationSpeed: 2
   _speed: 4
   _destroyTime: 10
+  _footsteps:
+  - {fileID: 8300000, guid: 0e855d633a67d204b87975119f56d077, type: 3}
+  - {fileID: 8300000, guid: 77cff7e655d4c194bb2c076782c189f3, type: 3}
+  - {fileID: 8300000, guid: 51a60ad27b9219443ac6dea1a1dc8c74, type: 3}
+  _footstepsDelay: 0.25
 --- !u!137 &137353317100048370
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

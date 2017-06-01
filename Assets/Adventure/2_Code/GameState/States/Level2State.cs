@@ -33,11 +33,12 @@ public class Level2State : IGameState
 		_player.GetComponent<FarmerNavigator>().enabled = true;
 
 		LevelManager.GetReference(_levelIndex, 4).SetActive(true);
+		LevelManager.GetReference(_levelIndex, 5).SetActive(true);
 	}
 
 	public void Update()
 	{
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
 		if(Input.GetKeyDown(KeyCode.Alpha1))
 		{
 			GameState.active = "Level1State";
@@ -48,7 +49,7 @@ public class Level2State : IGameState
 			GameState.active = "Level3State";
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
-#endif
+//#endif
 	}
 
 	public void LateUpdate()
@@ -63,6 +64,7 @@ public class Level2State : IGameState
 	{
 		SceneManager.sceneLoaded -= SceneLoadedHandler;
 		LevelManager.GetReference(_levelIndex, 4).SetActive(false);
+		LevelManager.GetReference(_levelIndex, 5).SetActive(false);
 
 		_player = GameObject.FindWithTag("Player");
 		_player.GetComponent<FarmerNavigator>().enabled = false;
@@ -93,5 +95,6 @@ public class Level2State : IGameState
 		LevelManager.GetReference(_levelIndex, 3).GetComponent<Animator>().enabled = true;			// Close fence
 		_player.transform.position = LevelManager.GetPlayerPosition(_levelIndex);					// Move player
 		_player.GetComponent<FarmerNavigator>().enabled = true;
+		_player.GetComponent<SheepController>().InBarnFootsteps = false;
 	}
 }
