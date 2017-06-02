@@ -111,7 +111,7 @@ namespace Adventure.Character
 					break;
 
 				case CharacterTransform.yAxisUp:
-					_velocityDir = -verticalAxis * _walkSpeed * transform.forward;
+					_velocityDir = verticalAxis * _walkSpeed * transform.forward;
 					transform.Rotate(Vector3.up * horizontalAxis * _turnSpeed * Time.deltaTime * 100f);
 					break;
 
@@ -147,6 +147,18 @@ namespace Adventure.Character
 			else
 			{
 				_footstepTime += Time.deltaTime;
+			}
+
+			// Animator
+			if(verticalAxis != 0f)
+			{
+				if(!GetComponent<Animator>().GetBool("Walk"))
+					GetComponent<Animator>().SetBool("Walk", true);
+			}
+			else
+			{
+				if(GetComponent<Animator>().GetBool("Walk"))
+					GetComponent<Animator>().SetBool("Walk", false);
 			}
 
 			_rigidbody.velocity = _currentVelocity;
@@ -200,7 +212,7 @@ namespace Adventure.Character
 
 			// Restart level
 			Time.timeScale = 1f;
-			SceneManager.LoadScene(0);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 	}
 }

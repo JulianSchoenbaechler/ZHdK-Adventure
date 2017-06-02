@@ -39,6 +39,7 @@ namespace Adventure.Entity
 		public virtual IEnumerator StartCutscene(Transform player)
 		{
 			player.GetComponent<SheepController>().enabled = false;
+			player.GetComponent<Animator>().SetBool("Walk", false);
 			_cutsceneCamera.enabled = true;
 			CameraControl.active.GetComponent<AudioListener>().enabled = false;
 			_cutsceneCamera.GetComponent<AudioListener>().enabled = true;

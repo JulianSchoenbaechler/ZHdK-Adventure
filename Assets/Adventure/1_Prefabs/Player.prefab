@@ -295,7 +295,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243633337444002996, guid: d48617255e97584478aa39d19f5f92a3,
     type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
@@ -456,6 +456,8 @@ MonoBehaviour:
   _inBarn: 1
   _footstepDelay: 0.5
   _deadPanel: {fileID: 0}
+  _deadSheep: {fileID: 8300000, guid: 3d1b97c8405c5bb4fbe8197ed2040b57, type: 3}
+  _deadSound: {fileID: 8300000, guid: f7f28b7df5f313243886669eacf53550, type: 3}
 --- !u!114 &114961933764466390
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -484,7 +486,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4256db31cf6aa94184a7a081d714da8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _active: 1
   _clips:
   - {fileID: 8300000, guid: 2961e472f2aa4684abca727067561d03, type: 3}
   - {fileID: 8300000, guid: 8d6cba6eb9bc6cf4382ee901aa2d6a5a, type: 3}
