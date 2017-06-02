@@ -4,6 +4,7 @@ using UnityEngine;
 using JulianSchoenbaechler.SnapPanel;
 using Adventure.CameraHandling;
 using Adventure.UI;
+using Adventure.Audio;
 
 namespace Adventure.Character
 {
@@ -74,6 +75,7 @@ namespace Adventure.Character
 				if(!_audioPlayed)
 				{
 					GetComponent<AudioSource>().PlayOneShot(_searchingAudio);
+					GetComponentInChildren<RandomBark>().enabled = false;
 					_audioPlayed = true;
 				}
 
@@ -174,6 +176,7 @@ namespace Adventure.Character
 				_snapPanel.Invoke("StartSnapping", _pauseInterval + 1.3f);
 
 			_audioPlayed = false;
+			GetComponentInChildren<RandomBark>().enabled = true;
 		}
 
 

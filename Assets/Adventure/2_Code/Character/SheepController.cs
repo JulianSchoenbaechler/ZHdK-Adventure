@@ -28,6 +28,8 @@ namespace Adventure.Character
 		[SerializeField] protected bool _inBarn = true;
 		[SerializeField] protected float _footstepDelay = 0.2f;
 		[SerializeField] protected GameObject _deadPanel;
+		[SerializeField] protected AudioClip _deadSheep;
+		[SerializeField] protected AudioClip _deadSound;
 
 
 		private float _jumpCooldown = 0.1f;
@@ -186,6 +188,9 @@ namespace Adventure.Character
 		{
 			GetComponent<FarmerNavigator>().enabled = false;
 			GetComponentInChildren<RandomBark>().enabled = false;
+			GetComponentInChildren<RandomBark>().GetComponent<AudioSource>().PlayOneShot(_deadSheep);
+			GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().Stop();
+			GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().PlayOneShot(_deadSound);
 			Time.timeScale = 0.2f;
 			_deathCam.enabled = true;
 

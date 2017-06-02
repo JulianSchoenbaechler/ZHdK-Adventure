@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using Adventure.LevelManager;
 using Adventure.Character;
 using Adventure.UI;
+using Adventure.Audio;
 using JulianSchoenbaechler.GameState;
 
 [CustomGameState]
@@ -96,5 +97,6 @@ public class Level2State : IGameState
 		_player.transform.position = LevelManager.GetPlayerPosition(_levelIndex);					// Move player
 		_player.GetComponent<FarmerNavigator>().enabled = true;
 		_player.GetComponent<SheepController>().InBarnFootsteps = false;
+		GameObject.FindWithTag("AmbientSound").GetComponent<AmbientSound>().ChangeAmbient(_levelIndex);
 	}
 }

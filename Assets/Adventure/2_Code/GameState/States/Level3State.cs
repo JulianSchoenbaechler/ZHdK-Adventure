@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 using Adventure.LevelManager;
 using Adventure.Character;
 using Adventure.UI;
+using Adventure.Audio;
 using JulianSchoenbaechler.GameState;
 
 [CustomGameState]
@@ -19,7 +20,11 @@ public class Level3State : IGameState
 		SceneManager.sceneLoaded -= SceneLoadedHandler;
 		SceneManager.sceneLoaded += SceneLoadedHandler;
 
-		LevelManager.GetReference(_levelIndex, 1).SetActive(true);
+		LevelManager.GetReference(_levelIndex, 0).SetActive(false);										// Close fence
+		LevelManager.GetReference(_levelIndex, 1).SetActive(true);										// Exit indicator
+		LevelManager.GetReference(_levelIndex, 2).SetActive(false);										// SnapPanel disable
+
+		GameObject.FindWithTag("AmbientSound").GetComponent<AmbientSound>().ChangeAmbient(_levelIndex);
 	}
 
 	public void Update()
@@ -66,6 +71,9 @@ public class Level3State : IGameState
 		player.GetComponent<SheepController>().InBarnFootsteps = false;
 
 		LevelManager.GetReference(_levelIndex, 0).SetActive(false);										// Close fence
-		LevelManager.GetReference(_levelIndex, 1).SetActive(true);
+		LevelManager.GetReference(_levelIndex, 1).SetActive(true);										// Exit indicator
+		LevelManager.GetReference(_levelIndex, 2).SetActive(false);										// SnapPanel disable
+
+		GameObject.FindWithTag("AmbientSound").GetComponent<AmbientSound>().ChangeAmbient(_levelIndex);
 	}
 }

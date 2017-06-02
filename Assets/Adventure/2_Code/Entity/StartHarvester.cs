@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Adventure.Audio;
 
 namespace Adventure.Entity
 {
@@ -8,6 +9,7 @@ namespace Adventure.Entity
 	public class StartHarvester : MonoBehaviour
 	{
 		[SerializeField] protected GameObject _harvester;
+		[SerializeField] protected AudioClip _indianaSheep;
 
 		protected Camera _camera;
 
@@ -22,6 +24,8 @@ namespace Adventure.Entity
 			if(_camera.enabled && !_harvester.activeInHierarchy)
 			{
 				_harvester.SetActive(true);
+				GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().clip = _indianaSheep;
+				GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().Play();
 			}
 			/*else if(!_camera.enabled && _harvester.activeInHierarchy)
 			{

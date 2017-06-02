@@ -20,6 +20,7 @@ namespace Adventure.Entity
 		{
 			_initialPosition = transform.position;
 			GetComponent<Animator>().speed = _animationSpeed;
+			GetComponent<Animator>().SetBool("Walk", true);
 			Invoke("Reset", _destroyTime);
 		}
 

@@ -33,6 +33,7 @@ namespace Adventure.Character
 		[SerializeField] protected float _keypressDistance = 1f;
 		[SerializeField] protected Texture _hintImage;
 		[SerializeField] protected Texture _keypressImage;
+		[SerializeField] protected AudioClip _hintSound;
 
 		private bool _buildStair = false;
 		private bool _finishStair = false;
@@ -129,7 +130,10 @@ namespace Adventure.Character
 				if(!_active)
 				{
 					if(!_hint.enabled)
+					{
 						_hint.enabled = true;
+						GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().PlayOneShot(_hintSound);
+					}
 				}
 				else
 				{

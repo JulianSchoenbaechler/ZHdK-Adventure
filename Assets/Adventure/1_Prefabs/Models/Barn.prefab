@@ -1946,6 +1946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorClosed: {fileID: 0}
   _doorOpen: {fileID: 0}
+  _successfulSound: {fileID: 0}
 --- !u!114 &114759662994537638
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1959,6 +1960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _doorClosed: {fileID: 8300000, guid: 4c98d5a02d843064ea1f3035ccbee381, type: 3}
   _doorOpen: {fileID: 8300000, guid: 1ea5d05eb3062e5489e3bbde83b033e8, type: 3}
+  _successfulSound: {fileID: 8300000, guid: 7c8de90a05e5ada459e43e6fe3a52590, type: 3}
 --- !u!114 &114949847755313524
 MonoBehaviour:
   m_ObjectHideFlags: 1

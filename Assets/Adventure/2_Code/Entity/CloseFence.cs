@@ -25,6 +25,7 @@ namespace Adventure.Entity
 			{
 				_animator.enabled = true;
 				_farmerShoot.SetActive(true);
+				GetComponent<AudioSource>().PlayDelayed(0.8f);
 				GameState.active = "Level2State";
 			}
 		}

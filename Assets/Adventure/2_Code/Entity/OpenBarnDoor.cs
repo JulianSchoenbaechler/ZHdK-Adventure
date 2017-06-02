@@ -11,6 +11,7 @@ namespace Adventure.Entity
 	{
 		[SerializeField] protected AudioClip _doorClosed;
 		[SerializeField] protected AudioClip _doorOpen;
+		[SerializeField] protected AudioClip _successfulSound;
 
 		protected Animator _animator;
 
@@ -31,6 +32,7 @@ namespace Adventure.Entity
 				if(_doorOpen != null)
 				{
 					GetComponent<AudioSource>().PlayOneShot(_doorOpen);
+					GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().PlayOneShot(_successfulSound);
 				}
 
 				if(GetComponent<WorldspaceImage>() != null)
