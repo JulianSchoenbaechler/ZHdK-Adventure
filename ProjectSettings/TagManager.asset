@@ -13,6 +13,7 @@ TagManager:
   - LevelManager
   - Harvester
   - StopHarvester
+  - AmbientSound
   layers:
   - Default
   - TransparentFX

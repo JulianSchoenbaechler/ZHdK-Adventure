@@ -1,84 +1,88 @@
 fileFormatVersion: 2
-guid: b4e9939358d931e40b4ed396e89ebefc
-timeCreated: 1496333455
+guid: 88a5d72118f68ea4eaba8309f556b086
+timeCreated: 1496355958
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: Ellbogen
-    100002: Ellbogen_2
-    100004: Ende
-    100006: Fussgelenk
-    100008: Fussgelenk_2
-    100010: Hintern
-    100012: "H\xFCfte"
-    100014: Joint_1
-    100016: Joint_2
-    100018: Joint_2_2
-    100020: Joint_3
-    100022: Joint_4
-    100024: Joint_5
-    100026: Joint_5_2
-    100028: Joint_6
-    100030: Joint_6_2
-    100032: Kopf
-    100034: L_Hinterhufgelenk_Goal_Controller
-    100036: L_Oberarm
-    100038: L_Oberschenkel
-    100040: L_Ohr
-    100042: L_Vorderhufgelenk_Goal_Controller
-    100044: Neck
-    100046: Ohrmitte
-    100048: R_Hinterhufgelenk_Goal_Controller
-    100050: R_Oberarm
-    100052: R_Oberschenkel
-    100054: R_Ohr
-    100056: R_Vorderhufgelenk_Goal_Controller
-    100058: SCHAAF
-    100060: Schulter
-    100062: Schwanz
+    100000: CINEMA_4D_Editor
+    100002: Ellbogen
+    100004: Ellbogen_2
+    100006: Ende
+    100008: Fussgelenk
+    100010: Fussgelenk_2
+    100012: Hintern
+    100014: "H\xFCfte"
+    100016: Joint_1
+    100018: Joint_2
+    100020: Joint_2_2
+    100022: Joint_3
+    100024: Joint_4
+    100026: Joint_5
+    100028: Joint_5_2
+    100030: Joint_6
+    100032: Joint_6_2
+    100034: Kopf
+    100036: L_Hinterhufgelenk_Goal_Controller
+    100038: L_Oberarm
+    100040: L_Oberschenkel
+    100042: L_Ohr
+    100044: L_Vorderhufgelenk_Goal_Controller
+    100046: Neck
+    100048: Ohrmitte
+    100050: R_Hinterhufgelenk_Goal_Controller
+    100052: R_Oberarm
+    100054: R_Oberschenkel
+    100056: R_Ohr
+    100058: R_Vorderhufgelenk_Goal_Controller
+    100060: SCHAAF
+    100062: SCHAAF_ready
     100064: //RootNode
-    100066: Vorderhufe
-    100068: Vorderhufe_2
-    100070: Vorderhufgelenk
-    100072: Vorderhufgelenk_2
-    400000: Ellbogen
-    400002: Ellbogen_2
-    400004: Ende
-    400006: Fussgelenk
-    400008: Fussgelenk_2
-    400010: Hintern
-    400012: "H\xFCfte"
-    400014: Joint_1
-    400016: Joint_2
-    400018: Joint_2_2
-    400020: Joint_3
-    400022: Joint_4
-    400024: Joint_5
-    400026: Joint_5_2
-    400028: Joint_6
-    400030: Joint_6_2
-    400032: Kopf
-    400034: L_Hinterhufgelenk_Goal_Controller
-    400036: L_Oberarm
-    400038: L_Oberschenkel
-    400040: L_Ohr
-    400042: L_Vorderhufgelenk_Goal_Controller
-    400044: Neck
-    400046: Ohrmitte
-    400048: R_Hinterhufgelenk_Goal_Controller
-    400050: R_Oberarm
-    400052: R_Oberschenkel
-    400054: R_Ohr
-    400056: R_Vorderhufgelenk_Goal_Controller
-    400058: SCHAAF
-    400060: Schulter
-    400062: Schwanz
+    100066: Schulter
+    100068: Schwanz
+    100070: Vorderhufe
+    100072: Vorderhufe_2
+    100074: Vorderhufgelenk
+    100076: Vorderhufgelenk_2
+    400000: CINEMA_4D_Editor
+    400002: Ellbogen
+    400004: Ellbogen_2
+    400006: Ende
+    400008: Fussgelenk
+    400010: Fussgelenk_2
+    400012: Hintern
+    400014: "H\xFCfte"
+    400016: Joint_1
+    400018: Joint_2
+    400020: Joint_2_2
+    400022: Joint_3
+    400024: Joint_4
+    400026: Joint_5
+    400028: Joint_5_2
+    400030: Joint_6
+    400032: Joint_6_2
+    400034: Kopf
+    400036: L_Hinterhufgelenk_Goal_Controller
+    400038: L_Oberarm
+    400040: L_Oberschenkel
+    400042: L_Ohr
+    400044: L_Vorderhufgelenk_Goal_Controller
+    400046: Neck
+    400048: Ohrmitte
+    400050: R_Hinterhufgelenk_Goal_Controller
+    400052: R_Oberarm
+    400054: R_Oberschenkel
+    400056: R_Ohr
+    400058: R_Vorderhufgelenk_Goal_Controller
+    400060: SCHAAF
+    400062: SCHAAF_ready
     400064: //RootNode
-    400066: Vorderhufe
-    400068: Vorderhufe_2
-    400070: Vorderhufgelenk
-    400072: Vorderhufgelenk_2
+    400066: Schulter
+    400068: Schwanz
+    400070: Vorderhufe
+    400072: Vorderhufe_2
+    400074: Vorderhufgelenk
+    400076: Vorderhufgelenk_2
     4300000: SCHAAF
     7400000: CINEMA_4D_Main
     9500000: //RootNode
@@ -107,8 +111,8 @@ ModelImporter:
     - serializedVersion: 16
       name: CINEMA_4D_Main
       takeName: CINEMA_4D_Main
-      firstFrame: 5
-      lastFrame: 90
+      firstFrame: 10
+      lastFrame: 88
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -131,77 +135,81 @@ ModelImporter:
       transformMask:
       - path: 
         weight: 1
-      - path: SCHAAF
+      - path: CINEMA_4D_Editor
         weight: 1
-      - path: SCHAAF/L_Hinterhufgelenk_Goal_Controller
+      - path: SCHAAF_ready
         weight: 1
-      - path: SCHAAF/L_Vorderhufgelenk_Goal_Controller
+      - path: SCHAAF_ready/SCHAAF
         weight: 1
-      - path: SCHAAF/Neck
+      - path: SCHAAF_ready/SCHAAF/L_Hinterhufgelenk_Goal_Controller
         weight: 1
-      - path: SCHAAF/Neck/Kopf
+      - path: SCHAAF_ready/SCHAAF/L_Vorderhufgelenk_Goal_Controller
         weight: 1
-      - path: SCHAAF/Neck/Kopf/L_Ohr
+      - path: SCHAAF_ready/SCHAAF/Neck
         weight: 1
-      - path: SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf
         weight: 1
-      - path: SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte/Joint_2
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/L_Ohr
         weight: 1
-      - path: SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte/Joint_2/Joint_3
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte
         weight: 1
-      - path: SCHAAF/Neck/Kopf/R_Ohr
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte/Joint_2
         weight: 1
-      - path: SCHAAF/Neck/Kopf/R_Ohr/Joint_4
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/L_Ohr/Ohrmitte/Joint_2/Joint_3
         weight: 1
-      - path: SCHAAF/Neck/Kopf/R_Ohr/Joint_4/Joint_5
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/R_Ohr
         weight: 1
-      - path: SCHAAF/Neck/Kopf/R_Ohr/Joint_4/Joint_5/Joint_6
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/R_Ohr/Joint_4
         weight: 1
-      - path: SCHAAF/Neck/Schulter
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/R_Ohr/Joint_4/Joint_5
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte"
+      - path: SCHAAF_ready/SCHAAF/Neck/Kopf/R_Ohr/Joint_4/Joint_5/Joint_6
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/Hintern"
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/Hintern/Schwanz"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/Hintern/Schwanz/Ende"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/Hintern"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/Hintern/Schwanz"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/Hintern/Schwanz/Ende"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1/Joint_2_2"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1/Joint_2_2/Fussgelenk"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1/Joint_2_2"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/L_Oberschenkel/Joint_1/Joint_2_2/Fussgelenk"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2/Joint_6_2"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel"
         weight: 1
-      - path: "SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2/Joint_6_2/Fussgelenk_2"
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2"
         weight: 1
-      - path: SCHAAF/Neck/Schulter/L_Oberarm
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2/Joint_6_2"
         weight: 1
-      - path: SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen
+      - path: "SCHAAF_ready/SCHAAF/Neck/Schulter/H\xFCfte/R_Oberschenkel/Joint_5_2/Joint_6_2/Fussgelenk_2"
         weight: 1
-      - path: SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen/Vorderhufgelenk
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/L_Oberarm
         weight: 1
-      - path: SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen/Vorderhufgelenk/Vorderhufe
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen
         weight: 1
-      - path: SCHAAF/Neck/Schulter/R_Oberarm
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen/Vorderhufgelenk
         weight: 1
-      - path: SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/L_Oberarm/Ellbogen/Vorderhufgelenk/Vorderhufe
         weight: 1
-      - path: SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2/Vorderhufgelenk_2
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/R_Oberarm
         weight: 1
-      - path: SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2/Vorderhufgelenk_2/Vorderhufe_2
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2
         weight: 1
-      - path: SCHAAF/R_Hinterhufgelenk_Goal_Controller
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2/Vorderhufgelenk_2
         weight: 1
-      - path: SCHAAF/R_Vorderhufgelenk_Goal_Controller
+      - path: SCHAAF_ready/SCHAAF/Neck/Schulter/R_Oberarm/Ellbogen_2/Vorderhufgelenk_2/Vorderhufe_2
+        weight: 1
+      - path: SCHAAF_ready/SCHAAF/R_Hinterhufgelenk_Goal_Controller
+        weight: 1
+      - path: SCHAAF_ready/SCHAAF/R_Vorderhufgelenk_Goal_Controller
         weight: 1
       maskType: 3
       maskSource: {instanceID: 0}

@@ -185,6 +185,7 @@ namespace Adventure.Character
 		IEnumerator Die()
 		{
 			GetComponent<FarmerNavigator>().enabled = false;
+			GetComponentInChildren<RandomBark>().enabled = false;
 			Time.timeScale = 0.2f;
 			_deathCam.enabled = true;
 
