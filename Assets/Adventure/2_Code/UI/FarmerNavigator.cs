@@ -7,11 +7,15 @@ namespace Adventure.UI
 {
 	public class FarmerNavigator : MonoBehaviour
 	{
-		[SerializeField] protected Texture _indicator;
+		[SerializeField] protected Texture _indicatorTop;
+		[SerializeField] protected Texture _indicatorBottom;
+		[SerializeField] protected Texture _indicatorLeft;
+		[SerializeField] protected Texture _indicatorRight;
 		[SerializeField] protected Transform _farmer;
 
 		protected SkinnedMeshRenderer _renderer;
 
+		private Texture _indicator;					// Displayed farmer indicator
 		private Vector3 _yMask;						// Vector mask (1,0,1)
 		private Vector3 _distanceVector;			// Vector from farmer to current camera
 		private Vector3 _cameraVector;				// Current camera forward vector
@@ -84,6 +88,9 @@ namespace Adventure.UI
 							(_screenCenter.x / (1f - _clippingAngleCos)) * (1f - _dampedIndicatorAngle),
 							_indicatorAngle > 0f ? -_screenCenter.y : _screenCenter.y
 						);
+
+						// Use top or bottom indicator
+						_indicator = _indicatorAngle > 0f ? _indicatorTop : _indicatorBottom;
 					}
 					else
 					{
@@ -92,6 +99,9 @@ namespace Adventure.UI
 							_screenCenter.x,
 							((_screenCenter.y / _clippingAngleCos) * _dampedIndicatorAngle) * (_indicatorAngle > 0f ? -1f : 1f)
 						);
+
+						// Use right indicator
+						_indicator = _indicatorRight;
 					}
 				}
 				else
@@ -106,6 +116,9 @@ namespace Adventure.UI
 							-(_screenCenter.x / (1f - _clippingAngleCos)) * (1f - _dampedIndicatorAngle),
 							_indicatorAngle > 0f ? -_screenCenter.y : _screenCenter.y
 						);
+
+						// Use top or bottom indicator
+						_indicator = _indicatorAngle > 0f ? _indicatorTop : _indicatorBottom;
 					}
 					else
 					{
@@ -114,6 +127,9 @@ namespace Adventure.UI
 							-_screenCenter.x,
 							((_screenCenter.y / _clippingAngleCos) * _dampedIndicatorAngle) * (_indicatorAngle > 0f ? -1f : 1f)
 						);
+
+						// Use left indicator
+						_indicator = _indicatorLeft;
 					}
 				
 				}

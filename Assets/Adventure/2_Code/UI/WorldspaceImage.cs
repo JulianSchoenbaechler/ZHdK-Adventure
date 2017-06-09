@@ -8,8 +8,9 @@ namespace Adventure.UI
 	public class WorldspaceImage : MonoBehaviour
 	{
 		// Serialized
+		[SerializeField] protected Camera _camera;
 		[SerializeField] protected Texture _image;
-		[SerializeField]protected float _scale = 1f;
+		[SerializeField] protected float _scale = 1f;
 		[SerializeField][Range(0f, 360f)] protected float _angle = 0f;
 		[SerializeField] protected Transform _target;
 		[SerializeField] protected Vector2 _pixelOffset;
@@ -20,11 +21,18 @@ namespace Adventure.UI
 		private Matrix4x4 _matrixBackup;
 
 		// Properties
+		public Camera Camera
+		{
+			get { return _camera; }
+			set { _camera = value; }
+		}
+
 		public Texture Image
 		{
 			get { return _image; }
 			set { _image = value; }
 		}
+
 
 		/// <summary>
 		/// Initialization
@@ -64,7 +72,12 @@ namespace Adventure.UI
 		{
 			if(_image != null)
 			{
-				_screenPosition = CameraControl.active.WorldToScreenPoint(_target.position);
+				if(_camera != null)
+					_screenPosition = _camera.WorldToScreenPoint(_target.position);
+				else	
+					_screenPosition = CameraControl.active.WorldToScreenPoint(_target.position);
+				
+
 				_screenPosition.y = Screen.height - _screenPosition.y;
 				_drawPosition.Set(
 					_screenPosition.x + _pixelOffset.x,

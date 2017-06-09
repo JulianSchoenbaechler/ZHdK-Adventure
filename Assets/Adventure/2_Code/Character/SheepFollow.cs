@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Adventure.Interaction;
+using Adventure.UI;
+using Adventure.Entity;
+using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Character
 {
@@ -24,6 +27,13 @@ namespace Adventure.Character
 		[SerializeField] protected float _jumpForce = 1f;
 		[SerializeField] protected Transform _sheepStairEntry;
 		[SerializeField] protected Transform _sheepStairEndpoint;
+		[SerializeField] protected SheepStair _sheepStair;
+		[SerializeField] protected int _sheepStairIndex = 1;
+		[SerializeField] protected float _hintDistance = 6f;
+		[SerializeField] protected float _keypressDistance = 1f;
+		[SerializeField] protected Texture _hintImage;
+		[SerializeField] protected Texture _keypressImage;
+		[SerializeField] protected AudioClip _hintSound;
 
 		private bool _buildStair = false;
 		private bool _finishStair = false;
@@ -36,6 +46,7 @@ namespace Adventure.Character
 		protected Rigidbody _rigidbody;
 		private Quaternion _rotateToTarget;
 		private Vector3 _tempRotationMask;
+		protected WorldspaceImage _hint;
 
 		public bool IsGrounded { get; private set; }
 		public bool Active
@@ -50,6 +61,9 @@ namespace Adventure.Character
 		{
 			IsGrounded = false;
 			_rigidbody = GetComponent<Rigidbody>();
+			_hint = GetComponent<WorldspaceImage>();
+			_hint.enabled = false;
+
 			GetComponent<InteractionObject>().InteractionEvent += PlayerInteraction;
 		}
 
@@ -111,6 +125,38 @@ namespace Adventure.Character
 		// Walk distance-check and speed calculation
 		protected void DistanceCheck()
 		{
+			if(Vector3.Distance(transform.position, _target.position) < _hintDistance)
+			{
+				if(!_active)
+				{
+					if(!_hint.enabled)
+					{
+						_hint.enabled = true;
+						GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().PlayOneShot(_hintSound);
+					}
+				}
+				else
+				{
+					if(_hint.enabled)
+						_hint.enabled = false;
+				}
+			}
+			else
+			{
+				if(_hint.enabled)
+					_hint.enabled = false;
+
+			}
+
+			if(Vector3.Distance(transform.position, _target.position) < _keypressDistance)
+			{
+				GetComponent<WorldspaceImage>().Image = _keypressImage;
+			}
+			else
+			{
+				GetComponent<WorldspaceImage>().Image = _hintImage;
+			}
+
 			if(Vector3.Distance(transform.position, _target.position) < _minDistance)
 			{
 				// Building stairs
@@ -125,6 +171,8 @@ namespace Adventure.Character
 				else if(_finishStair)
 				{
 					_finishStair = false;
+					GameState.Invoke("SheepIncrement");
+					_sheepStair.Activate(_sheepStairIndex);
 					Destroy(gameObject);
 				}
 

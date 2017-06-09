@@ -10,6 +10,11 @@ TagManager:
   - Barrel
   - SheepStair
   - Corn
+  - LevelManager
+  - Harvester
+  - StopHarvester
+  - AmbientSound
+  - MainMenu
   layers:
   - Default
   - TransparentFX

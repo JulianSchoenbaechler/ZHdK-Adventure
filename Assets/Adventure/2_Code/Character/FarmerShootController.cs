@@ -4,6 +4,7 @@ using UnityEngine;
 using JulianSchoenbaechler.SnapPanel;
 using Adventure.CameraHandling;
 using Adventure.UI;
+using Adventure.Audio;
 
 namespace Adventure.Character
 {
@@ -21,7 +22,11 @@ namespace Adventure.Character
 		[SerializeField] protected Transform _bulletSpawnPosition;
 		[SerializeField] protected Animator _visualShotAnimator;
 		[SerializeField] protected Animator _visualHitAnimator;
+		[SerializeField] protected UISpray _loadNoise;
 		[SerializeField] protected UISpray _shotNoise;
+		[SerializeField] protected AudioClip _searchingAudio;
+		[SerializeField] protected AudioClip _loadingAudio;
+		[SerializeField] protected AudioClip _shotAudio;
 
 		protected Animator _animator;
 		protected SnapPanel _snapPanel;
@@ -30,12 +35,15 @@ namespace Adventure.Character
 		private Quaternion _rotateToTarget;
 		private Vector3 _tempRotationMask;
 		private RaycastHit _shotHit;
+		private bool _audioPlayed = false;
+		private WorldspaceImage _curseImage;
 
 
 		void Start()
 		{
 			_animator = GetComponent<Animator>();
 			_snapPanel = GetComponentInChildren<SnapPanel>();
+			_curseImage = GetComponent<WorldspaceImage>();
 
 			if(_active)
 				_snapPanel.Invoke("StartSnapping", _pauseInterval + 2f);
@@ -64,7 +72,12 @@ namespace Adventure.Character
 			if(_animator.GetBool("Searching"))
 			{
 				// Searching...
-
+				if(!_audioPlayed)
+				{
+					GetComponent<AudioSource>().PlayOneShot(_searchingAudio);
+					GetComponentInChildren<RandomBark>().enabled = false;
+					_audioPlayed = true;
+				}
 
 				if(_animator.GetBool("Set"))
 				{
@@ -113,19 +126,26 @@ namespace Adventure.Character
 				{
 					_timer += Time.deltaTime;
 				}
+
+				if((_timer >= 3f) && _curseImage.enabled)
+				{
+					_curseImage.enabled = false;
+				}
 			}
 		}
 
 		public void OnReloadGun()
 		{
-			//GetComponentInChildren<SnapPanel>().StartSnapping();
-			print("reload");
+			GetComponent<AudioSource>().PlayOneShot(_loadingAudio);
+			_loadNoise.Play();
+			//print("reload");
 		}
 
 		public void OnShootGun()
 		{
 			_visualShotAnimator.SetTrigger("VisualShot");
 			_shotNoise.Play();
+			GetComponent<AudioSource>().PlayOneShot(_shotAudio);
 
 			if(Physics.Raycast(
 				_bulletSpawnPosition.position,
@@ -140,18 +160,23 @@ namespace Adventure.Character
 
 				if(_shotHit.transform.CompareTag("Player"))
 				{
-					print("Dead");
-					GameObject.Find("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;	// Debug... Need fix
+					//print("Dead");
+					//GameObject.Find("GameOver").GetComponent<UnityEngine.UI.Text>().enabled = true;	// Debug... Need fix
 					_active = false;
+					_target.GetComponent<SheepController>().Dead = true;
 				}
 				else
 				{
-					print("Missed");
+					//print("Missed");
+					_curseImage.enabled = true;
 				}
 			}
 
 			if(_active == true)
 				_snapPanel.Invoke("StartSnapping", _pauseInterval + 1.3f);
+
+			_audioPlayed = false;
+			GetComponentInChildren<RandomBark>().enabled = true;
 		}
 
 

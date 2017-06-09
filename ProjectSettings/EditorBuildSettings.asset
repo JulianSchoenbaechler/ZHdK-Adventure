@@ -6,4 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Adventure/0_Scenes/Code_Playground.unity
+    path: Assets/Adventure/0_Scenes/Main.unity
+  - enabled: 1
+    path: Assets/Adventure/0_Scenes/Game.unity
+  - enabled: 1
+    path: Assets/Adventure/0_Scenes/Credits.unity

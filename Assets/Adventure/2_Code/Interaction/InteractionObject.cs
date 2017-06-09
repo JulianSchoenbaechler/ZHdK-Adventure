@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Adventure.Inventory;
+using Adventure.UI;
+using Adventure.Character;
 using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Interaction
@@ -111,11 +113,33 @@ namespace Adventure.Interaction
 		{
 			if(_active)
 			{
-				if(_onKeyDown && Input.GetKeyDown(_interactionKey))
+				if(Vector3.Distance(transform.position, _player.position) <= _interactionDistance)
 				{
-					if(Vector3.Distance(transform.position, _player.position) <= _interactionDistance)
+					if(_onKeyDown && Input.GetKeyDown(_interactionKey))
 					{
 						OnInteraction();
+					}
+
+					// Edit only for Adventure -> hack
+					if(GetComponent<WorldspaceImage>() != null)
+					{
+						if(GetComponent<SheepFollow>() == null)
+						{
+							if(!GetComponent<WorldspaceImage>().enabled)
+								GetComponent<WorldspaceImage>().enabled = true;
+						}
+					}
+				}
+				else
+				{
+					// Edit only for Adventure -> hack
+					if(GetComponent<WorldspaceImage>() != null)
+					{
+						if(GetComponent<SheepFollow>() == null)
+						{
+							if(GetComponent<WorldspaceImage>().enabled)
+								GetComponent<WorldspaceImage>().enabled = false;
+						}
 					}
 				}
 			}

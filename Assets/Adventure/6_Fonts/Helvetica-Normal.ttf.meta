@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c07e10d9c4fcf8c419b2da36e3526943
+timeCreated: 1496839945
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Helvetica-Normal
+  fontNames:
+  - Helvetica-Normal
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

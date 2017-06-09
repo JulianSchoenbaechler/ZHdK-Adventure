@@ -59,7 +59,7 @@ namespace JulianSchoenbaechler.SnapPanel
 			_sequenceFinishDelay = new WaitUntil(() => SequenceFinished);
 
 			// Prealloc new RenderCamera stack
-			_renderCameraStack = new RenderCameraStack(Camera.main.depth - 1f, _panels.Length);
+			_renderCameraStack = new RenderCameraStack(/*Camera.main.depth - 1f*/2f, _panels.Length);
 			ShufflePositionsIndex();
 		}
 
@@ -120,7 +120,7 @@ namespace JulianSchoenbaechler.SnapPanel
 		/// <param name="camera">RenderCamera to use.</param>
 		protected IEnumerator Snapshot(GameObject panel, Vector2 size, RenderCamera camera)
 		{
-			RenderTexture rendered = RenderTexture.GetTemporary((int)size.x, (int)size.y, 24, RenderTextureFormat.Default, RenderTextureReadWrite.Default, 2);
+			RenderTexture rendered = RenderTexture.GetTemporary((int)size.x, (int)size.y, 24, RenderTextureFormat.Default, RenderTextureReadWrite.Default, 4);
 
 			// Setup camera
 			camera.targetTexture = rendered;
@@ -167,7 +167,7 @@ namespace JulianSchoenbaechler.SnapPanel
 		/// <param name="camera">RenderCamera to use.</param>
 		protected IEnumerator Realtime(GameObject panel, Vector2 size, RenderCamera camera)
 		{
-			RenderTexture rendered = RenderTexture.GetTemporary((int)size.x, (int)size.y, 24, RenderTextureFormat.Default, RenderTextureReadWrite.Default, 2);
+			RenderTexture rendered = RenderTexture.GetTemporary((int)size.x, (int)size.y, 24, RenderTextureFormat.Default, RenderTextureReadWrite.Default, 4);
 
 			// Setup camera
 			camera.targetTexture = rendered;
