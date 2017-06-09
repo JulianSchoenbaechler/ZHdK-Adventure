@@ -12,6 +12,12 @@ namespace Adventure.Audio
 		[SerializeField] protected AudioClip _level3Ambient;
 		[SerializeField] protected AudioClip _crows;
 
+
+		protected void Start()
+		{
+			GetComponent<AudioSource>().volume = 0.5f;
+		}
+
 		public void ChangeAmbient(uint level)
 		{
 			switch(level)
@@ -27,6 +33,7 @@ namespace Adventure.Audio
 					break;
 			}
 			GetComponent<AudioSource>().Play();
+			GetComponent<AudioSource>().volume = 0.5f;
 		}
 	}
 }

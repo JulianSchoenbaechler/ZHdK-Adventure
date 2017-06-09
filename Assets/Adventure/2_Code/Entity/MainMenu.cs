@@ -6,12 +6,33 @@ using UnityEngine.SceneManagement;
 [RequireComponent(typeof(AudioSource))]
 public class MainMenu : MonoBehaviour
 {
-	// Update is called once per frame
-	void Update()
+	[SerializeField] private GameObject _mainPanel;
+	[SerializeField] private GameObject _howToPanel;
+
+	public void StartGame()
 	{
-		if(Input.GetKeyDown(KeyCode.Space))
-		{
-			SceneManager.LoadScene(1);
-		}
+		SceneManager.LoadScene(1);
+	}
+
+	public void LoadCredits()
+	{
+		SceneManager.LoadScene(2);
+	}
+
+	public void ShowHowTo()
+	{
+		_howToPanel.SetActive(true);
+		_mainPanel.SetActive(false);
+	}
+
+	public void ShowMain()
+	{
+		_mainPanel.SetActive(true);
+		_howToPanel.SetActive(false);
+	}
+
+	public void Quit()
+	{
+		Application.Quit();
 	}
 }

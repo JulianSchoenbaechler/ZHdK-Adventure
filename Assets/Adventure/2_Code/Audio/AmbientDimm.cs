@@ -13,7 +13,10 @@ namespace Adventure.Audio
 
 		protected virtual void Start()
 		{
-			_insideMix.TransitionTo(0.1f);
+			if(GameState.active == "Level1State")
+				_insideMix.TransitionTo(0.01f);
+			else
+				_outsideMix.TransitionTo(0.01f);
 		}
 
 		protected virtual void OnTriggerEnter(Collider collider)

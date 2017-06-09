@@ -25,6 +25,7 @@ namespace Adventure.Entity
 			{
 				_harvester.SetActive(true);
 				GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().clip = _indianaSheep;
+				GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().volume = 1f;
 				GameObject.FindWithTag("AmbientSound").GetComponent<AudioSource>().Play();
 			}
 			/*else if(!_camera.enabled && _harvester.activeInHierarchy)

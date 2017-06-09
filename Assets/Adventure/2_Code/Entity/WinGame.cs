@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using JulianSchoenbaechler.GameState;
 
 namespace Adventure.Entity
 {
 	public class WinGame : MonoBehaviour
 	{
 		[SerializeField] protected Image _white;
-		[SerializeField] protected GameObject _displayUI;
 		[SerializeField] protected float _delay;
 
 		private bool _win = false;
@@ -44,13 +44,14 @@ namespace Adventure.Entity
 			if(collider.transform.CompareTag("Player"))
 			{
 				_win = true;
-				Invoke("DisplayUI", _delay);
+				Invoke("Finish", _delay);
 			}
 		}
 
-		private void DisplayUI()
+		private void Finish()
 		{
-			_displayUI.SetActive(true);
+			GameState.active = "Level1State";
+			SceneManager.LoadScene(2);
 		}
 	}
 }

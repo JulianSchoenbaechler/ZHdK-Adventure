@@ -9,3 +9,5 @@ EditorBuildSettings:
     path: Assets/Adventure/0_Scenes/Main.unity
   - enabled: 1
     path: Assets/Adventure/0_Scenes/Game.unity
+  - enabled: 1
+    path: Assets/Adventure/0_Scenes/Credits.unity
